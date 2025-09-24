@@ -14,6 +14,6 @@ This project uses the [iNaturalist API](https://www.inaturalist.org/pages/api+re
 ## Authors
 Jessica Long
 Oskar Riches
-Tom Arnette
+Tom Arnett
 Alex Poulter
 James McCarthy
