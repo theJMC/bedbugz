@@ -1,5 +1,5 @@
 <template>
-    <button class="button-stroke">
+    <button class="button button-stroke">
         <span class="material-symbols-outlined">
             {{ icon }}
         </span>
@@ -25,7 +25,12 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../main.scss';
+
 .button {
+    display: flex;
+    flex-direction: column;
+
     &-stroke {
         position: relative;
         border-radius: 25px;

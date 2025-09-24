@@ -10,6 +10,10 @@ $main-purple: #E110F2;
 $main-green: #1ED45E;
 $main-black: #18032D;
 
+.main-background {
+    background: $background-grad;
+}
+
 .font-medium {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
