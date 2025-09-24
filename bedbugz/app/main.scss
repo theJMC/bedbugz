@@ -20,6 +20,18 @@ $main-black: #18032D;
     height: 100vh;
 }
 
+.font-grad {
+    background: $main-bright-grad;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.font-white {
+    color: white;
+}
+
 .font-medium {
   font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
@@ -43,6 +55,10 @@ $main-black: #18032D;
 
 .font-20 {
     font-size: 20px;
+}
+
+.font-32 {
+    font-size: 32px;
 }
 
 .material-symbols-outlined {

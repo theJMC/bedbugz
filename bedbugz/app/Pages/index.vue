@@ -1,8 +1,8 @@
 <template>
-    <div class="main-background">
-        <div> 
-            <h1> BedBugZ </h1>
-            <h2> bug bites to love bites </h2>
+    <div class="main-background homepage">
+        <div class="homepage-title"> 
+            <h1 class="font-semibold font-white font-32"> BedBugZ </h1>
+            <h2 class="font-medium font-grad font-20"> bug bites to love bites </h2>
         </div>
         <div>
             <ButtonElement 
@@ -34,3 +34,17 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+.homepage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+        margin-top: 70px;
+        text-align: center;
+    }
+}
+</style>
