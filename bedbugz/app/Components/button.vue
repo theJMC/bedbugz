@@ -1,9 +1,9 @@
 <template>
     <button class="button button-stroke">
-        <span class="material-symbols-outlined">
+        <span :class="`material-symbols-outlined font-${isLarge ? '50' : '20'}`">
             {{ icon }}
         </span>
-        <span class="font-bold font-20">
+        <span :class="`font-bold font-${isLarge ? '50' : '20'}`">
             {{ text }}
         </span>
     </button>
@@ -19,6 +19,10 @@ export default {
         text: {
             type: String, 
             default: ''
+        },
+        isLarge: {
+            type: Boolean,
+            default: false
         }
     }
 }

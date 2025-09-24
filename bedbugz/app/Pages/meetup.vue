@@ -1,7 +1,8 @@
 <template>
   <div class="meetup-page">
-  <h1 class="font-semibold font-white font-32">BedBugZ</h1>
-  
+    <div class="logo">
+    <h1 class="font-semibold font-white font-32">BedBugZ</h1>
+  </div>
   <div class="scanner">
     <div class="image-container">
       <img
@@ -38,6 +39,7 @@
   </script>
   
   <style scoped>
+  
   .meetup-page {
   display: flex;
   flex-direction: column;
@@ -47,12 +49,16 @@
   padding: 20px;
   color: white;
   }
-  
+  .logo {
+  align-self: flex-start;
+  display: flex;
+  justify-content: flex-start;
+}
   .scanner {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   padding: 16px;
-  width: 450px;
+  width: 400px;
   text-align: center;
   position: relative;
   }
@@ -74,7 +80,7 @@
   
   .camera-button-style {
     position: absolute;
-bottom: 16%;
+bottom: 18%;
 left: 50%;
 transform: translateX(-50%);
 }
