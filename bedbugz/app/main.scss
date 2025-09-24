@@ -10,6 +10,11 @@ $main-purple: #E110F2;
 $main-green: #1ED45E;
 $main-black: #18032D;
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .main-background {
     background: $background-grad;
 }
