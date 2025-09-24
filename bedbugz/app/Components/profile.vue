@@ -93,7 +93,7 @@ export default {
   width: calc(100% - 32px);
   height: calc(100% - 46px);
   border-radius: 24px;
-  border: 2px solid white;
+  border: 2px solid #ffffff40;
   pointer-events: none;
 }
 
@@ -108,7 +108,7 @@ export default {
   position: relative;
   overflow-y: auto;
   padding-bottom: 24px;
-  background: inherit; // Restore original, remove inline background style
+  background: inherit;
   z-index: 1;
 }
 
