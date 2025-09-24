@@ -8,6 +8,7 @@ This project uses the [iNaturalist API](https://www.inaturalist.org/pages/api+re
 - Focus on local biodiversity
 
 ### Dependencies
+* Using .Nuxt
 * Using .Vue
 * Using Node 24.8
 
