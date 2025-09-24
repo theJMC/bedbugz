@@ -1,9 +1,9 @@
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <Index />
   </div>
 </template>
-<style lang="scss">
-@import './test.scss'
-</style>
+
+<script setup lang="js">
+import Index from './Pages/index.vue';
+</script>
