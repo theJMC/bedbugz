@@ -15,5 +15,5 @@ This project uses the [iNaturalist API](https://www.inaturalist.org/pages/api+re
 Jessica Long
 Oskar Riches
 Tom Arnette
-Alex Polter
+Alex Poulter
 James McCarthy
