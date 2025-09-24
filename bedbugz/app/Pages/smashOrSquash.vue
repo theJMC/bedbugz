@@ -1,18 +1,25 @@
 <template>
     <div class="smashOrSquash main-background">
         <h1 class="font-white font-32 font-semibold"> BedBugZ </h1>
-            <Profile 
-            />
-            <div class="footer">
+        <ProfileComponent />
+        <div class="footer">
             <button class="smash">🪰 smash</button>
             <button class="squash">❤️ squash</button>
-            </div>
+        </div>
     </div>
 </template>
 
 <script>
-import Profile from '~/components/Profile.vue';
+import ProfileComponent from '../components/profile.vue';
+
+export default {
+    name: 'SmashOrSquashPage',
+    components: {
+        ProfileComponent
+    }
+}
 </script>
+
 <style lang="scss">
 @import '../main.scss';
 .smashOrSquash {
@@ -66,5 +73,4 @@ import Profile from '~/components/Profile.vue';
         }
     }
 }
-
 </style>

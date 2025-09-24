@@ -14,13 +14,14 @@
 
 <script>
 export default {
-  name: 'Carousel',
+  name: 'CarouselComponent',
   props: {
     images: {
       type: Array,
       required: true
     }
   },
+emits: ['active-image'],
   data() {
     return {
       currentIndex: 0

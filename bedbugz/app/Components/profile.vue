@@ -1,11 +1,15 @@
 <template>
   <div class="profile-card-wrapper">
     <span class="profile-card-border"></span>
-    <div class="profile-card">
+    <div
+      class="profile-card"
+      :style="profileCardStyle"
+    >
       <div class="carousel-wrapper">
         <VerticalProfileCarousel
           :pages="carouselPages"
           :pageProps="carouselPageProps"
+          @pageChange="onCarouselChange"
         />
         <div class="overlay">
           <h2>Bumblebee</h2>
@@ -18,17 +22,14 @@
 
 <script>
 import VerticalProfileCarousel from './vertical-profile-carousel.vue'
-import Carousel from './carousel.vue'
-import Description from './description.vue'
-import Prompts from './prompts.vue'
+import CarouselComponent from './carousel.vue'
+import DescriptionComponent from './description.vue'
+import PromptsComponent from './prompts.vue'
 
 export default {
-  name: 'Profile',
+  name: 'ProfileComponent',
   components: {
-    VerticalProfileCarousel,
-    Carousel,
-    Description,
-    Prompts
+    VerticalProfileCarousel
   },
   data() {
     return {
@@ -38,9 +39,9 @@ export default {
         'https://picsum.photos/id/1020/600/400'
       ],
       carouselPages: [
-        Carousel,      // Use the imported component
-        Description,   // Use the imported component
-        Prompts        // Use the imported component
+        markRaw(CarouselComponent),
+        markRaw(DescriptionComponent),
+        markRaw(PromptsComponent)
       ],
       carouselPageProps: [
         { images: [
@@ -50,9 +51,30 @@ export default {
           ]
         },
         { text: "The bumblebee is a large, fuzzy insect known for its important role in pollination." },
-        { prompts: ['What flowers do bumblebees prefer?', 'How do bumblebees communicate?'] }
-      ]
+        { prompts: [
+                    {
+                      "question": "What flowers do bumblebees prefer?",
+                      "answer": "Bumblebees love big, easy-to-land-on flowers like lavender and sunflowers. Basically, they’re into the ‘bold and beautiful’ vibe."
+                    },
+                    {
+                      "question": "How do bumblebees communicate?",
+                      "answer": "They do the waggle dance! It’s like a bee rave, telling the crew where the best nectar spots are."
+                    }
+                  ]
+        }
+      ],
+      currentCarouselIndex: 0
     }
+  },  
+  computed: {
+    profileCardStyle() {
+      return {} // Remove dynamic background style
+    }
+  },
+  methods: {
+    onCarouselChange(index) {
+      this.currentCarouselIndex = index
+    }   
   }
 }
 </script>
@@ -86,7 +108,7 @@ export default {
   position: relative;
   overflow-y: auto;
   padding-bottom: 24px;
-  background: inherit;
+  background: inherit; // Restore original, remove inline background style
   z-index: 1;
 }
 

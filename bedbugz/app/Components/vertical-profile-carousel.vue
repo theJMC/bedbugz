@@ -8,14 +8,14 @@
         <button
           class="nav-btn up"
           :disabled="currentIndex === 0"
-          @click="prevPage"
           aria-label="Previous page"
+          @click="prevPage"
         >▲</button>
         <button
           class="nav-btn down"
           :disabled="currentIndex === pages.length - 1"
-          @click="nextPage"
           aria-label="Next page"
+          @click="nextPage"
         >▼</button>
       </div>
       <div class="page-content">
@@ -42,6 +42,14 @@ export default {
       activeImage: null
     }
   },
+  watch: {
+    activeImage() {
+      this.updateBgImage()
+    }
+  },
+  mounted() {
+    this.updateBgImage()
+  },
   methods: {
     prevPage() {
       if (this.currentIndex > 0) this.currentIndex--
@@ -59,14 +67,6 @@ export default {
         el.style.setProperty('--carousel-bg', this.activeImage ? `url(${this.activeImage})` : '')
       }
     }
-  },
-  watch: {
-    activeImage() {
-      this.updateBgImage()
-    }
-  },
-  mounted() {
-    this.updateBgImage()
   }
 }
 </script>
