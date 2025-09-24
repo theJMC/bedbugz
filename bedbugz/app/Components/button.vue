@@ -1,0 +1,56 @@
+<template>
+    <button class="button-stroke">
+        <span class="material-symbols-outlined">
+            {{ icon }}
+        </span>
+        <span class="font-bold font-20">
+            {{ text }}
+        </span>
+    </button>
+</template>
+
+<script>
+export default {
+    name: "ButtonElement",
+    props: {
+        icon: {
+            type: String
+        },
+        text: {
+            type: String, 
+            default: ''
+        }
+    }
+}
+</script>
+
+<style lang="scss">
+.button {
+    &-stroke {
+        position: relative;
+        border-radius: 25px;
+        padding: 16px;
+        background: $main-black;
+        color: white;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            padding: 2px;
+            border-radius: inherit;
+            background: $main-bright-grad;
+            -webkit-mask: 
+                linear-gradient(white 0 0) content-box, 
+                linear-gradient(white 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+        &:hover {
+            background: $main-bright-grad;
+            color: $main-black;
+        }
+    }
+}
+</style>
