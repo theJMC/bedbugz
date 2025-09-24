@@ -19,7 +19,7 @@
             />
         </div>
         <PercentBar 
-            number="33"
+            number=33
         />
     </div>
 </template>
