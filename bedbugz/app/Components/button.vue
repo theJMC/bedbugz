@@ -30,7 +30,7 @@ export default {
 .button {
     display: flex;
     flex-direction: column;
-
+    
     &-stroke {
         position: relative;
         border-radius: 25px;
