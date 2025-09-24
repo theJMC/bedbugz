@@ -29,7 +29,7 @@ export default {
     components: {
         ButtonElement,
         WinComponent
-    }
+    },
     props: {
         name: {
             type: String,

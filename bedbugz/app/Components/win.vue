@@ -21,9 +21,7 @@
 
 <script>
 export default {
-    name: "WinComponent",
-    props: {
-    }
+    name: "WinComponent"
 }
 </script>
 
