@@ -9,7 +9,7 @@
         <span class="font-medium font-grad font-20"> 
             new suitor unlocked 
             </br> 
-            "<span class="font-white">name</span>"
+            "<span class="font-white">{{ name }}</span>"
         </span>
 
         <div class="subpage-buttons">
@@ -29,6 +29,12 @@ export default {
     components: {
         ButtonElement,
         WinComponent
+    }
+    props: {
+        name: {
+            type: String,
+            default: 'Name'
+        }
     }
 }
 </script>
