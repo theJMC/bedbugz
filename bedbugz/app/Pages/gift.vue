@@ -33,26 +33,31 @@
           icon="grass"
           class="gift-option"
           :isLarge="true"
+          @click="handleGift('grass')"
         />
         <ButtonElement 
           icon="park"
           class="gift-option"
           :isLarge="true"
+          @click="handleGift('tree')"
         />
         <ButtonElement 
           icon="local_florist"
           class="gift-option"
           :isLarge="true"
+          @click="handleGift('flower')"
         />
         <ButtonElement 
           icon="water_drop"
           class="gift-option"
           :isLarge="true"
+          @click="handleGift('water')"
         />
         <ButtonElement 
           icon="hive"
           class="gift-option"
           :isLarge="true"
+          @click="handleGift('honey')"
         />
       </div>
     </div>
@@ -66,7 +71,33 @@
   
   export default {
   components: {
-  ButtonElement,
+    ButtonElement,
+  },
+  methods: {
+    handleGift(giftType) {
+      // TODO: add or minus to score based on this and the type of bug
+       switch (giftType) {
+        case "grass":
+            break;
+        case "tree":
+            break;
+        case 'flower':
+            break;
+        case 'water':
+            break;
+        case 'honey':
+            break;
+        default:
+            console.error("Unknown response");
+        }
+      
+      // TODO: this should be based on score
+      if (true) {
+        this.$router.push('/buzzstruck');
+      } else {
+        this.$router.push('/buzzoff');
+      }
+    }
   }
   };
   </script>
@@ -76,7 +107,7 @@
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, #3b006a, #000);
-  min-height: 100vh;
+  height: calc(100vh - 40px);
   padding: 20px;
   color: white;
   }
@@ -85,6 +116,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
   }
   
   .gift-container {
