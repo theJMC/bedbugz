@@ -65,6 +65,10 @@ export default {
   &.locked {
     cursor: not-allowed;
 
+    & .image-button__img {
+      filter: blur(3px);
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -104,6 +108,6 @@ export default {
   }
 }
 .lock-icon {
-  font-size: 75px;
+  font-size: 75px !important;
 }
 </style>

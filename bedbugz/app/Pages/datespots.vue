@@ -11,7 +11,7 @@
             v-for="(dateSpot, index) in dateSpots"
             :key="dateSpot.id"
             :image="dateSpot.image"
-            :text="dateSpot.name"
+            :locked="dateSpot.locked"
         />
       </div>
     </div>
@@ -40,7 +40,7 @@ export default {
         id: i + 1,
         name: `Plant`,
         image: 'https://watchandlearn.scholastic.com/content/dam/classroom-magazines/watchandlearn/videos/animals-and-plants/plants/what-are-plants-/What-Are-Plants.jpg',
-        locked: (i % 3)-2 === 0,
+        locked: true,
       })),
     };
   },
@@ -105,7 +105,7 @@ export default {
     }
 
     &__play-symbol {
-        font-size:50px;
+        font-size:50px !important;
     }
 
   &-grid-container {

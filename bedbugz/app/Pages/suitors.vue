@@ -193,11 +193,11 @@ export default {
     }
 
     &__play-symbol {
-        font-size:100px;
+        font-size:100px !important;
     }
 
     &__undo-symbol {
-        font-size:50px;
+        font-size:50px !important;
     }
 
   &-grid-container {

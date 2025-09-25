@@ -1,6 +1,7 @@
 <template>
     <div class="main-background homepage">
-        <div class="homepage-title"> 
+        <div class="homepage-title">
+            <img src="/images/bedbugz_logo.png" alt="bed bugz logo" height="50px"/>
             <h1 class="font-semibold font-white font-32"> BedBugZ </h1>
             <h2 class="font-medium font-grad font-20"> bug bites to love bites </h2>
         </div>
@@ -43,8 +44,9 @@ export default {
         }
     },
     mounted() {
-        // on page load get complete % from somewhere
-        this.completionNumber = 33;
+        const TOTAL_SUITORS = 43;
+        const CURRENT_UNLOCKED_SUITORS = 3; // TODO UPDATE THIS WHEN MORE SUITORS
+        this.completionNumber = Math.round((CURRENT_UNLOCKED_SUITORS / TOTAL_SUITORS) * 100);
     },
     methods: {
         handleFindAMatch() {
