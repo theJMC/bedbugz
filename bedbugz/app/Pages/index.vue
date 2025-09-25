@@ -50,7 +50,7 @@ export default {
             this.$router.push('/suitors');
         },
         handleViewDates() {
-            console.log('go to view dates')
+            this.$router.push('/datespots')
         },
         handleScanSuitor() {
             console.log('go to scan suitor')
