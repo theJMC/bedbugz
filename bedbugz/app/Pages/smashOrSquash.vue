@@ -217,7 +217,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
+    height: 100dvh;
     padding: 24px;
     box-sizing: border-box;
     position: relative;

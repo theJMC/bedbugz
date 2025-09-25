@@ -50,7 +50,7 @@
     flex-direction: column;
     align-items: center;
     background: linear-gradient(180deg, #3b006a, #000);
-    height: calc(100vh - 40px);
+    height: calc(100dvh - 40px);
     padding: 20px;
     color: white;
   }
@@ -69,7 +69,7 @@
   }
   
   .image-container {
-    max-height: calc(100vh - 250px);
+    max-height: calc(100dvh - 250px);
     overflow: hidden;
     margin: auto;
   padding: 2px;
@@ -80,7 +80,7 @@
   
   .scan-image {
   width: 100%;
-  height: calc(100vh - 250px);
+  height: calc(100dvh - 250px);
   border-radius: 16px;
   object-fit: cover;
   display: block;

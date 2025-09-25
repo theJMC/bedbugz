@@ -13,6 +13,7 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'BedBugZ | Bug Dating Simulator' },
         { property: 'og:description', content: 'Visit BedBugZ: The ultimate bug dating simulator that teaches you about wildlife and nature around Bournemouth University.' },
         { property: 'og:type', content: 'website' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' }
       ]
     }
   }

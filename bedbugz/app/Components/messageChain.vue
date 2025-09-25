@@ -64,7 +64,7 @@ export default {
   flex-direction: column;
   gap: 15px;
   width: 95vw;
-  height: 50vh;
+  height: 50dvh;
   overflow-y: scroll;
 
   scrollbar-width: none;
