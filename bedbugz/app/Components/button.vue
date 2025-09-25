@@ -1,9 +1,9 @@
 <template>
     <button class="button button-stroke">
-        <span class="material-symbols-outlined">
+        <span :class="`material-symbols-outlined font-${isLarge ? '50' : '20'}`">
             {{ icon }}
         </span>
-        <span class="font-bold font-20">
+        <span :class="`font-bold font-${isLarge ? '50' : '20'}`">
             {{ text }}
         </span>
     </button>
@@ -19,6 +19,10 @@ export default {
         text: {
             type: String, 
             default: ''
+        },
+        isLarge: {
+            type: Boolean,
+            default: false
         }
     }
 }
@@ -31,6 +35,8 @@ export default {
     display: flex;
     flex-direction: column;
     width: 100%;
+    text-align: center;
+    align-items: center;
     
     &-stroke {
         position: relative;
@@ -56,6 +62,7 @@ export default {
         &:hover {
             background: $main-bright-grad;
             color: $main-black;
+            cursor: pointer;
         }
     }
 }

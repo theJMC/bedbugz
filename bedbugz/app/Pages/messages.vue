@@ -14,9 +14,9 @@
                 :A="messageIndex == null ? null : optionA.text"
                 :B="optionB.text"
                 :C="optionC.text"
-                @choiceA="checkChoice(optionA.type)"
-                @choiceB="checkChoice(optionB.type)"
-                @choiceC="checkChoice(optionC.type)"
+                @choiceA="checkChoice(optionA.type, $event)"
+                @choiceB="checkChoice(optionB.type, $event)"
+                @choiceC="checkChoice(optionC.type, $event)"
             />
         </div>
     </div>
@@ -25,7 +25,9 @@
 <script>
 import MessageChoices from '~/components/messageChoices.vue';
 import MessageChain from '~/components/messageChain.vue';
+import gsap from 'gsap';
 
+const MIN_USER_SCORE = 40;
 export default {
   components: {
     MessageChoices,
@@ -33,57 +35,31 @@ export default {
   },
   data() {
     return {
+      name: '',
       messages: [],
       messageIndex: null,
       messageChain: [],
+      userScore: 0,
       optionA: '',
       optionB: '',
       optionC: '',
     }
   },
-    computed: {
-        currentMessage() {
-            return this.messages[this.messageIndex] ?? null;
-        }
-    },
   mounted() {
-    this.messages = [
-      {
-        "bugMsg": "Did you know I can flap my wings about 200 times per second? Imagine me buzzing around you that fast!",
-        "responses": {
-          "good": "200 times per second? That’s like a superhero in disguise!",
-          "medium": "Whoa… that’s fast. I hope you don’t give me whiplash.",
-          "bad": "Honestly, that sounds like too much buzzing in my life."
-        }
-      },
-      {
-        "bugMsg": "I spend my whole life collecting nectar—maybe I could collect a little sweetness from you too?",
-        "responses": {
-          "good": "Careful, I might start charging interest on this sweetness!",
-          "medium": "Hmm… nectar from me? That’s a first.",
-          "bad": "I think your hive can survive without my sugar."
-        }
-      },
-      {
-        "bugMsg": "I can see ultraviolet patterns on flowers that humans can’t. Lucky for you, I can still spot your charm.",
-        "responses": {
-          "good": "Wow, so you’re basically seeing my inner sparkle too? I’m flattered!",
-          "medium": "Ultraviolet charm… I guess that’s flattering in a weird, sci-fi way.",
-          "bad": "Seeing things I can’t see? That’s… kind of creepy, honestly."
-        }
-      },
-      {
-        "bugMsg": "Worker bees like me work together to make the hive thrive—think we could make a good team?",
-        "responses": {
-          "good": "If it means buzzing through adventures together, count me in!",
-          "medium": "A team, huh… I could give it a try.",
-          "bad": "Sorry, I’m more of a solo flower type."
-        }
-      }
-    ];
-    this.chooseResponseOrder(0)
+    this.name = localStorage.getItem("suitorName");
+    this.getMessages()
   },
   methods: {
+    async getMessages() {
+        try {
+            const response = await fetch(`https://api.bedbugz.uk/chat/sexyeducational${this.name}whodoesntintro`)
+            const data = await response.json()
+            this.messages = data
+            this.chooseResponseOrder(0)
+        } catch(error) {
+            console.error('Unexpected Error getting messages')
+        }
+    },
     scrollToBottom() {
         this.$nextTick(() => {
             const container = this.$refs.messageChainContainer?.$el || this.$refs.messageChainContainer;
@@ -114,7 +90,7 @@ export default {
 
         [this.optionA, this.optionB, this.optionC] = responses;
     },
-    checkChoice(type) {
+    checkChoice(type, event) {
         switch (type) {
         case "good":
             this.messageChain.push({
@@ -122,6 +98,7 @@ export default {
                 message: this.messages[this.messageIndex].responses.good
             })
             this.userScore += 20
+            this.explodeEmojis("good", event);
             break;
 
         case "medium":
@@ -130,6 +107,7 @@ export default {
                 message: this.messages[this.messageIndex].responses.medium
             })
             this.userScore += 10
+            this.explodeEmojis("medium", event);
             break;
 
         case "bad":
@@ -137,6 +115,7 @@ export default {
                 isUser: true,
                 message: this.messages[this.messageIndex].responses.bad
             })
+            this.explodeEmojis("bad", event);
             break;
 
         default:
@@ -153,10 +132,63 @@ export default {
             if (this.messageIndex < this.messages.length) {
                 this.chooseResponseOrder(this.messageIndex);
             } else {
-                console.log('TODO TODO TODO')
+                this.scoreAndRedirect()
             }
         }, 2000);
+    },
+    scoreAndRedirect() {
+        if (this.userScore >= MIN_USER_SCORE) {
+            this.$router.push('/meetup');
+        } else {
+            this.$router.push('/buzzoff');
+        }
+    },
+    explodeEmojis(type, event) {
+    let emojiChars = [];
+    if (type === "good") {
+        emojiChars = ["❤️", "💕", "💖"];
+    } else if (type === "medium") {
+        emojiChars = ["🫤", "👌", "🙌"];
+    } else if (type === "bad") {
+        emojiChars = ["😢", "😒", "😭"];
     }
+
+    const container = this.$refs.messageChainContainer?.$el || this.$refs.messageChainContainer;
+    if (!container) return;
+
+    const button = event.currentTarget;
+    const rect = button.getBoundingClientRect();
+    const centerX = rect.left + rect.width / 2;
+    const centerY = rect.top + rect.height - 60; // near bottom of messages
+
+    for (let i = 0; i < 30; i++) {
+        const emoji = document.createElement("span");
+        emoji.textContent = emojiChars[Math.floor(Math.random() * emojiChars.length)];
+        emoji.style.position = "fixed";
+        emoji.style.left = centerX + "px";
+        emoji.style.top = centerY + "px";
+        emoji.style.fontSize = "${500 + Math.random() * 30}px";
+        emoji.style.pointerEvents = "none";
+        document.body.appendChild(emoji);
+
+        // random trajectory
+        const angle = Math.random() * Math.PI * 2;
+        const distance = 100 + Math.random() * 80;
+        const x = Math.cos(angle) * distance;
+        const y = Math.sin(angle) * distance;
+
+        gsap.to(emoji, {
+            x,
+            y,
+            scale: 0,
+            opacity: 0,
+            rotation: Math.random() * 360,
+            duration: 5 + Math.random() * 0.5,
+            ease: "power2.out",
+            onComplete: () => emoji.remove()
+        });
+    }
+}
   }
 }
 </script>

@@ -43,9 +43,13 @@ $main-black: #18032D;
     padding: 0;
 }
 
+html {
+  background: $background-grad;
+}
+
 .main-background {
-    background: $background-grad;
-    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
 }
 
 .font-grad {
@@ -57,8 +61,16 @@ $main-black: #18032D;
 }
 
 .font-white {
-    color: white;
-    -webkit-text-fill-color: white;
+  color: white;
+  -webkit-text-fill-color: white;
+}
+
+.font-black {
+  color: $main-black;
+}
+
+.font-transparent {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .font-medium {
@@ -82,12 +94,24 @@ $main-black: #18032D;
   letter-spacing: -5%;
 }
 
+.font-14 {
+  font-size: 14px;
+}
+
 .font-20 {
     font-size: 20px;
 }
 
+.font-24 {
+    font-size: 24px;
+}
+
 .font-32 {
     font-size: 32px;
+}
+
+.font-50 {
+  font-size: 50px;
 }
 
 .material-symbols-outlined {
@@ -96,4 +120,9 @@ $main-black: #18032D;
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+
+
+.pointer-events-none {
+    pointer-events: none;
 }

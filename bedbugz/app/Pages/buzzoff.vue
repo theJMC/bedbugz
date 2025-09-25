@@ -4,12 +4,17 @@
             <h1 class="font-semibold font-white font-32"> BedBugZ </h1>
         </div>
         
-        <MatchComponent />
+        <LooseComponent />
+
+        <span class="font-medium font-grad font-20"> 
+            They’re not crawling back to you
+        </span>
 
         <div class="subpage-buttons">
             <ButtonElement 
-                icon="favorite"
-                text="get chatting"
+                icon="heart_broken"
+                text="return home"
+                @click="handleReturnHome"
             />
         </div>
     </div>
@@ -17,12 +22,17 @@
 
 <script>
 import ButtonElement from '~/components/button.vue';
-import MatchComponent from '~/components/match.vue';
+import LooseComponent from '~/components/loose.vue';
 
 export default {
     components: {
         ButtonElement,
-        MatchComponent
+        LooseComponent
+    },
+    methods: {
+        handleReturnHome() {
+            this.$router.push('/');
+        },
     }
 }
 </script>
