@@ -84,8 +84,6 @@ export default {
   }
 
   &.selected {
-    // border: 10px solid #17DA58;
-    // box-sizing: border-box;
     position: relative;
     border-radius: 25px;
     &::before{

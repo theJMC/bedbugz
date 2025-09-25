@@ -1,9 +1,5 @@
 <template>
   <div>
-    <Index />
+    <NuxtPage />
   </div>
 </template>
-
-<script setup lang="js">
-import Index from './Pages/index.vue';
-</script>
