@@ -47,11 +47,15 @@ export default {
     userImage: {
       type: String,
       default: '/images/user.png'
-    },
-    bugImage: {
-      type: String,
-      default: '/images/bug.png'
     }
+  },
+  data() {
+    return {
+        bugImage: ''
+    }
+  },
+  mounted() {
+    this.bugImage = localStorage.getItem("suitorImg");
   }
 }
 </script>
@@ -88,7 +92,7 @@ export default {
 .profile-photo {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 25%;
   object-fit: cover;
 }
 
