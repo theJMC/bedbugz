@@ -27,7 +27,7 @@ import MessageChoices from '~/components/messageChoices.vue';
 import MessageChain from '~/components/messageChain.vue';
 import gsap from 'gsap';
 
-const MIN_USER_SCORE = 40;
+const MIN_USER_SCORE = 50;
 export default {
   components: {
     MessageChoices,
@@ -106,7 +106,6 @@ export default {
                 isUser: true,
                 message: this.messages[this.messageIndex].responses.medium
             })
-            this.userScore += 10
             this.explodeEmojis("medium", event);
             break;
 
@@ -115,6 +114,7 @@ export default {
                 isUser: true,
                 message: this.messages[this.messageIndex].responses.bad
             })
+            this.userScore -= 10
             this.explodeEmojis("bad", event);
             break;
 
@@ -137,7 +137,7 @@ export default {
         }, 2000);
     },
     scoreAndRedirect() {
-        if (this.userScore >= MIN_USER_SCORE) {
+        if (this.userScore > MIN_USER_SCORE) {
             this.$router.push('/meetup');
         } else {
             this.$router.push('/buzzoff');
