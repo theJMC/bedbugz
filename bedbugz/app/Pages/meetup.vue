@@ -58,7 +58,7 @@ export default {
   methods: {
     async startCamera() {
       try {
-        this.stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        this.stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" }} });
         this.$refs.video.srcObject = this.stream;
       } catch (err) {
         console.error('Error accessing camera:', err);
@@ -71,7 +71,6 @@ export default {
     },
     handleCameraClick() {
       if (!this.capturedImage) {
-        // Capture current video frame
         const video = this.$refs.video;
         const canvas = document.createElement('canvas');
         canvas.width = video.videoWidth;
@@ -79,11 +78,9 @@ export default {
         canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
         this.capturedImage = canvas.toDataURL('image/png');
 
-        // Pause the video
         video.pause();
         this.stopCamera();
       } else {
-        // Optional: navigate to gift page if already captured
         this.$router.push('/gift');
       }
     }
