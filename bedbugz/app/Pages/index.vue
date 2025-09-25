@@ -73,7 +73,9 @@ export default {
 
     &-buttons {
         width: 75%;
-
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
     }
 }
 </style>
