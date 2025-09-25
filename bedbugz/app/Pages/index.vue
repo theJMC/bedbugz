@@ -1,6 +1,7 @@
 <template>
     <div class="main-background homepage">
-        <div class="homepage-title"> 
+        <div class="homepage-title">
+            <img src="/images/bedbugz_logo.png" alt="bed bugz logo" height="50px"/>
             <h1 class="font-semibold font-white font-32"> BedBugZ </h1>
             <h2 class="font-medium font-grad font-20"> bug bites to love bites </h2>
         </div>
