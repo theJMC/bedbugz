@@ -7,7 +7,7 @@
         <div class="homepage-buttons">
             <ButtonElement 
                 icon="favorite"
-                text="find a match"
+                text="find a catch"
                 @click="handleFindAMatch"
             />
             <ButtonElement 
