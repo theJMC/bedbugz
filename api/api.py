@@ -1,3 +1,6 @@
+import base64
+import json
+
 from fastapi import FastAPI
 from openai import OpenAI
 from fastapi.middleware.cors import CORSMiddleware
@@ -12,17 +15,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+"""
+{'bugMsg': 'MESSAGE','responses': \
+        {'good': 'GOOD_RESPONSE','medium': 'MEDIUM_RESPONSE','bad': 'BAD_RESPONSE'}}"
+"""
+
 @app.get("/{bug}")
 async def root(bug):
     response = client.responses.create(
         model="o4-mini",
         input="Please generate 6 of the below response. You are pretending to be an insect bug on tinder. You are a [bug]. Please can you generate a message \
         from you, the bug, to another bug. Can you try to keep the responses concise please. Please respond exactly in the format \
-        {'bugMsg': 'MESSAGE','responses': \
-        {'good': 'GOOD_RESPONSE','medium': 'MEDIUM_RESPONSE','bad': 'BAD_RESPONSE'}}".replace("[bug]", bug)
+        Please respond in JSON format, with a string field 'bugMsg', then a dict called 'responses' which contains 'good', 'medium', 'bad'.".replace("[bug]", bug)
     )
-    results = []
-    for res in response.output_text.split("\n"):
-        results.append(res)
-    return results
+    result = json.loads(" ".join(response.output_text.split()))
+    return result
+
 
