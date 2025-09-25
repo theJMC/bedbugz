@@ -2,6 +2,7 @@ import base64
 import json
 import math
 import os
+import random
 
 API_BASE_URL = "https://api.inaturalist.org/v1"
 API_PROJECT_ID = "bournemouth-university-nature-hackathon-2025"
@@ -54,4 +55,6 @@ async def profile(page: int):
     num_of_pages = math.ceil(length / PER_PAGE)
     start_index = (page - 1) * PER_PAGE
     end_index = start_index + PER_PAGE
-    return {"num_of_pages": num_of_pages, "current_page": page, "profiles": all_profiles[start_index:end_index]}
+    shuffld_profiles = all_profiles[start_index:end_index]
+    random.shuffle(shuffld_profiles)
+    return {"num_of_pages": num_of_pages, "current_page": page, "profiles": shuffld_profiles}
