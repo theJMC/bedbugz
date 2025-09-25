@@ -28,21 +28,21 @@
     >
         <button 
             class="choice font-medium"
-            @click="$emit('choiceA')"
+            @click="$emit('choiceA', $event)"
         >
             {{ A }}
         </button>
 
         <button 
             class="choice font-medium"
-            @click="$emit('choiceB')"
+            @click="$emit('choiceB', $event)"
         >
             {{ B }}
         </button>
 
         <button 
             class="choice font-medium"
-            @click="$emit('choiceC')"
+            @click="$emit('choiceC', $event)"
         >
             {{ C }}
         </button>
