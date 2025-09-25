@@ -62,6 +62,7 @@ export default {
         &:hover {
             background: $main-bright-grad;
             color: $main-black;
+            cursor: pointer;
         }
     }
 }
