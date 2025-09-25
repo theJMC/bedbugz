@@ -49,11 +49,6 @@ export default {
       optionC: '',
     }
   },
-    computed: {
-        currentMessage() {
-            return this.messages[this.messageIndex] ?? null;
-        }
-    },
   mounted() {
     this.getMessages()
   },
