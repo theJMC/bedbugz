@@ -1,5 +1,6 @@
 import base64
 import json
+import math
 import os
 
 API_BASE_URL = "https://api.inaturalist.org/v1"
@@ -42,7 +43,15 @@ async def get_bug(bug):
     result = json.loads(" ".join(response.output_text.split()))
     return result
 
-@app.get("/profile")
-async def profile():
+@app.get("/profile/{page}")
+async def profile(page: int):
+    PER_PAGE = 5
+    all_profiles = []
     with open(os.environ["JSON_LOC"]) as f:
-        return json.load(f)
+        all_profiles = json.load(f)
+
+    length = len(all_profiles)
+    num_of_pages = math.ceil(length / PER_PAGE)
+    start_index = (page - 1) * PER_PAGE
+    end_index = start_index + PER_PAGE
+    return {"num_of_pages": num_of_pages, "current_page": page, "profiles": all_profiles[start_index:end_index]}
