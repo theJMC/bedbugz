@@ -85,7 +85,7 @@ def write_to_file(results):
 if __name__ == "__main__":
     results = []
     try:
-        for i in range(20):
+        for i in range(50):
             print(i)
             new = add_new_profile(i + 1)
             print(new.to_json()[0])
