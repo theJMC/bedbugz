@@ -4,11 +4,11 @@
     <p class="desc-text">{{ text }}</p>
     <div class="info-row">
       <span class="info-label">Age:</span>
-      <span class="info-value">{{ age }}</span>
+      <span class="info-value">{{ randomAge }} Bug Years</span>
     </div>
     <div class="info-row">
       <span class="info-label">Looking for:</span>
-      <span class="info-value">{{ lookingFor }}</span>
+      <span class="info-value">{{ randomLookingFor }}</span>
     </div>
   </div>
 </template>
@@ -23,11 +23,33 @@ export default {
     },
     age: {
       type: [String, Number],
-      required: true
+      default: null
     },
     lookingFor: {
       type: String,
-      required: true
+      default: null
+    }
+  },
+  data() {
+    return {
+      lookingOptions: [
+        "Short-term",
+        "Long-term",
+        "Open to long-term",
+        "Looking for fun",
+        "Casual connection",
+        "Serious commitment",
+        "Friends first",
+        "See where it goes"
+      ]
+    }
+  },
+  computed: {
+    randomAge() {
+      return this.age || Math.floor(Math.random() * (60 - 18 + 1)) + 18
+    },
+    randomLookingFor() {
+      return this.lookingFor || this.lookingOptions[Math.floor(Math.random() * this.lookingOptions.length)]
     }
   }
 }
