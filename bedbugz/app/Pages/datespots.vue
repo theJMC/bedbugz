@@ -1,42 +1,29 @@
 <template>
-  <div class="main-background suitor-page">
-    <div class="suitor-page-title">
+  <div class="main-background date-spots-page">
+    <div class="date-spots-page-title">
       <h1 class="font-semibold font-white font-32">BedBugZ</h1>
     </div>
 
     <!-- Scrollable container -->
-    <div class="suitor-page-grid-container">
-      <div class="suitor-page-grid">
+    <div class="date-spots-page-grid-container">
+      <div class="date-spots-page-grid">
         <ImageButton 
-            v-for="(suitor, index) in suitors"
-            :key="suitor.id"
-            :image="suitor.image"
-            :text="suitor.name"
-            :locked="suitor.locked"
-            :selected="selectedSuitorId === suitor.id"
-            @click="selectSuitor(suitor)"
+            v-for="(dateSpot, index) in dateSpots"
+            :key="dateSpot.id"
+            :image="dateSpot.image"
+            :text="dateSpot.name"
         />
       </div>
     </div>
 
-    <div class="suitor-page__confirm-box">
-        <h2 class="font-medium font-grad font-20">Choose your suitor</h2>
-        <div class="suitor-page__buttons">
-          <button
-                  class="date-spots-page__play-button active"
-                  @click="handleReturn"
-              >
-              <span class="date-spots-page__play-symbol material-symbols-outlined">undo</span>
-          </button>  
-          <button
-                  class="suitor-page__play-button"
-                  :class="selectedSuitorId ? 'active' : 'inactive'"
-                  :disabled="!selectedSuitorId"
-                  @click="handleSelectSuitor"
-              >
-              <span class="suitor-page__play-symbol material-symbols-outlined">arrow_right</span>
-          </button>
-        </div>
+    <div class="date-spots-page__confirm-box">
+        <h2 class="font-medium font-grad font-20">view your date spots</h2>
+            <button
+                class="date-spots-page__play-button active"
+                @click="handleReturn"
+            >
+            <span class="date-spots-page__play-symbol material-symbols-outlined">undo</span>
+        </button>
     </div>
   </div>
 </template>
@@ -48,33 +35,30 @@ export default {
   components: { imageButton },
   data() {
     return {
-      selectedSuitorId: null,
-      suitors: Array.from({ length: 16 }, (_, i) => ({
+      selecteddateSpotId: null,
+      dateSpots: Array.from({ length: 16 }, (_, i) => ({
         id: i + 1,
-        name: `Suitor ${i + 1}`,
-        image: 'https://tse4.mm.bing.net/th/id/OIP.2Yp1BvzHL7251IUYAfkEUgHaEx?rs=1&pid=ImgDetMain&o=7&rm=3',
+        name: `Plant`,
+        image: 'https://watchandlearn.scholastic.com/content/dam/classroom-magazines/watchandlearn/videos/animals-and-plants/plants/what-are-plants-/What-Are-Plants.jpg',
         locked: (i % 3)-2 === 0,
       })),
     };
   },
   methods: {
-    selectSuitor(suitor) {
-      if (!suitor.locked) {
-        this.selectedSuitorId = suitor.id;
+    selectdateSpot(dateSpot) {
+      if (!dateSpot.locked) {
+        this.selecteddateSpotId = dateSpot.id;
       }
     },
-    handleSelectSuitor() {
-      this.$router.push('/smashOrSquash');
-    },
     handleReturn() {
-      this.$router.push('/')
+      this.$router.push('/');
     }
   },
 };
 </script>
 
 <style lang="scss">
-.suitor-page {
+.date-spots-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,11 +76,6 @@ export default {
         gap: 16px
     }
 
-    &__buttons {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-    }
 
     &__play-button {
         border-radius: 50%;
@@ -126,7 +105,7 @@ export default {
     }
 
     &__play-symbol {
-        font-size:100px;
+        font-size:50px;
     }
 
   &-grid-container {
@@ -157,7 +136,7 @@ export default {
   }
 }
 
-.suitor-page-grid-container {
+.date-spots-page-grid-container {
   -webkit-mask-image: linear-gradient(to bottom, black 0%, black 90%, transparent 100%);
   mask-image: linear-gradient(to bottom, black 0%, black 90%, transparent 100%);
   -webkit-mask-repeat: no-repeat;
