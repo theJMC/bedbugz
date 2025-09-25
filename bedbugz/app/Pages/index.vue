@@ -29,6 +29,7 @@
 
 <script>
 import ButtonElement from '~/components/button.vue';
+import PercentBar from '~/components/percent.vue';
 
 export default {
     components: {
