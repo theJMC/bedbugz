@@ -47,7 +47,7 @@ export default {
     },
     methods: {
         handleFindAMatch() {
-            console.log('find a match')
+            this.$router.push('/suitors');
         },
         handleViewDates() {
             console.log('go to view dates')
