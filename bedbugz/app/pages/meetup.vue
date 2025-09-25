@@ -1,48 +1,93 @@
 <template>
   <div class="meetup-page">
     <div class="logo">
-    <h1 class="font-semibold font-white font-32">BedBugZ</h1>
-  </div>
-  <div class="scanner">
-    <div class="image-container">
-      <img
-        class="scan-image"
-        src="/images/flowers.jpg"
-        alt="flowers"
+      <h1 class="font-semibold font-white font-32">BedBugZ</h1>
+    </div>
+
+    <div class="scanner">
+      <div class="image-container">
+        <video
+          v-if="!capturedImage"
+          ref="video"
+          autoplay
+          playsinline
+          class="scan-image"
+        ></video>
+        <img
+          v-else
+          :src="capturedImage"
+          alt="Captured"
+          class="scan-image"
+        />
+      </div>
+
+      <ButtonElement 
+        icon="camera"
+        class="camera-button-style"
+        @click="handleCameraClick"
       />
-    </div>
-    <ButtonElement 
-      icon="camera"
-      class="camera-button-style"
-      @click="handleCameraClick"
-    />
-  
-    <div class="hint-content">
-      <h2 class="font-medium text-white font-20">Hint</h2>
-      <p class="hint-text">
-        <span class="font-medium font-grad font-20">Bumblebees can’t resist <br></span>
-        <span class="font-medium font-grad font-20">lavender blooms</span>
-      </p>
+
+      <div class="hint-content">
+        <h2 class="font-medium text-white font-20">Hint</h2>
+        <p class="hint-text">
+          <span class="font-medium font-grad font-20">Bumblebees can’t resist <br></span>
+          <span class="font-medium font-grad font-20">lavender blooms</span>
+        </p>
+      </div>
     </div>
   </div>
-  
-  </div>
-  </template>
-  
+</template>
+
   <script>
-  import ButtonElement from '~/components/button.vue';
-  
-  export default {
-  components: {
-    ButtonElement,
+import ButtonElement from '~/components/button.vue';
+
+export default {
+  components: { ButtonElement },
+  data() {
+    return {
+      capturedImage: null,
+      stream: null,
+    };
+  },
+  mounted() {
+    this.startCamera();
+  },
+  beforeUnmount() {
+    this.stopCamera();
   },
   methods: {
+    async startCamera() {
+      try {
+        this.stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" }} });
+        this.$refs.video.srcObject = this.stream;
+      } catch (err) {
+        console.error('Error accessing camera:', err);
+      }
+    },
+    stopCamera() {
+      if (this.stream) {
+        this.stream.getTracks().forEach(track => track.stop());
+      }
+    },
     handleCameraClick() {
-      this.$router.push('/gift');
+      if (!this.capturedImage) {
+        const video = this.$refs.video;
+        const canvas = document.createElement('canvas');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+        this.capturedImage = canvas.toDataURL('image/png');
+
+        video.pause();
+        this.stopCamera();
+      } else {
+        this.$router.push('/gift');
+      }
     }
   }
-  }
-  </script>
+};
+</script>
+
   
   <style scoped>
   .meetup-page {

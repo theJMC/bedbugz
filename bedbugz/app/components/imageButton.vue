@@ -4,7 +4,7 @@
     @click="$emit('click')"
     :disabled="locked"
   >
-    <img :src="image" alt="" class="image-button__img" />
+    <img :src="image" :alt="text" class="image-button__img" />
     <span class="image-button__text">{{ text }}</span>
 
     <!-- Lock overlay -->
@@ -65,6 +65,10 @@ export default {
   &.locked {
     cursor: not-allowed;
 
+    & .image-button__img {
+      filter: blur(3px);
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -104,6 +108,6 @@ export default {
   }
 }
 .lock-icon {
-  font-size: 75px;
+  font-size: 75px !important;
 }
 </style>

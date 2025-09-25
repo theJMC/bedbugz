@@ -51,67 +51,11 @@ export default {
     data() {
         return {
             animating: null,
-            profiles: [
-                {
-                    name: "Bumblebee",
-                    species: "Bombus terrestris",
-                    images: [
-                        "https://picsum.photos/id/1011/600/400",
-                        "https://picsum.photos/id/1015/600/400",
-                        "https://picsum.photos/id/1020/600/400"
-                    ],
-                    description: "The bumblebee is a large, fuzzy insect known for its important role in pollination.",
-                    prompts: [
-                        {
-                            question: "What flowers do bumblebees prefer?",
-                            answer: "Bumblebees love big, easy-to-land-on flowers like lavender and sunflowers. Basically, they’re into the ‘bold and beautiful’ vibe."
-                        },
-                        {
-                            question: "How do bumblebees communicate?",
-                            answer: "They do the waggle dance! It’s like a bee rave, telling the crew where the best nectar spots are."
-                        }
-                    ]
-                },
-                {
-                    name: "Honey Bee",
-                    species: "Apis mellifera",
-                    images: [
-                        "https://picsum.photos/id/1040/600/400",
-                        "https://picsum.photos/id/1050/600/400"
-                    ],
-                    description: "Honey bees are famous for making honey and living in large, organized colonies.",
-                    prompts: [
-                        {
-                            question: "How do honey bees make honey?",
-                            answer: "They collect nectar, chew it up, and store it in honeycombs. Nature’s little chefs!"
-                        },
-                        {
-                            question: "What’s a honey bee’s favorite dance?",
-                            answer: "The waggle dance, of course! It’s their way of sharing directions to the best flowers."
-                        }
-                    ]
-                },
-                {
-                    name: "Carpenter Bee",
-                    species: "Xylocopa virginica",
-                    images: [
-                        "https://picsum.photos/id/1060/600/400",
-                        "https://picsum.photos/id/1070/600/400"
-                    ],
-                    description: "Carpenter bees are big and burly, and they love to tunnel into wood to make their homes.",
-                    prompts: [
-                        {
-                            question: "Why do carpenter bees drill holes in wood?",
-                            answer: "They’re not being destructive—they’re just making cozy nurseries for their babies."
-                        },
-                        {
-                            question: "Are carpenter bees social?",
-                            answer: "Nope, they’re more the solo type. Each bee likes its own space."
-                        }
-                    ]
-                }
-            ],
-            currentIndex: 0    // Index of the current profile
+            profiles: [],
+            currentIndex: 0,
+            currentPage: 1,
+            numberOfPages: 1,
+            loading: false,
         }
     },
     computed: {
@@ -120,76 +64,30 @@ export default {
         }
     },
     created() {
-        // Placeholder profiles based on the bumblebee example
-        this.profiles = [
-            {
-                name: "Bumblebee",
-                species: "Bombus terrestris",
-                images: [
-                    "https://picsum.photos/id/1011/600/400",
-                    "https://picsum.photos/id/1015/600/400",
-                    "https://picsum.photos/id/1020/600/400"
-                ],
-                description: "The bumblebee is a large, fuzzy insect known for its important role in pollination.",
-                prompts: [
-                    {
-                        question: "What flowers do bumblebees prefer?",
-                        answer: "Bumblebees love big, easy-to-land-on flowers like lavender and sunflowers. Basically, they’re into the ‘bold and beautiful’ vibe."
-                    },
-                    {
-                        question: "How do bumblebees communicate?",
-                        answer: "They do the waggle dance! It’s like a bee rave, telling the crew where the best nectar spots are."
-                    }
-                ]
-            },
-            {
-                name: "Honey Bee",
-                species: "Apis mellifera",
-                images: [
-                    "https://picsum.photos/id/1040/600/400",
-                    "https://picsum.photos/id/1050/600/400"
-                ],
-                description: "Honey bees are famous for making honey and living in large, organized colonies.",
-                prompts: [
-                    {
-                        question: "How do honey bees make honey?",
-                        answer: "They collect nectar, chew it up, and store it in honeycombs. Nature’s little chefs!"
-                    },
-                    {
-                        question: "What’s a honey bee’s favorite dance?",
-                        answer: "The waggle dance, of course! It’s their way of sharing directions to the best flowers."
-                    }
-                ]
-            },
-            {
-                name: "Carpenter Bee",
-                species: "Xylocopa virginica",
-                images: [
-                    "https://picsum.photos/id/1060/600/400",
-                    "https://picsum.photos/id/1070/600/400"
-                ],
-                description: "Carpenter bees are big and burly, and they love to tunnel into wood to make their homes.",
-                prompts: [
-                    {
-                        question: "Why do carpenter bees drill holes in wood?",
-                        answer: "They’re not being destructive—they’re just making cozy nurseries for their babies."
-                    },
-                    {
-                        question: "Are carpenter bees social?",
-                        answer: "Nope, they’re more the solo type. Each bee likes its own space."
-                    }
-                ]
-            }
-        ];
+        this.fetchProfiles(this.currentPage);
     },
     methods: {
+        async fetchProfiles(page) {
+            this.loading = true;
+            try {
+                const res = await fetch(`https://api.bedbugz.uk/profile/${page}`);
+                const data = await res.json();
+                this.profiles = data.profiles || [];
+                this.numberOfPages = data.num_of_pages || 1;
+                this.currentPage = data.current_page || page;
+                this.currentIndex = this.profiles.length > 0 ? 0 : -1;
+            } catch (e) {
+                this.profiles = [];
+                this.currentIndex = -1;
+            }
+            this.loading = false;
+        },
         handleSmash() {
             if (this.animating) return;
             this.animating = 'smash';
-            // 30% chance to emit a match event
-            if (Math.random() < 0.3) {
+            if (Math.random() < 0.3 && this.currentProfile) {
                 localStorage.setItem("suitorName", this.currentProfile.name ?? "Bug");
-                this.$emit('match');
+                localStorage.setItem("suitorImg", this.currentProfile.images[0] ?? "");
                 this.$router.push('/catch');
             }
         },
@@ -197,13 +95,14 @@ export default {
             if (this.animating) return;
             this.animating = 'squash';
         },
-        onAnimationEnd() {
+        async onAnimationEnd() {
             this.animating = null;
-            // Move to next profile if there are more
             if (this.currentIndex < this.profiles.length - 1) {
                 this.currentIndex++;
             } else {
-                // Optionally handle end of profiles (e.g., show a message)
+                // End of current page, get next page or loop to page 1
+                let nextPage = this.currentPage < this.numberOfPages ? this.currentPage + 1 : 1;
+                await this.fetchProfiles(nextPage);
             }
         }
     }

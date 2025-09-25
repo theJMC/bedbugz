@@ -43,15 +43,17 @@ export default {
     messageChain: {
       type: Array,
       default: () => ([])
-    },
-    userImage: {
-      type: String,
-      default: '/images/user.png'
-    },
-    bugImage: {
-      type: String,
-      default: '/images/bug.png'
     }
+  },
+  data() {
+    return {
+        bugImage: '',
+        userImage: ''
+    }
+  },
+  mounted() {
+    this.bugImage = localStorage.getItem("suitorImg");
+    this.userImage = localStorage.getItem("userImg");
   }
 }
 </script>
@@ -88,7 +90,7 @@ export default {
 .profile-photo {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 25%;
   object-fit: cover;
 }
 
