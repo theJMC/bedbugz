@@ -188,6 +188,7 @@ export default {
             this.animating = 'smash';
             // 30% chance to emit a match event
             if (Math.random() < 0.3) {
+                localStorage.setItem("suitorName", this.currentProfile.name ?? "Bug");
                 this.$emit('match');
                 this.$router.push('/catch');
             }

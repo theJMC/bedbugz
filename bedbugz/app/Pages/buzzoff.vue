@@ -29,12 +29,6 @@ export default {
         ButtonElement,
         LooseComponent
     },
-    props: {
-        name: {
-            type: String,
-            default: 'Name'
-        }
-    },
     methods: {
         handleReturnHome() {
             this.$router.push('/');

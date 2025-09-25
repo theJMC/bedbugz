@@ -31,11 +31,13 @@ export default {
         ButtonElement,
         WinComponent
     },
-    props: {
-        name: {
-            type: String,
-            default: 'Name'
+    data() {
+        return {
+            name: ''
         }
+    },
+    mounted() {
+        this.name = localStorage.getItem("suitorName");
     },
     methods: {
         handleReturnHome() {

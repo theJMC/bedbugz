@@ -32,14 +32,9 @@ export default {
     MessageChoices,
     MessageChain
   },
-  props: {
-    name: {
-        type: String,
-        default: 'Bee'
-    }
-  },
   data() {
     return {
+      name: '',
       messages: [],
       messageIndex: null,
       messageChain: [],
@@ -50,6 +45,7 @@ export default {
     }
   },
   mounted() {
+    this.name = localStorage.getItem("suitorName");
     this.getMessages()
   },
   methods: {
