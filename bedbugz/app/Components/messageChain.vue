@@ -23,8 +23,7 @@
         class="profile-photo"
       />
     </div>
-
-    <div v-if="messageChain.length && messageChain[messageChain.length-1].isUser" class="message-row row-bug">
+    <div v-if="messageChain.length == 0 || messageChain.length && messageChain[messageChain.length-1].isUser" class="message-row row-bug">
       <img 
         :src="bugImage" 
         alt="Bug profile" 
@@ -43,14 +42,7 @@ export default {
   props: {
     messageChain: {
       type: Array,
-      default: () => ([
-        { isUser: false, message: 'First Test' },
-        { isUser: true, message: 'Second Test' },
-        { isUser: false, message: 'Third Test' },
-        { isUser: true, message: 'Fourth Test' },
-        { isUser: false, message: 'Fifth Test' },
-        { isUser: true, message: 'Six Test' }
-      ])
+      default: () => ([])
     },
     userImage: {
       type: String,
