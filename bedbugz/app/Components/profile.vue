@@ -13,8 +13,8 @@
           @pageChange="onCarouselChange"
         />
         <div class="overlay">
-          <h2>{{ profile?.name }}</h2>
-          <p><i>{{ profile?.species }}</i></p>
+          <h2 class="font-semibold font-24 font-transparent">{{ profile?.name }}</h2>
+          <p class="font-semibold font-14 font-white"><i>{{ profile?.species }}</i></p>
         </div>
       </div>
     </div>
