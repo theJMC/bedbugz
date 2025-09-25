@@ -87,7 +87,7 @@ export default {
             this.animating = 'smash';
             if (Math.random() < 0.3 && this.currentProfile) {
                 localStorage.setItem("suitorName", this.currentProfile.name ?? "Bug");
-                this.$emit('match');
+                localStorage.setItem("suitorImg", this.currentProfile.images[0] ?? "");
                 this.$router.push('/catch');
             }
         },
