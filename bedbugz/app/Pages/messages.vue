@@ -32,6 +32,12 @@ export default {
     MessageChoices,
     MessageChain
   },
+  props: {
+    name: {
+        type: String,
+        default: 'Bee'
+    }
+  },
   data() {
     return {
       messages: [],
@@ -49,43 +55,19 @@ export default {
         }
     },
   mounted() {
-    this.messages = [
-      {
-        "bugMsg": "Did you know I can flap my wings about 200 times per second? Imagine me buzzing around you that fast!",
-        "responses": {
-          "good": "200 times per second? That’s like a superhero in disguise!",
-          "medium": "Whoa… that’s fast. I hope you don’t give me whiplash.",
-          "bad": "Honestly, that sounds like too much buzzing in my life."
-        }
-      },
-      {
-        "bugMsg": "I spend my whole life collecting nectar—maybe I could collect a little sweetness from you too?",
-        "responses": {
-          "good": "Careful, I might start charging interest on this sweetness!",
-          "medium": "Hmm… nectar from me? That’s a first.",
-          "bad": "I think your hive can survive without my sugar."
-        }
-      },
-      {
-        "bugMsg": "I can see ultraviolet patterns on flowers that humans can’t. Lucky for you, I can still spot your charm.",
-        "responses": {
-          "good": "Wow, so you’re basically seeing my inner sparkle too? I’m flattered!",
-          "medium": "Ultraviolet charm… I guess that’s flattering in a weird, sci-fi way.",
-          "bad": "Seeing things I can’t see? That’s… kind of creepy, honestly."
-        }
-      },
-      {
-        "bugMsg": "Worker bees like me work together to make the hive thrive—think we could make a good team?",
-        "responses": {
-          "good": "If it means buzzing through adventures together, count me in!",
-          "medium": "A team, huh… I could give it a try.",
-          "bad": "Sorry, I’m more of a solo flower type."
-        }
-      }
-    ];
-    this.chooseResponseOrder(0)
+    this.getMessages()
   },
   methods: {
+    async getMessages() {
+        try {
+            const response = await fetch(`https://api.bedbugz.uk/educational${this.name}`)
+            const data = await response.json()
+            this.messages = data
+            this.chooseResponseOrder(0)
+        } catch(error) {
+            console.error('Unexpected Error')
+        }
+    },
     scrollToBottom() {
         this.$nextTick(() => {
             const container = this.$refs.messageChainContainer?.$el || this.$refs.messageChainContainer;
