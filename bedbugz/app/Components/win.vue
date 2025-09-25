@@ -1,6 +1,8 @@
 <template>
     <div class="win">
-        <div class="win-profile win-profile-one"></div>
+        <div class="win-profile win-profile-one">
+            <img :src="suitorImg" alt="profile image" width="100%" class="pointer-events-none"/>
+        </div>
 
         <span class="win-heart material-symbols-outlined"> favorite </span>
         <span class="win-heart win-heart--med material-symbols-outlined"> favorite </span>
@@ -21,7 +23,15 @@
 
 <script>
 export default {
-    name: "WinComponent"
+    name: "WinComponent",
+    data() {
+        return {
+            suitorImg: ''
+        }
+    },
+    mounted() {
+        this.suitorImg = localStorage.getItem("suitorImg");
+    }
 }
 </script>
 

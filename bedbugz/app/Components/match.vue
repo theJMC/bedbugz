@@ -1,6 +1,8 @@
 <template>
     <div class="match">
-        <div class="match-profile match-profile-one"></div>
+        <div class="match-profile match-profile-one">
+            <img :src="suitorImg" alt="profile image" width="100%" class="pointer-events-none"/>
+        </div>
         <div class="match-profile match-profile-two"></div>
 
         <span class="match-heart material-symbols-outlined"> favorite </span>
@@ -19,7 +21,13 @@
 <script>
 export default {
     name: "MatchComponent",
-    props: {
+    data() {
+        return {
+            suitorImg: ''
+        }
+    },
+    mounted() {
+        this.suitorImg = localStorage.getItem("suitorImg");
     }
 }
 </script>
