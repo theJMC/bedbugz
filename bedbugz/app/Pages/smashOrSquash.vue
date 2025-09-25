@@ -72,12 +72,13 @@ export default {
             try {
                 const res = await fetch(`https://api.bedbugz.uk/profile/${page}`);
                 const data = await res.json();
-                // Adjust these keys if your API uses different names
                 this.profiles = data.profiles || [];
-                this.numberOfPages = data.numberOfPages || 1;
-                this.currentIndex = 0;
+                this.numberOfPages = data.num_of_pages || 1;
+                this.currentPage = data.current_page || page;
+                this.currentIndex = this.profiles.length > 0 ? 0 : -1;
             } catch (e) {
                 this.profiles = [];
+                this.currentIndex = -1;
             }
             this.loading = false;
         },
@@ -98,11 +99,10 @@ export default {
             this.animating = null;
             if (this.currentIndex < this.profiles.length - 1) {
                 this.currentIndex++;
-            } else if (this.currentPage < this.numberOfPages) {
-                this.currentPage++;
-                await this.fetchProfiles(this.currentPage);
             } else {
-                // No more profiles
+                // End of current page, get next page or loop to page 1
+                let nextPage = this.currentPage < this.numberOfPages ? this.currentPage + 1 : 1;
+                await this.fetchProfiles(nextPage);
             }
         }
     }
