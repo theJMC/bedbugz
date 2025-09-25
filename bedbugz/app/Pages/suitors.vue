@@ -26,7 +26,7 @@
                 :class="selectedSuitorId ? 'active' : 'inactive'"
                 :disabled="!selectedSuitorId"
             >
-            <span class="material-symbols-outlined">arrow_right</span>
+            <span class="suitor-page__play-symbol material-symbols-outlined">arrow_right</span>
         </button>
     </div>
   </div>
@@ -90,7 +90,6 @@ export default {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 28px;
 
         &.inactive {
             background: purple;
@@ -105,6 +104,10 @@ export default {
                 background-color: purple;
             }
         }
+    }
+
+    &__play-symbol {
+        font-size:100px;
     }
 
   &-grid-container {
