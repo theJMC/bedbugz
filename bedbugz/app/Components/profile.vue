@@ -7,13 +7,14 @@
     >
       <div class="carousel-wrapper">
         <VerticalProfileCarousel
+          :key="profile.name"
           :pages="carouselPages"
           :pageProps="carouselPageProps"
           @pageChange="onCarouselChange"
         />
         <div class="overlay">
-          <h2>Bumblebee</h2>
-          <p><i>Bombus terrestris</i></p>
+          <h2>{{ profile?.name }}</h2>
+          <p><i>{{ profile?.species }}</i></p>
         </div>
       </div>
     </div>
@@ -25,56 +26,55 @@ import VerticalProfileCarousel from './vertical-profile-carousel.vue'
 import CarouselComponent from './carousel.vue'
 import DescriptionComponent from './description.vue'
 import PromptsComponent from './prompts.vue'
+import { markRaw } from 'vue'
 
 export default {
   name: 'ProfileComponent',
   components: {
     VerticalProfileCarousel
   },
+  props: {
+    profile: {
+      type: Object,
+      required: true
+    }
+  },
   data() {
     return {
-      images: [
-        'https://picsum.photos/id/1011/600/400',
-        'https://picsum.photos/id/1015/600/400',
-        'https://picsum.photos/id/1020/600/400'
-      ],
-      carouselPages: [
+      currentCarouselIndex: 0
+    }
+  },
+  computed: {
+    carouselPages() {
+      return [
         markRaw(CarouselComponent),
         markRaw(DescriptionComponent),
         markRaw(PromptsComponent)
-      ],
-      carouselPageProps: [
-        { images: [
-            'https://picsum.photos/id/1011/600/400',
-            'https://picsum.photos/id/1015/600/400',
-            'https://picsum.photos/id/1020/600/400'
-          ]
-        },
-        { text: "The bumblebee is a large, fuzzy insect known for its important role in pollination." },
-        { prompts: [
-                    {
-                      "question": "What flowers do bumblebees prefer?",
-                      "answer": "Bumblebees love big, easy-to-land-on flowers like lavender and sunflowers. Basically, they’re into the ‘bold and beautiful’ vibe."
-                    },
-                    {
-                      "question": "How do bumblebees communicate?",
-                      "answer": "They do the waggle dance! It’s like a bee rave, telling the crew where the best nectar spots are."
-                    }
-                  ]
-        }
-      ],
-      currentCarouselIndex: 0
-    }
-  },  
-  computed: {
+      ]
+    },
+    carouselPageProps() {
+      return [
+        { images: this.profile?.images || [] },
+        { text: this.profile?.description || '' },
+        { prompts: this.profile?.prompts || [] }
+      ]
+    },
     profileCardStyle() {
-      return {} // Remove dynamic background style
+      return {}
     }
   },
   methods: {
-    onCarouselChange(index) {
+    onCarouselChange(index) {   
       this.currentCarouselIndex = index
-    }   
+    }
+  },
+  watch: {
+    profile: {
+      handler() {
+        this.currentCarouselIndex = 0;
+      },
+      immediate: true
+    }
   }
 }
 </script>
