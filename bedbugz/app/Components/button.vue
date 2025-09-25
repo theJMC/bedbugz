@@ -36,6 +36,7 @@ export default {
     flex-direction: column;
     width: 100%;
     text-align: center;
+    align-items: center;
     
     &-stroke {
         position: relative;
