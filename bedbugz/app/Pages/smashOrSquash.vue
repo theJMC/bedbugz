@@ -189,6 +189,7 @@ export default {
             // 30% chance to emit a match event
             if (Math.random() < 0.3) {
                 this.$emit('match');
+                this.$router.push('/catch');
             }
         },
         handleSquash() {
