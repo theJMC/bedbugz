@@ -18,6 +18,7 @@
             <ButtonElement 
                 icon="pest_control"
                 text="scan a suitor"
+                :disabled="true"
                 @click="handleScanSuitor"
             />
         </div>
