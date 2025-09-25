@@ -75,8 +75,8 @@ if __name__ == "__main__":
     try:
         for i in range(20):
             new = add_new_profile(i+1)
-            print(new.to_json())
-            results.append(new.to_json())
+            print(new.to_json()[0])
+            results.append(new.to_json()[0])
     except Exception as e:
         print(e)
     finally:
