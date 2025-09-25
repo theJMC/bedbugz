@@ -128,6 +128,7 @@ export default {
     selectSuitor(suitor) {
       if (!suitor.locked) {
         this.selectedSuitorId = suitor.id;
+        localStorage.setItem("userImg", suitor.image ?? "");
       }
     },
     handleSelectSuitor() {
