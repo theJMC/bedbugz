@@ -14,6 +14,7 @@
     <ButtonElement 
       icon="camera"
       class="camera-button-style"
+      @click="handleCameraClick"
     />
   
     <div class="hint-content">
@@ -33,21 +34,25 @@
   
   export default {
   components: {
-  ButtonElement,
+    ButtonElement,
+  },
+  methods: {
+    handleCameraClick() {
+      this.$router.push('/gift');
+    }
   }
   }
   </script>
   
   <style scoped>
-  
   .meetup-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: linear-gradient(180deg, #3b006a, #000);
-  min-height: 100vh;
-  padding: 20px;
-  color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #3b006a, #000);
+    height: calc(100vh - 40px);
+    padding: 20px;
+    color: white;
   }
   .logo {
   align-self: flex-start;
@@ -55,16 +60,18 @@
   justify-content: flex-start;
 }
   .scanner {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
-  padding: 16px;
-  width: 400px;
-  text-align: center;
-  position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 16px;
+    width: 75%;
+    text-align: center;
+    position: relative;
   }
   
   .image-container {
-  width: 100%;
+    max-height: calc(100vh - 250px);
+    overflow: hidden;
+    margin: auto;
   padding: 2px;
   border-radius: 16px;
   background-image: linear-gradient(135deg, #18D959, #D80FF2,#18D959, #D80FF2);
@@ -73,6 +80,7 @@
   
   .scan-image {
   width: 100%;
+  height: calc(100vh - 250px);
   border-radius: 16px;
   object-fit: cover;
   display: block;
@@ -80,9 +88,10 @@
   
   .camera-button-style {
     position: absolute;
-bottom: 18%;
-left: 50%;
-transform: translateX(-50%);
+    bottom: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
 }
   
   .hint-content {

@@ -4,7 +4,7 @@
             <h1 class="font-semibold font-white font-32"> BedBugZ </h1>
             <h2 class="font-medium font-grad font-20"> bug bites to love bites </h2>
         </div>
-        <div>
+        <div class="homepage-buttons">
             <ButtonElement 
                 icon="favorite"
                 text="find a match"
@@ -69,6 +69,11 @@ export default {
     &-title {
         margin-top: 70px;
         text-align: center;
+    }
+
+    &-buttons {
+        width: 75%;
+
     }
 }
 </style>
