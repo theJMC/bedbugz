@@ -1,6 +1,9 @@
 <template>
     <div class="smashOrSquash main-background">
         <h1 class="font-white font-32 font-semibold"> BedBugZ </h1>
+        <div v-if="loading" class="loader-overlay">
+            <div class="spinner"></div>
+        </div>
         <ProfileComponent
             v-if="currentProfile"
             :profile="currentProfile"

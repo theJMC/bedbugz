@@ -45,7 +45,18 @@ export default {
     },
     mounted() {
         const TOTAL_SUITORS = 43;
-        const CURRENT_UNLOCKED_SUITORS = 3; // TODO UPDATE THIS WHEN MORE SUITORS
+
+        // Safely parse localStorage (fallback to empty array if null or invalid JSON)
+        let unlockedSuitors = [];
+        try {
+            const stored = localStorage.getItem("unlockedSuitors");
+            unlockedSuitors = stored ? JSON.parse(stored) : [];
+        } catch (e) {
+            unlockedSuitors = [];
+        }
+
+        const CURRENT_UNLOCKED_SUITORS = unlockedSuitors.length;
+
         this.completionNumber = Math.round((CURRENT_UNLOCKED_SUITORS / TOTAL_SUITORS) * 100);
     },
     methods: {

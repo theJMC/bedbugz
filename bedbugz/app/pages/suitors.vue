@@ -3,6 +3,10 @@
     <div class="suitor-page-title">
       <h1 class="font-semibold font-white font-32">BedBugZ</h1>
     </div>
+    <!-- Loader Overlay -->
+    <div v-if="loading" class="loader-overlay">
+      <div class="spinner"></div>
+    </div>
 
     <!-- Scrollable container -->
     <div class="suitor-page-grid-container">
