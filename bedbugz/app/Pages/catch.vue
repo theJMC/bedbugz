@@ -4,19 +4,13 @@
             <h1 class="font-semibold font-white font-32"> BedBugZ </h1>
         </div>
         
-        <WinComponent />
-
-        <span class="font-medium font-grad font-20"> 
-            new suitor unlocked 
-            </br> 
-            "<span class="font-white">{{ name }}</span>"
-        </span>
+        <MatchComponent />
 
         <div class="subpage-buttons">
             <ButtonElement 
                 icon="favorite"
-                text="return home"
-                @click="handleReturnHome"
+                text="get chatting"
+                @click="handleGetChatting"
             />
         </div>
     </div>
@@ -24,22 +18,16 @@
 
 <script>
 import ButtonElement from '~/components/button.vue';
-import WinComponent from '~/components/win.vue';
+import MatchComponent from '~/components/match.vue';
 
 export default {
     components: {
         ButtonElement,
-        WinComponent
-    },
-    props: {
-        name: {
-            type: String,
-            default: 'Name'
-        }
+        MatchComponent
     },
     methods: {
-        handleReturnHome() {
-            this.$router.push('/');
+        handleGetChatting() {
+            this.$router.push('/messages');
         },
     }
 }

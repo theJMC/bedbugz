@@ -34,7 +34,6 @@ export default {
 .button {
     display: flex;
     flex-direction: column;
-    width: 100%;
     
     &-stroke {
         position: relative;

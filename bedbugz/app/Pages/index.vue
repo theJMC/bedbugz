@@ -8,20 +8,22 @@
             <ButtonElement 
                 icon="favorite"
                 text="find a match"
+                @click="handleFindAMatch"
             />
             <ButtonElement 
                 icon="park"
                 text="view date spots"
+                @click="handleViewDates"
             />
             <ButtonElement 
                 icon="pest_control"
                 text="scan a suitor"
+                @click="handleScanSuitor"
             />
         </div>
-        <div>
-            33% done
-            TODO: Percent Element here
-        </div>
+        <PercentBar 
+            :number="completionNumber"
+        />
     </div>
 </template>
 
@@ -30,7 +32,28 @@ import ButtonElement from '~/components/button.vue';
 
 export default {
     components: {
-        ButtonElement
+        ButtonElement,
+        PercentBar
+    },
+    data() {
+        return {
+            completionNumber: 0
+        }
+    },
+    mounted() {
+        // on page load get complete % from somewhere
+        this.completionNumber = 33;
+    },
+    methods: {
+        handleFindAMatch() {
+            this.$router.push('/suitors');
+        },
+        handleViewDates() {
+            console.log('go to view dates')
+        },
+        handleScanSuitor() {
+            console.log('go to scan suitor')
+        },
     }
 }
 </script>

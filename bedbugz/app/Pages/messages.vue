@@ -26,6 +26,7 @@
 import MessageChoices from '~/components/messageChoices.vue';
 import MessageChain from '~/components/messageChain.vue';
 
+const MIN_USER_SCORE = 40;
 export default {
   components: {
     MessageChoices,
@@ -36,6 +37,7 @@ export default {
       messages: [],
       messageIndex: null,
       messageChain: [],
+      userScore: 0,
       optionA: '',
       optionB: '',
       optionC: '',
@@ -153,9 +155,16 @@ export default {
             if (this.messageIndex < this.messages.length) {
                 this.chooseResponseOrder(this.messageIndex);
             } else {
-                console.log('TODO TODO TODO')
+                this.scoreAndRedirect()
             }
         }, 2000);
+    },
+    scoreAndRedirect() {
+        if (this.userScore >= MIN_USER_SCORE) {
+            console.log('find a location')
+        } else {
+            this.$router.push('/buzzoff');
+        }
     }
   }
 }
