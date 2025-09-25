@@ -4,28 +4,56 @@
       <h1 class="font-semibold font-white font-32">BedBugZ</h1>
     </div>
 
-    <h2 class="font-medium font-grad font-20">Choose your suitor</h2>
-
     <!-- Scrollable container -->
     <div class="suitor-page-grid-container">
       <div class="suitor-page-grid">
-        <ButtonElement
-          v-for="n in 16"
-          :key="n"
-          :image="'https://lipsum.app/640x640/'"
-          :text="`Suitor ${n}`"
+        <ImageButton 
+            v-for="(suitor, index) in suitors"
+            :key="suitor.id"
+            :image="suitor.image"
+            :text="suitor.name"
+            :locked="suitor.locked"
+            :selected="selectedSuitorId === suitor.id"
+            @click="selectSuitor(suitor)"
         />
       </div>
+    </div>
+
+    <div class="suitor-page__confirm-box">
+        <h2 class="font-medium font-grad font-20">Choose your suitor</h2>
+            <button
+                class="suitor-page__play-button"
+                :class="selectedSuitorId ? 'active' : 'inactive'"
+                :disabled="!selectedSuitorId"
+            >
+            <span class="material-symbols-outlined">arrow_right</span>
+        </button>
     </div>
   </div>
 </template>
 
 <script>
-import ButtonElement from '~/components/button.vue';
+import imageButton from '~/components/imageButton.vue'; 
 
 export default {
-  components: {
-    ButtonElement,
+  components: { imageButton },
+  data() {
+    return {
+      selectedSuitorId: null,
+      suitors: Array.from({ length: 16 }, (_, i) => ({
+        id: i + 1,
+        name: `Suitor ${i + 1}`,
+        image: 'https://tse4.mm.bing.net/th/id/OIP.2Yp1BvzHL7251IUYAfkEUgHaEx?rs=1&pid=ImgDetMain&o=7&rm=3',
+        locked: (i % 3)-2 === 0,
+      })),
+    };
+  },
+  methods: {
+    selectSuitor(suitor) {
+      if (!suitor.locked) {
+        this.selectedSuitorId = suitor.id;
+      }
+    },
   },
 };
 </script>
@@ -41,35 +69,66 @@ export default {
     text-align: center;
   }
 
-  /* Container limits the height and makes grid scrollable */
+    &__confirm-box {
+        display: flex;
+        padding-top: 25px;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px
+    }
+
+
+    &__play-button {
+        border-radius: 50%;
+        border: none;
+        width: 100px;
+        height: 100px; 
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+
+        &.inactive {
+            background: purple;
+            cursor: default;
+        }
+
+        &.active {
+            background: #E110F2;
+            cursor:pointer;
+
+            &:hover {
+                background-color: purple;
+            }
+        }
+    }
+
   &-grid-container {
+
+    padding-top: 30px;
     width: 100%;
     max-width: 350px;
     overflow-y: auto;
-
-    /* Show exactly 3 rows of squares + gaps */
-    //max-height: calc(3 * ((350px / 3)) + 2 * 12px); 
     max-height: 400px;
-    /* 350px = max container width, 12px = gap */
 
     &::-webkit-scrollbar {
         display: none;
     }
 
     scrollbar-width: none;
-
-    /* Hide scrollbar (IE 10+) */
     -ms-overflow-style: none;
   }
 
-  /* Actual grid */
   &-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 12px; /* same horizontal & vertical */
+    gap: 12px;
   }
 
-  /* Grid items are squares */
   &-grid > * {
     aspect-ratio: 1 / 1;
     width: 100%;
