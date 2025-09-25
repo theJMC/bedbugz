@@ -134,7 +134,7 @@ export default {
     },
     scoreAndRedirect() {
         if (this.userScore >= MIN_USER_SCORE) {
-            console.log('find a location')
+            this.$router.push('/meetup');
         } else {
             this.$router.push('/buzzoff');
         }
