@@ -43,19 +43,17 @@ export default {
     messageChain: {
       type: Array,
       default: () => ([])
-    },
-    userImage: {
-      type: String,
-      default: '/images/user.png'
     }
   },
   data() {
     return {
-        bugImage: ''
+        bugImage: '',
+        userImage: ''
     }
   },
   mounted() {
     this.bugImage = localStorage.getItem("suitorImg");
+    this.userImage = localStorage.getItem("userImg");
   }
 }
 </script>

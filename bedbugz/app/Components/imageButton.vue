@@ -4,7 +4,7 @@
     @click="$emit('click')"
     :disabled="locked"
   >
-    <img :src="image" alt="" class="image-button__img" />
+    <img :src="image" :alt="text" class="image-button__img" />
     <span class="image-button__text">{{ text }}</span>
 
     <!-- Lock overlay -->
