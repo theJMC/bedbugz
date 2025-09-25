@@ -107,7 +107,7 @@
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg, #3b006a, #000);
-  height: calc(100vh - 40px);
+  height: calc(100dvh - 40px);
   padding: 20px;
   color: white;
   }

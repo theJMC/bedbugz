@@ -43,9 +43,12 @@ $main-black: #18032D;
     padding: 0;
 }
 
+html {
+  background: $background-grad;
+}
+
 .main-background {
-    background: $background-grad;
-    height: 100vh;
+    height: 100dvh;
 }
 
 .font-grad {
