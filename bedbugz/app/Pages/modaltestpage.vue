@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import ModalComponent from '../Components/modal.vue';
-import ButtonElement from '../Components/button.vue';
+import ModalComponent from '../components/modal.vue';
+import ButtonElement from '../components/button.vue';
 
 export default {
   name: 'ModalTestPage',
