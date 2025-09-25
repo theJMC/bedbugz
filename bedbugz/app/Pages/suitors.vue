@@ -23,10 +23,10 @@
         <h2 class="font-medium font-grad font-20">Choose your suitor</h2>
         <div class="suitor-page__buttons">
           <button
-                  class="date-spots-page__play-button active"
+                  class="suitor-page__play-button active"
                   @click="handleReturn"
               >
-              <span class="date-spots-page__play-symbol material-symbols-outlined">undo</span>
+              <span class="suitor-page__undo-symbol material-symbols-outlined">undo</span>
           </button>  
           <button
                   class="suitor-page__play-button"
@@ -127,6 +127,10 @@ export default {
 
     &__play-symbol {
         font-size:100px;
+    }
+
+    &__undo-symbol {
+        font-size:50px;
     }
 
   &-grid-container {
