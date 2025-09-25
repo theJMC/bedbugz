@@ -6,7 +6,6 @@
 
     <div class="scanner">
       <div class="image-container">
-        <!-- Show video if not captured, else show snapshot -->
         <video
           v-if="!capturedImage"
           ref="video"
