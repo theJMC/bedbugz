@@ -44,8 +44,9 @@ export default {
         }
     },
     mounted() {
-        // on page load get complete % from somewhere
-        this.completionNumber = 33;
+        const TOTAL_SUITORS = 43;
+        const CURRENT_UNLOCKED_SUITORS = 3; // TODO UPDATE THIS WHEN MORE SUITORS
+        this.completionNumber = Math.round((CURRENT_UNLOCKED_SUITORS / TOTAL_SUITORS) * 100);
     },
     methods: {
         handleFindAMatch() {
