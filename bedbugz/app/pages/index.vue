@@ -8,18 +8,21 @@
             <ButtonElement 
                 icon="favorite"
                 text="find a match"
+                @click="handleFindAMatch"
             />
             <ButtonElement 
                 icon="park"
                 text="view date spots"
+                @click="handleViewDates"
             />
             <ButtonElement 
                 icon="pest_control"
                 text="scan a suitor"
+                @click="handleScanSuitor"
             />
         </div>
         <PercentBar 
-            number="33"
+            :number="completionNumber"
         />
     </div>
 </template>
@@ -32,6 +35,26 @@ export default {
     components: {
         ButtonElement,
         PercentBar
+    },
+    data() {
+        return {
+            completionNumber: 0
+        }
+    },
+    mounted() {
+        // on page load get complete % from somewhere
+        this.completionNumber = 33;
+    },
+    methods: {
+        handleFindAMatch() {
+            console.log('find a match')
+        },
+        handleViewDates() {
+            console.log('go to view dates')
+        },
+        handleScanSuitor() {
+            console.log('go to scan suitor')
+        },
     }
 }
 </script>
