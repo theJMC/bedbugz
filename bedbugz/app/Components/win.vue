@@ -1,7 +1,7 @@
 <template>
     <div class="win">
         <div class="win-profile win-profile-one">
-            <img :src="suitorImg" alt="profile image" width="100%" class="pointer-events-none"/>
+            <img :src="suitorImg" alt="profile image" class="pointer-events-none"/>
         </div>
 
         <span class="win-heart material-symbols-outlined"> favorite </span>
@@ -72,6 +72,14 @@ export default {
         border-radius: 25px;
         height: 150px;
         width: 150px;
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
 
         &-one {
             top: 0;

@@ -1,7 +1,7 @@
 <template>
     <div class="match">
         <div class="match-profile match-profile-one">
-            <img :src="suitorImg" alt="profile image" width="100%" class="pointer-events-none"/>
+            <img :src="suitorImg" alt="profile image" class="pointer-events-none"/>
         </div>
         <div class="match-profile match-profile-two"></div>
 
@@ -51,11 +51,19 @@ export default {
 
     &-profile {
         position: absolute;
+        overflow: hidden;
         background-color: $main-green;
         box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
         border-radius: 25px;
         height: 150px;
         width: 150px;
+
+        img {
+            object-fit: cover;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
 
         &-one {
             top: 0;
