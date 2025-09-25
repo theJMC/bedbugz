@@ -2,7 +2,11 @@
   <div>
     <NuxtPage />
   </div>
+<<<<<<< HEAD
 </template>
 
 <script setup lang="js">
 </script>
+=======
+</template>
+>>>>>>> develop
