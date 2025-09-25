@@ -3,7 +3,9 @@
         <div class="match-profile match-profile-one">
             <img :src="suitorImg" alt="profile image" class="pointer-events-none"/>
         </div>
-        <div class="match-profile match-profile-two"></div>
+        <div class="match-profile match-profile-two">
+            <img :src="userImage" alt="profile image" class="pointer-events-none"/>
+        </div>
 
         <span class="match-heart material-symbols-outlined"> favorite </span>
 
@@ -23,11 +25,13 @@ export default {
     name: "MatchComponent",
     data() {
         return {
-            suitorImg: ''
+            suitorImg: '',
+            userImage: '',
         }
     },
     mounted() {
         this.suitorImg = localStorage.getItem("suitorImg");
+        this.userImage = localStorage.getItem("userImg");
     }
 }
 </script>
