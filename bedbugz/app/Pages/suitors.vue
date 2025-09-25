@@ -25,6 +25,7 @@
                 class="suitor-page__play-button"
                 :class="selectedSuitorId ? 'active' : 'inactive'"
                 :disabled="!selectedSuitorId"
+                @click="handleSelectSuitor"
             >
             <span class="suitor-page__play-symbol material-symbols-outlined">arrow_right</span>
         </button>
@@ -54,6 +55,9 @@ export default {
         this.selectedSuitorId = suitor.id;
       }
     },
+    handleSelectSuitor() {
+      this.$router.push('/smashOrSquash');
+    }
   },
 };
 </script>
