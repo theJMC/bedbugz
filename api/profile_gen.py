@@ -52,11 +52,20 @@ def add_new_profile(page: int):
         name = bug["taxon"]["name"]
 
     photos = []
-    # try:
-    for photo in bug["photos"]:
-        photos.append(photo["url"])
-    # except TypeError:
-    #     pass
+    try:
+        photo_req = r.get(API_BASE_URL + "/taxa/" + str(bug["taxon"]["id"]))
+        photo_res = photo_req.json()["results"][0]
+        # print(photo_res["default_photo"]["medium_url"])
+        photos.append(photo_res["default_photo"]["medium_url"])
+        # for photo in photo_res["default_photo"]:
+        #     print(photo)
+        #     photos.append(photo["default_photo"]["medium_url"])
+    except KeyError:
+        print("USED KEY ERROR")
+        for photo in bug["photos"]:
+            photos.append(photo["url"])
+            print(photo["url"])
+
 
     # description = bug["taxon"]["description"]
     description = f"Fun Fact! It's a {name}"
@@ -85,7 +94,7 @@ def write_to_file(results):
 if __name__ == "__main__":
     results = []
     try:
-        for i in range(50):
+        for i in range(23, 50):
             print(i)
             new = add_new_profile(i + 1)
             print(new.to_json()[0])

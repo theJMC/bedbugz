@@ -3,21 +3,21 @@
     "name": "Coccinella",
     "species": "Coccinellini",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571809558/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/75836801/medium.jpg"
     ],
     "description": "Fun Fact! It's a Coccinella",
     "prompts": [
       {
-        "question": "What does the seven-spot ladybird (Coccinella septempunctata) primarily feed on?",
-        "answer": "Coccinella septempunctata primarily feeds on aphids and other small soft-bodied insects."
+        "question": "What common name is given to insects of the genus Coccinella?",
+        "answer": "Insects of the genus Coccinella are commonly known as ladybirds in the UK and ladybugs in North America."
       },
       {
-        "question": "Where is Coccinella septempunctata commonly found?",
-        "answer": "It is native to Europe but has been introduced to North America, and it inhabits gardens, fields, and meadows."
+        "question": "What is the primary diet of Coccinella septempunctata?",
+        "answer": "Coccinella septempunctata, also called the seven-spot ladybird, primarily feeds on aphids and other soft-bodied plant pests."
       },
       {
-        "question": "How can you identify Coccinella septempunctata?",
-        "answer": "It can be identified by its distinctive seven black spots on bright red or orange wing covers."
+        "question": "How many spots are typically found on Coccinella septempunctata?",
+        "answer": "The seven-spot ladybird usually has seven black spots on its red elytra: three on each wing cover and one centered near the rear."
       }
     ]
   },
@@ -25,21 +25,21 @@
     "name": "Asian Lady Beetle",
     "species": "Harmonia",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571809386/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/452640195/medium.jpg"
     ],
     "description": "Fun Fact! It's a Asian Lady Beetle",
     "prompts": [
       {
-        "question": "What is the primary diet of the Asian Lady Beetle (Harmonia axyridis)?",
-        "answer": "The Asian Lady Beetle primarily feeds on aphids, scale insects, and other soft-bodied pests, making it a valuable biological control agent in agricultural and garden settings."
+        "question": "What is the scientific name of the Asian lady beetle and where is it originally from?",
+        "answer": "The Asian lady beetle\u2019s scientific name is Harmonia axyridis. It is native to eastern Asia, including regions of China, Korea, Japan, and parts of Russia."
       },
       {
-        "question": "How can you distinguish an Asian Lady Beetle from native lady beetle species?",
-        "answer": "Asian Lady Beetles often have a variable number of spots (from zero to 22) and a distinctive 'M'-shaped black marking on the white area behind their heads, features less common in native species."
+        "question": "How can you distinguish an Asian lady beetle from native North American lady beetle species?",
+        "answer": "Asian lady beetles vary in color from yellow to deep red and can have zero to 22 black spots. A key identifier is the white pronotum with a distinctive black M- or W-shaped marking behind the head."
       },
       {
-        "question": "Why are Asian Lady Beetles considered an invasive species in many regions?",
-        "answer": "They outcompete native lady beetles for food and habitat, aggregate in large numbers inside homes during winter, and can bite humans or stain surfaces with their defensive secretions."
+        "question": "What ecological impacts do Asian lady beetles have in areas where they have been introduced?",
+        "answer": "Although effective at controlling aphid populations, Asian lady beetles can outcompete and displace native lady beetle species, aggregate in homes during winter, and sometimes bite humans when disturbed."
       }
     ]
   },
@@ -47,21 +47,21 @@
     "name": "Lady Beetles",
     "species": "Coccinelloidea",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571809135/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/75979875/medium.jpg"
     ],
     "description": "Fun Fact! It's a Lady Beetles",
     "prompts": [
       {
+        "question": "What is the scientific name of the common lady beetle?",
+        "answer": "The common lady beetle's scientific name is Coccinella septempunctata."
+      },
+      {
         "question": "What do lady beetles typically eat?",
-        "answer": "Most lady beetles are predatory and feed on soft-bodied insects such as aphids, mealybugs, whiteflies, and scale insects. A few species supplement their diet with pollen, nectar, or fungal spores."
+        "answer": "Lady beetles primarily feed on aphids and other small soft-bodied insects, making them beneficial for gardens and crops."
       },
       {
-        "question": "How many stages are there in the life cycle of a lady beetle and what are they?",
-        "answer": "Lady beetles undergo complete metamorphosis in four stages: egg, larva, pupa, and adult. The entire cycle typically takes three to six weeks, depending on temperature and food availability."
-      },
-      {
-        "question": "How do lady beetles defend themselves against predators?",
-        "answer": "Lady beetles use bright coloration (aposematism) to warn predators of their toxicity. When threatened, they may release a foul-tasting hemolymph from their leg joints (reflex bleeding), deterring birds and other attackers."
+        "question": "How many spots does the seven-spotted lady beetle have?",
+        "answer": "The seven-spotted lady beetle has seven black spots on its red wing covers, three on each side and one in the center."
       }
     ]
   },
@@ -69,7 +69,7 @@
     "name": "Seven-spotted Lady Beetle",
     "species": "Coccinella",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571792392/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/267168450/medium.jpg"
     ],
     "description": "Fun Fact! It's a Seven-spotted Lady Beetle",
     "prompts": [
@@ -78,12 +78,12 @@
         "answer": "The scientific name of the Seven-spotted Lady Beetle is Coccinella septempunctata."
       },
       {
-        "question": "What does the Seven-spotted Lady Beetle primarily eat?",
-        "answer": "The Seven-spotted Lady Beetle primarily feeds on aphids, scale insects, and other soft-bodied pests, making it a valuable predator in gardens and agricultural fields."
+        "question": "What do Seven-spotted Lady Beetles primarily eat?",
+        "answer": "Seven-spotted Lady Beetles primarily feed on aphids and other soft-bodied plant pests, making them beneficial for natural pest control."
       },
       {
-        "question": "How does the Seven-spotted Lady Beetle defend itself against predators?",
-        "answer": "When threatened, the Seven-spotted Lady Beetle may secrete a yellow, foul-tasting fluid from its leg joints (a process called reflex bleeding) to deter predators."
+        "question": "How can you identify a Seven-spotted Lady Beetle?",
+        "answer": "You can identify a Seven-spotted Lady Beetle by its distinctive red or orange wing covers with three black spots on each side and one central spot, totaling seven, plus a black and white patterned head."
       }
     ]
   },
@@ -91,21 +91,21 @@
     "name": "Small White",
     "species": "Pieris",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571792086/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/28420401/medium.jpg"
     ],
     "description": "Fun Fact! It's a Small White",
     "prompts": [
       {
-        "question": "What is the typical wingspan of the Small White butterfly?",
-        "answer": "The Small White butterfly typically has a wingspan of 32 to 47 millimeters."
+        "question": "What is the Small White butterfly and how can it be identified?",
+        "answer": "The Small White (Pieris rapae) is a common butterfly with white wings marked by small black tips on the forewings and one or two black spots. It has a wingspan of 32\u201347 mm and a delicate, fluttering flight."
       },
       {
         "question": "What plants do Small White caterpillars feed on?",
-        "answer": "Small White caterpillars primarily feed on cruciferous plants such as cabbages, broccoli, and mustard greens."
+        "answer": "Small White caterpillars primarily feed on members of the mustard family (Brassicaceae), including cabbage, broccoli, kale and wild mustard, often causing damage to garden and crop plants."
       },
       {
-        "question": "How can you distinguish a male Small White from a female?",
-        "answer": "Males have a single black spot on each forewing, while females usually have two spots and more extensive dark markings."
+        "question": "What is the lifecycle of the Small White butterfly?",
+        "answer": "The lifecycle of the Small White includes four stages: egg (laid singly on host leaves), larva (green caterpillar feeding on Brassicaceae), pupa (chrysalis attached to stems or leaves), and adult. There are typically three to four generations per year."
       }
     ]
   },
@@ -113,21 +113,21 @@
     "name": "Bumble Bees",
     "species": "Bombini",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571515596/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/6812/medium.jpg"
     ],
     "description": "Fun Fact! It's a Bumble Bees",
     "prompts": [
       {
-        "question": "What distinguishes bumble bees from honey bees?",
-        "answer": "Bumble bees are larger and fuzzier, form smaller colonies of 50\u2013400 individuals, often nest in the ground, and produce much less honey than honey bees."
+        "question": "What physical characteristics distinguish bumble bees from other bee species?",
+        "answer": "Bumble bees are larger and hairier than many other bees, with robust, fuzzy bodies that help them retain heat. They often have distinct black and yellow banding patterns and a rounded abdomen."
       },
       {
-        "question": "How do bumble bees perform \u2018buzz pollination\u2019?",
-        "answer": "Bumble bees grasp a flower and rapidly vibrate their flight muscles without flapping their wings, shaking loose pollen that\u2019s otherwise trapped in the flower\u2019s anthers."
+        "question": "How do bumble bees perform buzz pollination?",
+        "answer": "Bumble bees grasp a flower's stamens and rapidly contract their flight muscles without flapping their wings, causing vibrations that release pollen from flowers more effectively than other pollinators."
       },
       {
-        "question": "What are the primary threats to bumble bee populations?",
-        "answer": "Habitat loss, pesticide exposure, climate change, and the spread of pathogens are the main factors causing declines in many bumble bee species."
+        "question": "Why are bumble bees important for ecosystems and agriculture?",
+        "answer": "Bumble bees are key pollinators for many wild plants and crops. Their efficient pollination improves plant reproduction, contributes to biodiversity, and enhances yields of fruits, vegetables, and seeds."
       }
     ]
   },
@@ -135,21 +135,21 @@
     "name": "Lumbricid Earthworms",
     "species": "Lumbricina",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571490202/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/28279/medium.jpg"
     ],
     "description": "Fun Fact! It's a Lumbricid Earthworms",
     "prompts": [
       {
-        "question": "What are the key morphological features of Lumbricid earthworms?",
-        "answer": "Lumbricid earthworms have a segmented, cylindrical body with bristle-like setae on each segment, a distinct clitellum for reproduction, no specialized respiratory organs (gas exchange occurs through the skin), and a simple digestive tract running the length of the body."
+        "question": "What taxonomic family do Lumbricid earthworms belong to?",
+        "answer": "Lumbricid earthworms belong to the family Lumbricidae, which includes over 700 described species distributed primarily in temperate regions around the world."
       },
       {
         "question": "How do Lumbricid earthworms contribute to soil fertility?",
-        "answer": "They ingest organic matter and mineral soil, breaking it down in their gut and excreting nutrient-rich casts. Their burrowing aerates the soil, improves water infiltration, and promotes microbial activity, enhancing overall soil structure and fertility."
+        "answer": "By ingesting organic matter and mineral particles, Lumbricid earthworms produce nutrient-rich castings, improve soil structure through bioturbation, enhance aeration and water infiltration, and accelerate decomposition of plant residues."
       },
       {
-        "question": "Describe the reproductive cycle of Lumbricid earthworms.",
-        "answer": "Lumbricids are simultaneous hermaphrodites that mate by aligning ventral surfaces and exchanging sperm. After mating, each worm secretes a mucous ring from the clitellum that picks up eggs and stored sperm, forming a cocoon where fertilization and embryonic development occur until juveniles hatch."
+        "question": "What is the reproductive strategy of Lumbricid earthworms?",
+        "answer": "Lumbricid earthworms are simultaneous hermaphrodites with a specialized reproductive segment called the clitellum. During copulation, two individuals exchange sperm, later secreting cocoons in the soil where fertilized eggs develop without parental care."
       }
     ]
   },
@@ -157,21 +157,21 @@
     "name": "Ichneumonid and Braconid Wasps",
     "species": "Apocrita",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571459619/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/22098248/medium.jpg"
     ],
     "description": "Fun Fact! It's a Ichneumonid and Braconid Wasps",
     "prompts": [
       {
-        "question": "What are the main morphological differences between ichneumonid and braconid wasps?",
-        "answer": "Ichneumonid wasps (family Ichneumonidae) typically have a more slender body, a distinct \u201chorse-head\u201d cell in the forewing venation, and often a very long ovipositor. Braconid wasps (family Braconidae) are generally smaller, have fewer wing veins (lacking the horse-head cell), and a shorter, stouter ovipositor. Taxonomically, ichneumonids are more diverse, while braconids often exhibit more specialized host relationships."
+        "question": "What wing venation feature is used to differentiate Ichneumonid wasps from Braconid wasps?",
+        "answer": "Ichneumonid wasps have a distinctive 'horsehead' cell (areolet) in the forewing formed by the second recurrent vein, whereas Braconid wasps typically lack this areolet or have it greatly reduced, and also show a simpler venation with fewer closed cells."
       },
       {
-        "question": "How do braconid wasps locate and parasitize their hosts?",
-        "answer": "Braconid wasps locate hosts by sensing chemical cues (kairomones) released by host insects or plant volatiles induced by feeding damage. Once a suitable host (often caterpillars or beetle larvae) is found, the female uses her ovipositor to inject eggs into or onto the host\u2019s body. The developing wasp larvae then consume the host internally or externally, eventually emerging as adult wasps."
+        "question": "How do Ichneumonid and Braconid wasps differ in their parasitic strategies on insect hosts?",
+        "answer": "Most Ichneumonid wasps are koinobiont endoparasitoids that allow the host to continue growing after oviposition, while Braconid wasps include both koinobionts and idiobionts, with many species paralyzing (idiobiont) the host and arresting its development before or after egg-laying, and exhibiting both ecto- and endoparasitoid lifestyles."
       },
       {
-        "question": "Why are ichneumonid and braconid wasps important for agricultural pest management?",
-        "answer": "Both ichneumonid and braconid wasps act as natural biological control agents by parasitizing pest insects such as caterpillars, aphids, and beetle larvae. Their parasitism reduces pest populations without chemical pesticides, promoting sustainable agriculture, preserving beneficial insects, and helping maintain ecosystem balance."
+        "question": "What roles do Ichneumonid and Braconid wasps play in agricultural biological control?",
+        "answer": "Both families are vital natural enemies of pest insects: Ichneumonids commonly parasitize Lepidoptera and wood-boring larvae, regulating populations in forests, while Braconids (e.g., Microgastrinae like Cotesia) are widely used to control caterpillars and other crop pests in integrated pest management programs."
       }
     ]
   },
@@ -179,21 +179,21 @@
     "name": "Black Garden Ant",
     "species": "Lasius",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571452434/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/129815566/medium.jpg"
     ],
     "description": "Fun Fact! It's a Black Garden Ant",
     "prompts": [
       {
-        "question": "What is the Black Garden Ant and where is it commonly found?",
-        "answer": "The Black Garden Ant (Lasius niger) is a small, dark-colored ant species native to Europe, parts of Asia, and introduced to North America. It typically nests in soil, under stones, or in walls, and thrives in gardens, lawns, and urban areas where it can forage for sugary substances and insects."
+        "question": "What is the typical diet of the Black Garden Ant?",
+        "answer": "Black Garden Ants primarily feed on honeydew produced by aphids, as well as nectar, seeds, small insects, and other sweet substances they find in gardens and lawns."
       },
       {
-        "question": "How do Black Garden Ants communicate and coordinate their activities?",
-        "answer": "Black Garden Ants communicate primarily through pheromones\u2014chemical signals laid down as scent trails. Foragers deposit a pheromone path back to the nest after discovering food, guiding nestmates to the source. They also use tactile signals, such as antennal tapping, to exchange information within the colony."
+        "question": "How do Black Garden Ants communicate and navigate?",
+        "answer": "They use chemical pheromone trails to mark paths to food sources and alarm signals; ants detect these pheromones with sensory receptors on their antennae to coordinate foraging and colony defense."
       },
       {
-        "question": "What role do Black Garden Ants play in their ecosystem?",
-        "answer": "Black Garden Ants contribute to soil aeration and nutrient cycling by tunneling underground. They help control pest populations by preying on small insects and arthropods. Additionally, they engage in mutualistic relationships with aphids, protecting them from predators in exchange for honeydew, which influences plant health and insect community dynamics."
+        "question": "Where do Black Garden Ants typically build their nests?",
+        "answer": "Black Garden Ants commonly excavate nests in soil, under stones, within lawns, and in decaying wood; their colonies can extend several meters underground with multiple chambers and tunnels."
       }
     ]
   },
@@ -201,21 +201,21 @@
     "name": "Common Carder Bumble Bee",
     "species": "Thoracobombus",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571443765/square.jpg"
+      "https://static.inaturalist.org/photos/34380670/medium.jpg"
     ],
     "description": "Fun Fact! It's a Common Carder Bumble Bee",
     "prompts": [
       {
-        "question": "What distinguishing features help identify the Common Carder Bumble Bee (Bombus pascuorum)?",
-        "answer": "The Common Carder Bumble Bee has a uniformly tawny-brown coat without distinct yellow bands, a long tongue for feeding on deep flowers, and a black tail tip."
+        "question": "How can you identify a Common Carder Bumble Bee (Bombus pascuorum)?",
+        "answer": "The Common Carder Bumble Bee has a ginger-brown thorax and abdomen with scattered darker hairs, lacks distinct yellow bands, has a furry appearance and a slender body about 8\u201315 mm long."
       },
       {
-        "question": "In what habitats and during which months is the Common Carder Bumble Bee most commonly active?",
-        "answer": "This species frequents gardens, meadows, grasslands, and hedgerows. Workers appear from April, peaking in July and August, with queens sometimes active until October."
+        "question": "What habitats does the Common Carder Bumble Bee prefer?",
+        "answer": "It prefers open grassy habitats such as meadows, gardens, hedgerows and woodland edges, often nesting on or just below the surface in dense vegetation or moss tussocks."
       },
       {
-        "question": "How does the Common Carder Bumble Bee establish its nest and what is the typical colony size?",
-        "answer": "Queens build nests above ground in grass tussocks, under sheds, or in bird boxes. Colonies usually contain 50\u2013150 workers, though larger nests of up to 200 can occur."
+        "question": "Which flowers does the Common Carder Bumble Bee commonly forage on?",
+        "answer": "It forages on a wide variety of flowers, favoring open-faced blooms like clovers, thistles, lavender, daisies and harebells, collecting both nectar and pollen."
       }
     ]
   },
@@ -223,21 +223,21 @@
     "name": "Wolf Spiders",
     "species": "Lycosoidea",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571434628/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/491213904/medium.png"
     ],
     "description": "Fun Fact! It's a Wolf Spiders",
     "prompts": [
       {
-        "question": "What distinguishing features help identify a wolf spider?",
-        "answer": "Wolf spiders have robust bodies, long legs, and a distinctive eye arrangement: four small eyes in a row at the bottom, two large eyes above, and two medium-sized eyes on the sides."
+        "question": "What physical characteristics distinguish wolf spiders from other spider species?",
+        "answer": "Wolf spiders typically have robust bodies covered in dense hair, long legs, and a distinctive eye arrangement with four small eyes in a row below two large forward-facing eyes and two medium eyes on the sides. Their coloration often blends into leaf litter or soil, providing excellent camouflage."
       },
       {
         "question": "How do wolf spiders hunt and capture their prey?",
-        "answer": "Unlike web-building spiders, wolf spiders stalk or ambush their prey. They rely on speed and excellent vision to chase down insects and other small arthropods."
+        "answer": "Unlike web-building spiders, wolf spiders are active hunters that rely on keen eyesight and sensitive leg hairs to detect vibrations. They stalk or chase down insects and other small invertebrates, pouncing on prey with bursts of speed and using their strong jaws (chelicerae) to subdue it."
       },
       {
-        "question": "Where are wolf spiders commonly found and what habitats do they prefer?",
-        "answer": "Wolf spiders inhabit a variety of environments, including grasslands, forests, gardens, and human dwellings. They prefer ground-level habitats with leaf litter, logs, or rocks for shelter."
+        "question": "Are wolf spiders dangerous to humans, and what should you do if bitten?",
+        "answer": "Wolf spiders are not aggressive toward humans and bites are rare. Their venom is primarily suited for subduing small prey and typically causes only mild pain, swelling, and redness in people. If bitten, clean the area with soap and water, apply a cold compress, and seek medical attention if symptoms worsen or an allergic reaction develops."
       }
     ]
   },
@@ -245,21 +245,21 @@
     "name": "Rollrims",
     "species": "Paxillaceae",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571428782/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/21188377/medium.jpg"
     ],
     "description": "Fun Fact! It's a Rollrims",
     "prompts": [
       {
-        "question": "What are Rollrims and how do they differ from conventional bead-seat rims?",
-        "answer": "Rollrims are bicycle wheel or tire rims with an inwardly rolled edge along the bead seat, providing a stronger, more consistent rim wall compared to conventional straight-gauge or welded rims. The rolled lip increases structural integrity, helps prevent tire burping under low pressure, and offers enhanced impact resistance."
+        "question": "What is a Rollrims and how is it used on a vehicle?",
+        "answer": "A Rollrims is an automotive wheel featuring a rolled or curled outer lip designed to increase strength and resistance to damage. It is mounted on the wheel hub just like a standard rim and often used on custom or off-road vehicles to combine durability with a distinctive look."
       },
       {
-        "question": "What are the primary benefits of using Rollrims on mountain bike wheels?",
-        "answer": "Rollrims improve durability by distributing stress more evenly around the rim circumference, reduce the risk of rim cracks at spoke holes, and enhance tubeless tire sealing due to the uniform bead seat. Cyclists also report better shock absorption and fewer pinch flats when riding rough terrain."
+        "question": "What materials are commonly used to manufacture Rollrims?",
+        "answer": "Rollrims are typically made from forged or cast aluminum alloys due to their high strength-to-weight ratio and corrosion resistance. Some heavy-duty applications use steel or reinforced steel composites for added toughness under extreme load conditions."
       },
       {
-        "question": "Are there any downsides or maintenance considerations for Rollrims?",
-        "answer": "While Rollrims are robust, they can be slightly heavier than some lightweight alternatives. They require precise spoke tensioning to maintain the rolled bead seat shape and periodic inspection for dents or deformation. If damaged, reshaping a Rollrim is difficult, so professional wheelbuilding or rim replacement may be necessary."
+        "question": "How should you maintain Rollrims to ensure maximum longevity?",
+        "answer": "To maintain Rollrims, regularly wash them with a mild detergent and water to remove brake dust and road grime. Inspect for dents or cracks after off-road use. Apply a protective wax or sealant quarterly, and ensure tire pressures are kept within the manufacturer\u2019s recommended range to avoid rim deformation."
       }
     ]
   },
@@ -267,21 +267,21 @@
     "name": "Common Gilled Mushrooms and Allies",
     "species": "Agaricomycetidae",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571428642/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/7259109/medium.jpg"
     ],
     "description": "Fun Fact! It's a Common Gilled Mushrooms and Allies",
     "prompts": [
       {
-        "question": "What feature distinguishes the saffron milk cap (Lactarius deliciosus) from other orange-colored gilled mushrooms?",
-        "answer": "Lactarius deliciosus exudes bright orange latex when the gills are cut or bruised, and that latex quickly turns green upon exposure to air. It also often shows concentric rings on the cap and forms mycorrhizal associations with pine trees."
+        "question": "What structural feature defines a common gilled mushroom and how does it facilitate spore dispersal?",
+        "answer": "Common gilled mushrooms produce a cap with radiating lamellae (gills) on its underside. These gills greatly increase the surface area for spore-producing cells (basidia), allowing efficient spore release into the air for dispersal."
       },
       {
-        "question": "How can you differentiate a Russula mushroom from a Lactarius species in the field?",
-        "answer": "When broken or cut, Lactarius species exude a milky latex from the gills, whereas Russula mushrooms never produce latex. Additionally, Russula flesh is brittle and snaps like chalk, while Lactarius flesh is more fibrous."
+        "question": "To which order do most edible gilled mushrooms belong and what is a widely cultivated example?",
+        "answer": "Most edible gilled mushrooms belong to the order Agaricales. A widely cultivated example is Agaricus bisporus, known commercially as the button mushroom, cremini, or portobello at different maturity stages."
       },
       {
-        "question": "What key morphological difference helps tell apart the false chanterelle (Hygrophoropsis aurantiaca) from the true chanterelle (Cantharellus cibarius)?",
-        "answer": "The false chanterelle has true, blade-like gills that are thin and closely spaced, whereas the true chanterelle features blunt, forked ridges (false gills) that run decurrently down the stem and lack sharp edges."
+        "question": "What type of ecological role do many common gilled mushrooms play in forest ecosystems?",
+        "answer": "Many common gilled mushrooms are saprotrophic, meaning they decompose dead organic matter such as leaf litter, wood, and other plant debris. By recycling nutrients back into the soil, they play a crucial role in maintaining forest health."
       }
     ]
   },
@@ -289,21 +289,21 @@
     "name": "Common Flower Flies",
     "species": "Syrphini",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571428651/square.jpg"
+      "https://static.inaturalist.org/photos/51874009/medium.jpg"
     ],
     "description": "Fun Fact! It's a Common Flower Flies",
     "prompts": [
       {
-        "question": "What ecological role do Common Flower Flies play in gardens and wildflower meadows?",
-        "answer": "Common Flower Flies are important pollinators, transferring pollen as they feed on nectar and pollen from a wide variety of flowering plants."
+        "question": "What is the primary ecological role of common flower flies?",
+        "answer": "Common flower flies (family Syrphidae) act as important pollinators, visiting flowers to feed on nectar and pollen and transferring pollen between plants."
       },
       {
-        "question": "How do Common Flower Flies protect themselves from predators?",
-        "answer": "They exhibit Batesian mimicry by sporting yellow and black banding similar to bees and wasps, deterring predators even though they are harmless and cannot sting."
+        "question": "How can you distinguish a common flower fly from bees or wasps?",
+        "answer": "Flower flies mimic bees or wasps with yellow and black stripes but can be distinguished by their single pair of wings, large compound eyes, and hovering flight; bees and wasps have two pairs of wings."
       },
       {
-        "question": "What do the larvae of Common Flower Flies typically feed on?",
-        "answer": "Many Common Flower Fly larvae are voracious predators of aphids and other soft-bodied pests, helping to naturally control garden pest populations."
+        "question": "What do the larvae of common flower flies typically feed on?",
+        "answer": "Many common flower fly larvae are predators of aphids and other soft-bodied pests, making them beneficial for natural pest control in gardens and crops."
       }
     ]
   },
@@ -311,21 +311,21 @@
     "name": "Western Conifer Seed Bug",
     "species": "Leptoglossus clypealis",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571399159/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/344303585/medium.jpg"
     ],
     "description": "Fun Fact! It's a Western Conifer Seed Bug",
     "prompts": [
       {
-        "question": "What is a Western Conifer Seed Bug?",
-        "answer": "The Western Conifer Seed Bug (Leptoglossus occidentalis) is a leaf-footed bug native to North America, recognized by its leaf-like hind legs and its habit of feeding on seeds of conifer trees."
+        "question": "What distinctive physical feature helps identify the Western Conifer Seed Bug?",
+        "answer": "The Western Conifer Seed Bug has enlarged, leaf-shaped hind legs with a prominent white zigzag band across its brownish wing covers."
       },
       {
-        "question": "Where is the Western Conifer Seed Bug commonly found?",
-        "answer": "This species inhabits coniferous forests across western North America and has spread to Europe and Asia; in autumn, it often enters homes seeking warmth and shelter."
+        "question": "What do Western Conifer Seed Bugs primarily feed on?",
+        "answer": "They feed mainly on the seeds and developing tissues of pine, spruce, fir, cedar, and other conifer cones, using their long rostrum to pierce and suck out nutrients."
       },
       {
-        "question": "How can I prevent Western Conifer Seed Bugs from entering my home?",
-        "answer": "Seal gaps around windows, doors, and foundations, repair torn screens, use weatherstripping, reduce outdoor lighting at night, and vacuum any bugs indoors; apply insecticidal perimeter treatments if necessary."
+        "question": "Why are Western Conifer Seed Bugs considered invasive in many regions?",
+        "answer": "Originating in North America, they have spread to Europe and Asia via international trade. With few natural predators in new areas, they reproduce rapidly and can damage commercially important conifer seed crops."
       }
     ]
   },
@@ -333,21 +333,21 @@
     "name": "Angulate and Roundshouldered Orbweavers",
     "species": "Araneinae",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571385425/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/322401633/medium.png"
     ],
     "description": "Fun Fact! It's a Angulate and Roundshouldered Orbweavers",
     "prompts": [
       {
-        "question": "What are the key morphological differences between an Angulate Orbweaver and a Roundshouldered Orbweaver?",
-        "answer": "Angulate Orbweavers (Verrucosa arenata) have a more angular abdomen with distinct dorsal projections and a triangular pattern on the back, whereas Roundshouldered Orbweavers (Tetragnatha planata) feature a smoother, more rounded dorsal surface and a subtle, elongated body shape. The Angulate\u2019s legs often show banding, while the Roundshouldered\u2019s legs are uniformly colored and its carapace is more elongated."
+        "question": "What distinguishing physical feature gives the Angulate Orbweaver (Zygiella x-notata) its common name?",
+        "answer": "The Angulate Orbweaver has pronounced angular projections or 'shoulders' on each side of its abdomen, creating a distinctly angled outline that inspired its common name."
       },
       {
-        "question": "In what habitats are Angulate Orbweavers and Roundshouldered Orbweavers typically found?",
-        "answer": "Angulate Orbweavers prefer woodland edges, meadows, and gardens where they anchor their orb webs to low shrubs and grasses. Roundshouldered Orbweavers are commonly found near water\u2014along stream banks, marshes, and ponds\u2014where they build their sheet-like orb webs among reeds and low vegetation to catch flying insects."
+        "question": "How does the web-building behavior of the Angulate Orbweaver differ from that of the Roundshouldered Orbweaver (Nuctenea umbratica)?",
+        "answer": "The Angulate Orbweaver often constructs a missing-sector orb web and retreats to a silken shelter at the edge, monitoring vibrations via a signal thread, whereas the Roundshouldered Orbweaver builds a complete circular web and typically rests in the center behind a veil of silk."
       },
       {
-        "question": "How do the web structures and hunting strategies of Angulate and Roundshouldered Orbweavers differ?",
-        "answer": "Angulate Orbweavers spin classic circular orb webs with tight spirals close to the ground, relying on prey impacting the web\u2019s sticky spiral. They often remain in a retreat off to one side. Roundshouldered Orbweavers construct more open, loosely wound orb webs higher off the ground and frequently include stabilimenta\u2014zigzag silk bands\u2014to attract flying insects. They usually sit in the web\u2019s center, ready to react quickly."
+        "question": "What survival adaptations does the Roundshouldered Orbweaver (Nuctenea umbratica) exhibit for cooler climates?",
+        "answer": "It produces antifreeze proteins to prevent ice crystallization, opts for sheltered microhabitats under bark or fallen leaves, and often has darker body coloration to absorb more heat, enabling it to remain active at lower temperatures."
       }
     ]
   },
@@ -355,21 +355,21 @@
     "name": "Lasius",
     "species": "Lasius",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571380328/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/122285292/medium.jpg"
     ],
     "description": "Fun Fact! It's a Lasius",
     "prompts": [
       {
-        "question": "What is the geographic distribution of ants in the genus Lasius?",
-        "answer": "Ants of the genus Lasius are primarily found throughout temperate regions of the Northern Hemisphere, including Europe, North America, and parts of Asia."
+        "question": "What is the typical diet of Lasius ants?",
+        "answer": "Lasius ants primarily feed on honeydew secreted by aphids, but they also consume other sugary substances such as nectar and fruit juices, as well as protein sources like insect carcasses and small invertebrates."
       },
       {
-        "question": "How do Lasius ants typically establish new colonies?",
-        "answer": "Lasius ants establish new colonies through a nuptial flight: winged males and females mate in the air, after which the fertilized queen sheds her wings, finds a sheltered site, and starts laying eggs to found a new colony."
+        "question": "How do Lasius ants communicate and coordinate their activities within the colony?",
+        "answer": "Lasius ants use chemical signals called pheromones to lay scent trails, mark food sources, and signal alarms. They also engage in tactile communication through antennal contact and exchange food via trophallaxis to share nutritional and chemical information."
       },
       {
-        "question": "What is the primary food source for Lasius flavus and how do they obtain it?",
-        "answer": "Lasius flavus primarily feeds on honeydew produced by root-feeding aphids. They tend and protect these aphids in underground chambers, harvesting the honeydew as their main carbohydrate source."
+        "question": "What role does the queen play in a Lasius ant colony?",
+        "answer": "The queen is the sole fertile female responsible for laying all the eggs in the colony. She initiates a new colony by founding a nest after the nuptial flight, produces chemical cues that regulate worker behavior, and can live for several years while continuously producing offspring."
       }
     ]
   },
@@ -377,22 +377,21 @@
     "name": "Cross Orbweaver",
     "species": "Araneus",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571376878/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571376891/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/156036389/medium.jpg"
     ],
     "description": "Fun Fact! It's a Cross Orbweaver",
     "prompts": [
       {
-        "question": "What is the Razer\u2122 Orbweaver Chroma and how does it differ from a standard keyboard?",
-        "answer": "The Razer\u2122 Orbweaver Chroma is a standalone mechanical gaming keypad designed for MMO and MOBA gamers. It differs from a standard keyboard by featuring an ergonomic, adjustable wrist rest, a fully programmable 20-key layout with mechanical switches, and per-key RGB lighting for enhanced customization and comfort during long gaming sessions."
+        "question": "What are the key identifying features of a Cross Orbweaver?",
+        "answer": "The Cross Orbweaver (Neoscona crucifera) is a large, hairy spider with a light brown to reddish abdomen marked by a pale cross-shaped pattern. Its legs are banded with darker stripes, and the body length can reach up to 18 mm in females and 14 mm in males. The dorsal side often appears mottled, helping it blend into tree bark or wooden surfaces."
       },
       {
-        "question": "How do I customize key bindings and macros on the Razer\u2122 Orbweaver Chroma?",
-        "answer": "You can customize key bindings and macros using Razer Synapse software. Simply launch Synapse, select the Orbweaver Chroma device, choose a key to reassign or record a macro, assign the desired function or macro sequence, and save your profile. You can store multiple profiles on the device and switch between them on the fly."
+        "question": "Where and when does the Cross Orbweaver typically build its web?",
+        "answer": "Cross Orbweavers construct classic orb-shaped webs at night, usually between shrubs, trees, or man-made structures like porches and fences. They prefer locations near lights that attract insects. Web diameter can span 30\u201360 cm, and they often rebuild a fresh web each evening, consuming the old one at dawn."
       },
       {
-        "question": "What ergonomic features does the Razer\u2122 Orbweaver Chroma offer?",
-        "answer": "The Orbweaver Chroma offers a fully adjustable, multi-directional thumb pad and removable, tiltable wrist rest that can be repositioned for optimal hand placement. Its concave keycaps and mechanical switch actuation points are designed to reduce hand fatigue and provide a more natural, comfortable gaming posture."
+        "question": "Is the Cross Orbweaver dangerous to humans?",
+        "answer": "No, the Cross Orbweaver is not dangerous to humans. While it can bite if provoked, its venom is mild and typically causes only minor localized pain, redness, or swelling. These spiders are generally shy and retreat when disturbed."
       }
     ]
   },
@@ -400,22 +399,21 @@
     "name": "Common Field Grasshopper",
     "species": "Chorthippus brunneus",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571376833/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571376853/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/37915818/medium.jpg"
     ],
     "description": "Fun Fact! It's a Common Field Grasshopper",
     "prompts": [
       {
-        "question": "What is the scientific name of the common field grasshopper?",
-        "answer": "The common field grasshopper is scientifically known as Chorthippus brunneus."
+        "question": "What is the scientific name of the Common Field Grasshopper?",
+        "answer": "The scientific name of the Common Field Grasshopper is Chorthippus brunneus."
       },
       {
-        "question": "What does the common field grasshopper primarily eat?",
-        "answer": "The common field grasshopper is herbivorous and feeds mainly on grasses, cereal crops, and various herbaceous plants."
+        "question": "What type of habitat does the Common Field Grasshopper prefer?",
+        "answer": "The Common Field Grasshopper prefers dry, sunny grasslands and meadow edges with low vegetation."
       },
       {
-        "question": "What ecological role does the common field grasshopper play?",
-        "answer": "Common field grasshoppers help control plant growth by grazing vegetation and serve as an important food source for birds, small mammals, and predatory insects."
+        "question": "What does the Common Field Grasshopper feed on?",
+        "answer": "The Common Field Grasshopper feeds primarily on grasses and cereal crops, consuming leaves and stems."
       }
     ]
   },
@@ -423,22 +421,21 @@
     "name": "Wolf Spiders",
     "species": "Lycosoidea",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571376804/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571376814/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/491213904/medium.png"
     ],
     "description": "Fun Fact! It's a Wolf Spiders",
     "prompts": [
       {
         "question": "What distinguishes wolf spiders from other spider species?",
-        "answer": "Wolf spiders (family Lycosidae) are active hunters that do not spin capture webs; instead, they rely on speed, agility, and keen eyesight to chase and pounce on prey."
+        "answer": "Wolf spiders (family Lycosidae) are distinguished by their hunting behavior\u2014they don\u2019t build webs to catch prey but actively chase and pounce on insects\u2014and by their eye arrangement: eight eyes in three rows with two large front-facing eyes."
       },
       {
-        "question": "How many eyes do wolf spiders have and how are they arranged?",
-        "answer": "Wolf spiders have eight eyes arranged in three rows: four small eyes on the bottom row, two large forward-facing eyes in the middle row, and two medium-sized eyes on the top row, giving them excellent vision."
+        "question": "Where do wolf spiders typically live and hunt?",
+        "answer": "Wolf spiders can be found in diverse habitats including grasslands, forests, deserts, and even human dwellings. They hunt on the ground, hiding under rocks, leaf litter, or in burrows during the day and emerging at night to forage."
       },
       {
-        "question": "What role do wolf spiders play in ecosystems?",
-        "answer": "Wolf spiders serve as important predators of insects and other small arthropods, helping to control pest populations, and they also provide a food source for birds, reptiles, and small mammals."
+        "question": "Are wolf spiders dangerous to humans?",
+        "answer": "Wolf spiders are venomous, but their bite is typically no more harmful than a bee sting for most people. They are not aggressive toward humans and will bite only if provoked or handled roughly."
       }
     ]
   },
@@ -446,23 +443,21 @@
     "name": "Lasius",
     "species": "Lasius",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571368964/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571368987/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/571369016/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/122285292/medium.jpg"
     ],
     "description": "Fun Fact! It's a Lasius",
     "prompts": [
       {
-        "question": "What taxonomic characteristics define ants of the genus Lasius?",
-        "answer": "Lasius is a genus in the family Formicidae, subfamily Formicinae. They lack a functional sting and instead spray formic acid from an acidopore at the tip of their gaster. Workers have a single-segmented petiole and antennae with 12 segments (11 in males), ending in a 4-segment club."
+        "question": "What are the key characteristics that distinguish ants of the genus Lasius from other ant genera?",
+        "answer": "Ants of the genus Lasius are typically small (2\u20134 mm), monomorphic, and often yellow to dark brown or black. They have a single petiole node, a rounded head with relatively short antennae, and lack spines on the back of the thorax. Many Lasius species nest in soil or under stones and are known for tending aphids for honeydew."
       },
       {
-        "question": "How is the colony structure organized in Lasius ant species?",
-        "answer": "Most Lasius colonies are founded by a single queen (monogynous), though some species form polygynous nests with multiple queens. Colonies consist of a queen, sterile worker castes, brood (eggs, larvae, pupae), and, seasonally, winged males and new queens for nuptial flights. Worker numbers range from a few hundred to several thousand."
+        "question": "Where can Lasius niger colonies most commonly be found, and what is their typical nesting behavior?",
+        "answer": "Lasius niger, the common black garden ant, is found throughout Europe, Asia, and parts of North America. Colonies are usually established in soil, under pavement, or in wall crevices. The queen lays eggs in spring, and workers build chambers and tunnels, often expanding nests year after year."
       },
       {
-        "question": "What mutualistic relationship do Lasius ants have with aphids?",
-        "answer": "Lasius ants farm aphids for honeydew, a sugary excretion. They protect aphid colonies from predators and move them to optimal feeding sites on plant roots or stems. In return, ants harvest honeydew directly from the aphids\u2019 anus or from droplets deposited on plants."
+        "question": "How do Lasius ants communicate and coordinate tasks within their colonies?",
+        "answer": "Lasius ants communicate primarily through chemical signals (pheromones). Foraging workers lay scent trails to food sources, alarm pheromones alert nestmates to danger, and brood and queen pheromones help regulate colony organization. Tactile and brief antennal contacts also reinforce social cohesion."
       }
     ]
   },
@@ -470,44 +465,21 @@
     "name": "Typical Stone Centipedes",
     "species": "Lithobiidae",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570948859/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/115505747/medium.jpeg"
     ],
     "description": "Fun Fact! It's a Typical Stone Centipedes",
     "prompts": [
       {
-        "question": "What are Typical Stone Centipedes and how can they be identified?",
-        "answer": "Typical Stone Centipedes are small, fast-moving arthropods in the order Lithobiomorpha. They measure 1\u20133 cm in length, have a flattened, elongated body with 15 pairs of legs, and display brown to reddish coloration. Distinctive features include a head with long antennae and forcipules (poison claws) on the first body segment."
+        "question": "What taxonomic order do typical stone centipedes belong to?",
+        "answer": "Typical stone centipedes belong to the order Lithobiomorpha, characterized by having 15 pairs of legs in the adult stage."
       },
       {
-        "question": "In what habitats are Typical Stone Centipedes commonly found?",
-        "answer": "Typical Stone Centipedes favor moist, sheltered environments such as under stones, logs, leaf litter, and within soil crevices. They thrive in damp forest floors, gardens, and basements, avoiding direct sunlight and desiccation by remaining in high-humidity microhabitats."
+        "question": "What morphological features distinguish stone centipedes from other centipede groups?",
+        "answer": "Stone centipedes are dorsoventrally flattened, have short antennae, and possess 15 segments each covered by a single plate (tergite), allowing them to move easily under rocks and debris."
       },
       {
-        "question": "What is the diet and predatory behavior of Typical Stone Centipedes?",
-        "answer": "Typical Stone Centipedes are nocturnal predators that feed on small invertebrates like insects, spiders, mites, and worms. They use their forcipules to inject venom into prey, immobilizing them before consumption, and play an important role in controlling soil-dwelling pest populations."
-      }
-    ]
-  },
-  {
-    "name": "Thoracobombus",
-    "species": "Bombus",
-    "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570948508/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570948533/square.jpg"
-    ],
-    "description": "Fun Fact! It's a Thoracobombus",
-    "prompts": [
-      {
-        "question": "What is Thoracobombus in bumble bee taxonomy?",
-        "answer": "Thoracobombus is a subgenus of the genus Bombus, comprising a group of medium- to large-sized bumble bee species characterized by distinct thoracic color patterns and dense hair."
-      },
-      {
-        "question": "Which morphological features distinguish Thoracobombus species from other bumble bees?",
-        "answer": "Thoracobombus species typically have a banded thorax with contrasting pale and dark hairs, a robust body, and relatively long tongue length, adapted for feeding on deep corolla flowers."
-      },
-      {
-        "question": "In what regions and habitats are Thoracobombus species commonly found?",
-        "answer": "Thoracobombus species are distributed across temperate regions of Europe and Asia, inhabiting alpine meadows, montane forests, and subarctic tundra where they forage on wildflowers and alpine blooms."
+        "question": "What is the primary diet and hunting strategy of a typical stone centipede?",
+        "answer": "Typical stone centipedes are nocturnal predators that feed on small arthropods such as insects and spiders, using their forcipules (modified front legs) to inject venom and immobilize prey."
       }
     ]
   },
@@ -515,21 +487,21 @@
     "name": "Whitewash Lichen",
     "species": "Phlyctis",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570944546/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/12764569/medium.jpeg"
     ],
     "description": "Fun Fact! It's a Whitewash Lichen",
     "prompts": [
       {
         "question": "What is Whitewash Lichen?",
-        "answer": "Whitewash Lichen is a pale, foliose lichen commonly found on tree bark and rock surfaces. Its thallus appears dusty or chalky white, giving it a \u201cwhitewashed\u201d look."
+        "answer": "Whitewash Lichen is a crustose lichen species characterized by its thin, whitish thallus that adheres tightly to rock or bark substrates. It is a symbiotic organism composed of a fungal partner and photosynthetic algae or cyanobacteria."
       },
       {
-        "question": "Where is Whitewash Lichen most commonly found?",
-        "answer": "Whitewash Lichen thrives in temperate and boreal regions, often growing on the bark of deciduous trees, exposed rocks, and old wooden structures in moist, shaded environments."
+        "question": "Where is Whitewash Lichen commonly found?",
+        "answer": "Whitewash Lichen is commonly found on exposed rock faces, concrete walls, and tree bark in temperate regions. It thrives in areas with good air circulation and moderate moisture, often in open woodlands, rocky outcrops, and urban environments."
       },
       {
-        "question": "What ecological role does Whitewash Lichen play?",
-        "answer": "Whitewash Lichen contributes to nutrient cycling by trapping dust and airborne minerals, serves as an indicator of air quality, and provides microhabitats for tiny invertebrates and microorganisms."
+        "question": "How can you identify Whitewash Lichen in the field?",
+        "answer": "You can identify Whitewash Lichen by its thin, pale to whitish-gray crustose thallus that lacks pronounced lobes. It often has tiny, disc-shaped fruiting bodies (apothecia) with light-colored margins. A simple potassium hydroxide (K) spot test on the thallus typically yields a yellow to orange reaction."
       }
     ]
   },
@@ -537,22 +509,21 @@
     "name": "Chip Cherries",
     "species": "Leratiomyces",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570943262/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570943275/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/12439328/medium.jpeg"
     ],
     "description": "Fun Fact! It's a Chip Cherries",
     "prompts": [
       {
-        "question": "What are Chip Cherries?",
-        "answer": "Chip Cherries are a gourmet snack combining the crispiness of a potato chip with the sweet-tart flavor of natural cherry extract."
+        "question": "What is Chip Cherries?",
+        "answer": "Chip Cherries is a snack product that combines the sweet, tangy flavor of real cherries with the crunchy texture of potato chips, offering a unique sweet-savory taste experience."
       },
       {
-        "question": "What flavor varieties do Chip Cherries come in?",
-        "answer": "Chip Cherries are available in three flavors: Classic Cherry, Spiced Cherry BBQ, and Dark Chocolate Cherry."
+        "question": "What ingredients are used in Chip Cherries?",
+        "answer": "Chip Cherries are made from thinly sliced potatoes, real cherry powder, sunflower oil, a pinch of sea salt, and a hint of sugar to enhance the fruit\u2019s natural sweetness."
       },
       {
-        "question": "How should Chip Cherries be stored?",
-        "answer": "Store Chip Cherries in a cool, dry place and reseal the package after opening to maintain maximum freshness and crunch."
+        "question": "Are Chip Cherries gluten-free?",
+        "answer": "Yes, Chip Cherries are completely gluten-free. They\u2019re produced in a dedicated gluten-free facility to prevent cross-contamination."
       }
     ]
   },
@@ -560,21 +531,21 @@
     "name": "Hyphodontia",
     "species": "Hyphodontiaceae",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570942199/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/30292435/medium.jpeg"
     ],
     "description": "Fun Fact! It's a Hyphodontia",
     "prompts": [
       {
         "question": "What is Hyphodontia in mycology?",
-        "answer": "Hyphodontia is a genus of crust fungi in the family Corticiaceae, characterized by thin, resupinate fruiting bodies that adhere closely to woody substrates."
+        "answer": "Hyphodontia is a genus of wood-rotting crust fungi in the family Hyphodontiaceae, characterized by thin, resupinate (crust-like) basidiocarps that grow on dead wood."
       },
       {
-        "question": "What are the key morphological features of Hyphodontia species?",
-        "answer": "Hyphodontia species typically form smooth to slightly tuberculate hymenial surfaces, lack distinct caps or stems, and produce basidiospores that are smooth, thin-walled, and often ellipsoid to cylindrical."
+        "question": "What ecological role does Hyphodontia play in forest ecosystems?",
+        "answer": "Hyphodontia species are saprotrophic fungi that decompose lignin and cellulose in dead hardwood and conifer wood, recycling nutrients and contributing to wood decay processes."
       },
       {
-        "question": "What ecological role do Hyphodontia fungi play in forest ecosystems?",
-        "answer": "Hyphodontia fungi are saprotrophic wood decomposers, contributing to lignin and cellulose breakdown and nutrient cycling by colonizing dead branches and logs in temperate and tropical forests."
+        "question": "How can you identify a specimen as belonging to the genus Hyphodontia?",
+        "answer": "Hyphodontia can be recognized by its smooth to slightly tuberculate hymenial surface, a monomitic hyphal system with clamp connections, and small, ellipsoid, thin-walled basidiospores visible under the microscope."
       }
     ]
   },
@@ -582,22 +553,21 @@
     "name": "fluted bird's nest fungus",
     "species": "Cyathus",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570941613/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570941634/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2324355/medium.jpg"
     ],
     "description": "Fun Fact! It's a fluted bird's nest fungus",
     "prompts": [
       {
-        "question": "What distinguishing features characterize the fluted bird\u2019s nest fungus?",
-        "answer": "The fluted bird\u2019s nest fungus (Cyathus striatus) forms tiny, cup-shaped fruiting bodies about 5\u201310 mm high. The interior surface is lined with pronounced vertical ridges (fluting), and it contains several small, lens-shaped spore packets called peridioles that resemble eggs."
+        "question": "What is the scientific name of the fluted bird\u2019s nest fungus known for its distinctive striated cups?",
+        "answer": "The fluted bird\u2019s nest fungus with striated cups is scientifically known as Cyathus striatus."
       },
       {
         "question": "How does the fluted bird\u2019s nest fungus disperse its spores?",
-        "answer": "It uses a splash-cup mechanism: raindrops striking the cup eject peridioles at high speed. Each peridiole is often attached to a sticky cord (funiculus) that wraps around nearby vegetation, helping the fungus colonize new substrates."
+        "answer": "It uses a splash-cup mechanism: raindrops hitting the fluted cup eject the small \u2018\u2018eggs\u2019\u2019 (peridioles) containing spores, which then stick to nearby surfaces."
       },
       {
-        "question": "In what habitats is the fluted bird\u2019s nest fungus commonly found, and what ecological role does it play?",
-        "answer": "This fungus is typically found on decaying hardwood mulch, fallen twigs, and leaf litter in temperate forests and gardens. As a saprotroph, it helps break down woody debris and recycle nutrients back into the soil."
+        "question": "On what substrates is the fluted bird\u2019s nest fungus most commonly found growing in nature?",
+        "answer": "Cyathus striatus is most often found on decaying wood, mulch, wood chips, and other lignin-rich debris in damp, shaded environments."
       }
     ]
   },
@@ -605,21 +575,21 @@
     "name": "fluted bird's nest fungus",
     "species": "Cyathus",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570941536/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2324355/medium.jpg"
     ],
     "description": "Fun Fact! It's a fluted bird's nest fungus",
     "prompts": [
       {
-        "question": "What is the fluted bird's nest fungus and how did it get its name?",
-        "answer": "The fluted bird's nest fungus (genus Cyathus, e.g., Cyathus striatus) produces small cup-shaped fruiting bodies with vertically fluted sides resembling tiny bird nests containing egg-like peridioles."
+        "question": "What distinctive feature gives the fluted bird's nest fungus its common name?",
+        "answer": "The fluted bird\u2019s nest fungus (Cyathus striatus) has small, cup-shaped fruiting bodies with fluted or grooved inner walls that resemble miniature bird\u2019s nests."
       },
       {
-        "question": "How does the fluted bird's nest fungus disperse its spores?",
-        "answer": "It uses a splash-cup mechanism: raindrops striking the fluted cup eject peridioles (spore packets) out of the 'nest,' which then adhere to nearby surfaces and germinate."
+        "question": "How does the fluted bird\u2019s nest fungus disperse its spores?",
+        "answer": "When a raindrop strikes the cup of the fluted bird\u2019s nest fungus, it splashes out the peridioles (spore-containing \u2018eggs\u2019), which then stick to nearby surfaces and release spores."
       },
       {
-        "question": "In what habitats is the fluted bird's nest fungus typically found and what ecological role does it play?",
-        "answer": "It colonizes damp, decaying wood, mulch, and leaf litter in forests and gardens, acting as a saprotroph to decompose organic matter, recycle nutrients, and maintain soil health."
+        "question": "Where is the fluted bird\u2019s nest fungus most commonly found?",
+        "answer": "The fluted bird\u2019s nest fungus typically grows on decaying wood, mulch, and leaf litter in damp, shaded areas of temperate forests and gardens."
       }
     ]
   },
@@ -627,21 +597,21 @@
     "name": "bracket polypores",
     "species": "Polyporales",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570940213/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/10084/medium.jpg"
     ],
     "description": "Fun Fact! It's a bracket polypores",
     "prompts": [
       {
-        "question": "What are bracket polypores and how do they differ from typical mushrooms?",
-        "answer": "Bracket polypores, also known as shelf fungi, are a group of wood-decaying basidiomycetes that form tough, shelf-like fruiting bodies (conks) on tree trunks and logs. Unlike typical gilled mushrooms, their spore-bearing surface consists of many tiny pores on the underside of the shelf rather than gills or teeth."
+        "question": "What is a bracket polypore and how does it contribute to forest ecosystems?",
+        "answer": "A bracket polypore is a type of wood-decaying fungus in the Polyporales that forms shelf-like, often woody fruit bodies on trees. It contributes to forest ecosystems by breaking down lignin and cellulose in dead or dying wood, recycling nutrients, creating habitats for insects and other microorganisms, and aiding soil formation."
       },
       {
-        "question": "What ecological role do bracket polypores play in forest ecosystems?",
-        "answer": "Bracket polypores are important decomposers of dead or dying wood. They secrete enzymes that break down lignin and cellulose, recycling nutrients back into the soil. Some species cause white rot (degrading both lignin and cellulose), while others cause brown rot (primarily breaking down cellulose)."
+        "question": "Which morphological characteristics help identify a bracket polypore species such as Trametes versicolor (turkey tail)?",
+        "answer": "Trametes versicolor has thin, semicircular, overlapping caps with concentric zones of varying colors (brown, tan, white). The underside is covered with dozens of microscopic pores rather than gills. The texture is tough and leathery, and it typically grows in tiered clusters on dead hardwood."
       },
       {
-        "question": "Are bracket polypores edible or useful in traditional medicine?",
-        "answer": "Most bracket polypores are too tough and woody to eat, but several species have been used medicinally. For example, Ganoderma lucidum (reishi) is prized in traditional Asian medicine for its purported immune-modulating and anti-inflammatory properties. Always consult an expert before using wild fungi medicinally."
+        "question": "Are bracket polypores edible, and do they have any medicinal properties?",
+        "answer": "Most bracket polypores are too tough to eat raw, but some species like turkey tail (Trametes versicolor) and reishi (Ganoderma lucidum) are used medicinally. They contain bioactive polysaccharides and triterpenes that may support immune function and are often consumed as teas, extracts, or supplements."
       }
     ]
   },
@@ -649,21 +619,21 @@
     "name": "Mealy Rim-lichen",
     "species": "Lecanora",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570937473/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2920154/medium.jpg"
     ],
     "description": "Fun Fact! It's a Mealy Rim-lichen",
     "prompts": [
       {
-        "question": "What is the scientific classification of the Mealy Rim-lichen?",
-        "answer": "The Mealy Rim-lichen is Rimelia farinacea. Its full classification is: Kingdom Fungi; Phylum Ascomycota; Class Lecanoromycetes; Order Lecanorales; Family Parmeliaceae; Genus Rimelia; Species R. farinacea."
+        "question": "What distinguishing feature gives the Mealy Rim-lichen its common name?",
+        "answer": "The Mealy Rim-lichen is named for the powdery, mealy-looking pruina that forms a distinct rim around its apothecia (fruiting bodies), creating a granular white border."
       },
       {
-        "question": "What are the distinctive morphological features of the Mealy Rim-lichen?",
-        "answer": "Rimelia farinacea is a foliose lichen with a pale grey-green thallus forming rosettes up to 10 cm across. Its lobes are 2\u20135 mm wide with a powdery (mealy) coating of soredia along the margins. The lower surface is blackened with simple, black rhizines for attachment."
+        "question": "Where is Mealy Rim-lichen most likely to be found in nature?",
+        "answer": "Mealy Rim-lichen typically grows on the bark of deciduous trees and on siliceous (silica-rich) rocks in temperate forests, preferring well-lit, moderately humid environments with clean air."
       },
       {
-        "question": "In what habitats and regions is the Mealy Rim-lichen commonly found?",
-        "answer": "The Mealy Rim-lichen grows primarily as an epiphyte on bark of deciduous and coniferous trees, and occasionally on siliceous rock. It prefers well-lit, humid environments and is widespread in temperate regions of Europe, North America, and parts of Asia."
+        "question": "What ecological roles does Mealy Rim-lichen play in its habitat?",
+        "answer": "Mealy Rim-lichen contributes to nutrient cycling by breaking down substrates, offers microhabitats and food sources for small invertebrates, and serves as a sensitive bioindicator of air quality due to its sensitivity to sulfur and nitrogen pollutants."
       }
     ]
   },
@@ -671,22 +641,21 @@
     "name": "Siphona",
     "species": "Siphonini",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570935628/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570935647/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/201383865/medium.jpeg"
     ],
     "description": "Fun Fact! It's a Siphona",
     "prompts": [
       {
         "question": "What taxonomic family does the genus Siphona belong to?",
-        "answer": "Siphona is a genus in the family Tachinidae, a large group of parasitoid flies."
+        "answer": "The genus Siphona belongs to the family Tachinidae, which is a large group of parasitoid flies."
       },
       {
-        "question": "What is the typical life cycle of a Siphona species?",
-        "answer": "Adult females lay eggs on or near a host insect (usually caterpillars). Larvae hatch and develop inside the host, eventually killing it. Mature larvae pupate in the soil or leaf litter, then emerge as adults."
+        "question": "What types of hosts do Siphona species typically parasitize?",
+        "answer": "Siphona species are endoparasitoids that primarily target the larvae of Lepidoptera (moths and butterflies)."
       },
       {
-        "question": "What ecological role do Siphona flies play?",
-        "answer": "Siphona species act as natural biological control agents by parasitizing caterpillars and other insect larvae, helping to regulate host populations in their ecosystems."
+        "question": "In which geographic regions are Siphona flies most commonly found?",
+        "answer": "Siphona flies have a primarily Holarctic distribution, with many species recorded in Europe, Asia, and North America."
       }
     ]
   },
@@ -694,22 +663,21 @@
     "name": "Lesser House Fly",
     "species": "Fannia",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570935092/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570935117/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/96380853/medium.jpg"
     ],
     "description": "Fun Fact! It's a Lesser House Fly",
     "prompts": [
       {
-        "question": "What is the scientific name of the Lesser House Fly?",
-        "answer": "The Lesser House Fly is scientifically known as Fannia canicularis."
+        "question": "What is the lesser house fly (Fannia canicularis) and how can it be identified?",
+        "answer": "The lesser house fly (Fannia canicularis) is a small dipteran insect measuring 4\u20136 mm in length, with a slender gray body, two dark thoracic stripes, and a distinctive erratic flight pattern often observed resting on walls and ceilings."
       },
       {
-        "question": "How does the life cycle of the Lesser House Fly differ from that of the common house fly?",
-        "answer": "Unlike the common house fly, which lays eggs in decaying organic matter, the Lesser House Fly often deposits eggs on the edges of moist substrates, such as animal bedding and decaying vegetation. Its larval stage develops in these areas before pupating in drier soils nearby."
+        "question": "Describe the life cycle of the lesser house fly.",
+        "answer": "The life cycle of the lesser house fly includes egg, three larval instars, pupal, and adult stages. Under favorable conditions, it can complete development from egg to adult in 2\u20134 weeks, with females laying up to 100 eggs per batch in decaying organic matter or animal waste."
       },
       {
-        "question": "What are effective control measures against Lesser House Flies in homes?",
-        "answer": "Effective control includes removing breeding sites by regularly cleaning animal bedding and decaying organic waste, installing fine mesh screens on windows and doors, and using UV light traps or sticky traps to capture adult flies indoors."
+        "question": "What environments do lesser house flies prefer and why are they commonly found indoors?",
+        "answer": "Lesser house flies prefer cool, shaded areas with abundant organic material for larval feeding, such as decaying vegetation or animal feces. They are commonly found indoors because they are attracted to food residues, moisture, and sheltered resting sites on walls and ceilings."
       }
     ]
   },
@@ -717,23 +685,21 @@
     "name": "Common Wood-Pigeon",
     "species": "Columba",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570934317/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570934342/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570934988/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/108521205/medium.jpg"
     ],
     "description": "Fun Fact! It's a Common Wood-Pigeon",
     "prompts": [
       {
-        "question": "What is the average wingspan of a Common Wood-Pigeon?",
-        "answer": "The average wingspan of a Common Wood-Pigeon (Columba palumbus) ranges from 68 to 77 cm."
+        "question": "What distinctive white markings help identify a Common Wood-Pigeon?",
+        "answer": "They have large white patches on the sides of their neck and a broad white band on each wing that is visible in flight."
       },
       {
-        "question": "What does the diet of a Common Wood-Pigeon mainly consist of?",
-        "answer": "A Common Wood-Pigeon's diet mainly consists of seeds, grains, berries, leaves, and young shoots."
+        "question": "What is the typical diet of a Common Wood-Pigeon?",
+        "answer": "They mainly eat seeds, grains, berries, buds and young shoots, often foraging in agricultural fields, woodlands and gardens."
       },
       {
-        "question": "Where do Common Wood-Pigeons typically build their nests?",
-        "answer": "Common Wood-Pigeons typically build their flimsy platform nests in the forks of tall trees, often high above the ground."
+        "question": "How does the Common Wood-Pigeon build its nest?",
+        "answer": "It builds a flimsy platform nest of twigs and sticks, usually placed in the fork of a tree, hedge or on building ledges, where the female lays two white eggs."
       }
     ]
   },
@@ -741,22 +707,21 @@
     "name": "sunburst lichens, firedots, and allies",
     "species": "Teloschistales",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570934026/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570934040/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/7687/medium.jpg"
     ],
     "description": "Fun Fact! It's a sunburst lichens, firedots, and allies",
     "prompts": [
       {
-        "question": "What is the sunburst lichen and where is it commonly found?",
-        "answer": "The sunburst lichen (Xanthoria parietina) is a bright yellow to orange foliose lichen characterized by radiating lobes and the pigment parietin. It commonly grows on tree bark, fence posts, roofs, and coastal rocks across temperate regions, and is often used as an indicator of nutrient enrichment and air quality."
+        "question": "What are sunburst lichens and how do they obtain nutrients?",
+        "answer": "Sunburst lichens are symbiotic organisms combining a fungal partner with photosynthetic algae or cyanobacteria; they obtain nutrients through photosynthesis by the algal cells and absorb moisture and minerals from the air and substrate via the fungal hyphae."
       },
       {
-        "question": "What are firedot lichens and how can you identify them in the field?",
-        "answer": "Firedot lichens (e.g., Caloplaca spp.) are small crustose lichens with a gray to pale thallus studded with vivid red to orange apothecia (fruiting dots). They typically colonize sun-exposed rock faces, old mortar, or wood. Identification hinges on their minute size, brightly colored punctate reproductive structures, and preference for alkaline or siliceous substrates."
+        "question": "What defines firedots in their natural habitat and what is their ecological role?",
+        "answer": "Firedots are small, bright red fungal fruiting bodies that colonize decaying wood and leaf litter; they decompose tough plant polymers like lignin and cellulose, recycling nutrients into the soil and providing microhabitats for invertebrates."
       },
       {
-        "question": "What are lichen allies and how do they differ from true lichens?",
-        "answer": "Lichen allies are photosynthetic microorganisms\u2014primarily green algae (e.g., Trebouxia) and cyanobacteria (e.g., Nostoc)\u2014that live free of a fungal partner. In true lichens, these algae or cyanobacteria form a stable symbiosis with a fungal mycobiont, creating a composite thallus. Alone, as allies, they lack the protective fungal cortex and cannot form the complex, multicellular structures characteristic of lichens."
+        "question": "Which allies commonly interact with sunburst lichens and firedots to form ecological networks?",
+        "answer": "Common allies include flame mosses (which help retain moisture), ember mushrooms (which aid spore dispersal), nitrogen-fixing cyanobacteria, and detritivorous springtails; together, they establish a resilient community on exposed substrates."
       }
     ]
   },
@@ -764,21 +729,21 @@
     "name": "Stonewall Rim Lichen",
     "species": "Protoparmeliopsis",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570933864/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/20724471/medium.jpg"
     ],
     "description": "Fun Fact! It's a Stonewall Rim Lichen",
     "prompts": [
       {
-        "question": "What are the key identification features of the Stonewall Rim Lichen?",
-        "answer": "Stonewall Rim Lichen (Rhizocarpon stonewallense) is a crustose lichen characterized by a pale gray to greenish thallus that forms small, round areoles with distinct black rims. Its apothecia are black and round, often centrally located within each areole, giving it a 'rimmed' appearance."
+        "question": "What are the key identifying characteristics of Stonewall Rim Lichen?",
+        "answer": "Stonewall Rim Lichen is a crustose lichen with a pale green to gray thallus that forms discrete, irregular patches on rock. Its most distinctive feature is a thin, dark brown to black marginal rim around each patch, formed by densely packed fungal hyphae and reproductive structures called apothecia."
       },
       {
-        "question": "In what habitat and geographic range is the Stonewall Rim Lichen most commonly found?",
-        "answer": "Stonewall Rim Lichen is most commonly found on exposed sandstone cliffs and rimrock ledges in arid to semi-arid regions of the southwestern United States, particularly in Utah and Arizona at elevations between 1,200 and 2,200 meters."
+        "question": "In which type of habitat is Stonewall Rim Lichen most commonly found?",
+        "answer": "Stonewall Rim Lichen typically colonizes exposed calcareous and siliceous rock surfaces in open, sunny locations. It is most abundant on cliff faces, rocky outcrops, and historic stone walls in semi-arid to temperate regions with low air pollution."
       },
       {
-        "question": "Why is the Stonewall Rim Lichen ecologically significant and what threats does it face?",
-        "answer": "Stonewall Rim Lichen contributes to rock weathering and nutrient cycling by breaking down mineral substrates and fixing atmospheric nitrogen. As a bioindicator, it signals air quality and microclimate changes. Threats include air pollution, physical disturbance from rock climbing, and habitat alteration due to development."
+        "question": "What ecological roles does Stonewall Rim Lichen play in its environment?",
+        "answer": "Stonewall Rim Lichen acts as a pioneer species, contributing to rock weathering and soil formation by secreting organic acids. It also serves as a bioindicator of air quality, provides microhabitats for invertebrates, and participates in nutrient cycling through its symbiotic relationship between fungus and photosynthetic algae."
       }
     ]
   },
@@ -786,22 +751,21 @@
     "name": "Emerald-bottle Flies",
     "species": "Calliphorinae",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570934946/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570934968/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/112519524/medium.jpg"
     ],
     "description": "Fun Fact! It's a Emerald-bottle Flies",
     "prompts": [
       {
-        "question": "What is the scientific name of the emerald-bottle fly?",
-        "answer": "The emerald-bottle fly is scientifically known as Lucilia sericata."
+        "question": "What are the identifying characteristics of Emerald-bottle Flies?",
+        "answer": "Emerald-bottle Flies (Lucilia sericata) are distinguished by their bright metallic green bodies, clear wings, and red or orange eyes. Adults measure about 8\u201310 mm long and often exhibit a golden sheen under sunlight."
       },
       {
-        "question": "What role do emerald-bottle flies play in forensic science?",
-        "answer": "Emerald-bottle flies are used in forensic entomology to estimate post-mortem intervals, as their predictable life cycle stages on carrion help determine time of death."
+        "question": "What is the life cycle of an Emerald-bottle Fly?",
+        "answer": "The life cycle includes four stages: egg, larva (maggot), pupa, and adult. Females lay eggs on decaying matter; larvae hatch in 8\u201324 hours and feed for 3\u201310 days before pupating in soil. Adults emerge after 6\u201314 days, depending on temperature."
       },
       {
-        "question": "How long does the life cycle of an emerald-bottle fly typically take?",
-        "answer": "In warm conditions, the life cycle of Lucilia sericata\u2014from egg to adult\u2014can be completed in about 10 to 21 days."
+        "question": "How are Emerald-bottle Flies used in forensic investigations?",
+        "answer": "Forensic entomologists use them to estimate postmortem intervals because their predictable colonization of decomposing remains and temperature-dependent development rates allow for accurate calculations of time since death."
       }
     ]
   },
@@ -809,22 +773,21 @@
     "name": "Rosemary Beetle",
     "species": "Taeniochrysea",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570933687/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570933709/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/2879513/medium.jpg"
     ],
     "description": "Fun Fact! It's a Rosemary Beetle",
     "prompts": [
       {
-        "question": "What are the identifying features of a rosemary beetle?",
-        "answer": "The rosemary beetle (Chrysolina americana) is a small metallic beetle, about 5\u20138 mm long, with iridescent green and purple stripes across its wing covers and a metallic blue-green head and thorax."
+        "question": "What is a rosemary beetle and where is it commonly found?",
+        "answer": "The rosemary beetle (Chrysolina americana) is a small, metallic green and purple-striped leaf beetle. Despite its species name 'americana,' it originates from the Mediterranean region and is now commonly found across Europe, North America, and other temperate regions, where it feeds on aromatic herbs such as rosemary, lavender, thyme, and sage."
       },
       {
-        "question": "What kind of damage does the rosemary beetle cause to garden plants?",
-        "answer": "Rosemary beetles feed on aromatic members of the mint family, such as rosemary, lavender, thyme, and oregano. Adults and larvae chew small holes in leaves, leading to defoliation, stunted growth, and reduced vigor in heavily infested plants."
+        "question": "How can I identify damage caused by a rosemary beetle on my herb plants?",
+        "answer": "Damage from rosemary beetles appears as notches and holes in the leaves of rosemary, lavender, thyme, and other aromatic herbs. Heavy infestations can lead to stripped foliage, stunted growth, and browning of new shoots. You may also spot adult beetles or their larvae feeding on the undersides of leaves."
       },
       {
-        "question": "How can I control or manage a rosemary beetle infestation?",
-        "answer": "Control methods include handpicking adults and larvae, shaking beetles into soapy water, pruning off heavily damaged foliage, and applying organic insecticidal soap or neem oil. Encouraging natural predators like birds and predatory insects can also help reduce population levels."
+        "question": "What are effective methods for controlling a rosemary beetle infestation?",
+        "answer": "Handpicking adults and larvae off plants and dropping them into soapy water is effective for small infestations. Encourage natural predators like ladybugs and parasitic wasps. For severe outbreaks, apply an insecticidal soap or neem oil spray directly to affected foliage, ensuring coverage on leaf undersides. Rotate herbs and maintain plant health to reduce beetle attractiveness."
       }
     ]
   },
@@ -832,22 +795,21 @@
     "name": "European Robin",
     "species": "Erithacus",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570934898/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570934918/square.jpg"
+      "https://static.inaturalist.org/photos/331946615/medium.jpeg"
     ],
     "description": "Fun Fact! It's a European Robin",
     "prompts": [
       {
-        "question": "What does the European Robin primarily eat?",
-        "answer": "The European Robin feeds mainly on insects and other invertebrates such as worms, spiders, and beetles, supplemented with berries and seeds, especially during the colder months when insects are scarce."
+        "question": "What distinctive feature helps to identify a European Robin?",
+        "answer": "The European Robin is easily identified by its bright orange-red breast and face, contrasted with a grey-brown back and wings."
       },
       {
-        "question": "How can you identify a European Robin in the wild?",
-        "answer": "The European Robin is easily recognized by its bright orange-red breast and face, contrasted with a grey-brown back and white belly. It also has a round body shape, upright posture, and a short, thin bill."
+        "question": "Where does the European Robin typically build its nest?",
+        "answer": "European Robins usually build their nests in sheltered sites such as dense shrubs, tree cavities, hedges, or even in garden sheds and flower pots."
       },
       {
-        "question": "Where and how does the European Robin typically build its nest?",
-        "answer": "European Robins build a cup-shaped nest close to the ground in dense vegetation, tree roots, or cavities, using materials like moss, leaves, and grass, and lining it with hair or feathers. They usually raise two to three broods of four to six eggs each per year."
+        "question": "What does the diet of a European Robin mainly consist of?",
+        "answer": "The European Robin's diet mainly includes insects, spiders, worms, and berries, with insects making up the majority of its food especially during the breeding season."
       }
     ]
   },
@@ -855,21 +817,21 @@
     "name": "Tiny Button Lichen",
     "species": "Amandinea",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570933112/square.jpg"
+      "https://static.inaturalist.org/photos/32304041/medium.jpg"
     ],
     "description": "Fun Fact! It's a Tiny Button Lichen",
     "prompts": [
       {
-        "question": "What are the distinguishing features of Tiny Button Lichen?",
-        "answer": "Tiny Button Lichen has a minute, button-shaped thallus typically 0.5\u20131.5 mm across, a pale green to gray surface, and tiny black apothecia at the center that release spores for reproduction."
+        "question": "What is the Tiny Button Lichen and what are its key features?",
+        "answer": "Tiny Button Lichen is a crustose lichen formed by a fungal partner and a photosynthetic alga. It grows as tiny circular patches, typically 0.5\u20132 mm across, with a pale gray to greenish thallus and distinctive button-like apothecia (fruiting bodies) that are flat to slightly convex and often darker than the surrounding tissue."
       },
       {
-        "question": "In which habitats is Tiny Button Lichen commonly found?",
-        "answer": "It is often found on exposed, nutrient-poor surfaces such as bare rock, compacted soil, and tree bark in temperate to arid regions, favoring sunny, well-drained microhabitats."
+        "question": "In what habitats does the Tiny Button Lichen thrive?",
+        "answer": "Tiny Button Lichen is most often found on the bark of deciduous trees, on exposed rocks, and occasionally on soil or man-made structures. It prefers well-lit, humid environments with moderate air circulation and slightly acidic substrates, such as woodland edges, open forests, and shaded urban walls."
       },
       {
-        "question": "What ecological roles does Tiny Button Lichen play in its environment?",
-        "answer": "Tiny Button Lichen helps stabilize soil and rock surfaces, contributes to nutrient cycling by fixing atmospheric nitrogen through its algal partner, and provides microhabitat and food for small invertebrates."
+        "question": "How does the Tiny Button Lichen reproduce and spread?",
+        "answer": "Tiny Button Lichen reproduces both sexually and asexually. Sexual reproduction occurs when spores are produced in the apothecia and dispersed by wind or rain. Asexual reproduction involves vegetative propagules such as soredia or isidia, which contain both fungal and algal cells and can establish new colonies when they settle on a suitable substrate."
       }
     ]
   },
@@ -877,22 +839,21 @@
     "name": "Angulate and Roundshouldered Orbweavers",
     "species": "Araneinae",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570933143/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570933007/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/322401633/medium.png"
     ],
     "description": "Fun Fact! It's a Angulate and Roundshouldered Orbweavers",
     "prompts": [
       {
-        "question": "What morphological features distinguish the Angulate Orbweaver from the Roundshouldered Orbweaver?",
-        "answer": "The Angulate Orbweaver (Araneus angulatus) has a flattened, angular abdomen with pronounced lateral edges and a mottled gray-brown pattern, whereas the Roundshouldered Orbweaver (Hypsosinga rubens) has a more domed, evenly rounded abdomen often colored reddish or yellowish with subtle markings; additionally, the Angulate\u2019s legs are robust with dark banding, while the Roundshouldered\u2019s legs are more slender and uniformly colored."
+        "question": "What are the key physical characteristics of the Angulate Orbweaver?",
+        "answer": "The Angulate Orbweaver (Verrucosa arenata) is a small spider (5\u20137 mm body length) with a distinctly flat, angular abdomen. It typically has a white dorsal arrow or diamond-shaped marking on a rust-red or brown background, and its legs are banded with light and dark segments."
       },
       {
-        "question": "In which habitats are Angulate and Roundshouldered Orbweavers most commonly encountered?",
-        "answer": "Angulate Orbweavers are typically found in sunny forest edges, gardens, and shrublands across Europe and western Asia, building webs in open, lightly wooded areas; Roundshouldered Orbweavers prefer grassy meadows, low herbaceous vegetation, and agricultural fields in North America and Europe, often constructing their webs closer to the ground among tall grasses."
+        "question": "How does the Roundshouldered Orbweaver differ in appearance from the Angulate Orbweaver?",
+        "answer": "The Roundshouldered Orbweaver has a more convex, dome-shaped abdomen without pronounced angles. Its coloration ranges from tan to dark brown, often with subtle mottling or pale spots. It is slightly larger (7\u201310 mm) and its legs appear stouter and less banded than those of the Angulate Orbweaver."
       },
       {
-        "question": "How do the web architectures of Angulate and Roundshouldered Orbweavers differ?",
-        "answer": "Angulate Orbweavers build large, vertical orb webs up to 70 cm in diameter with tightly spaced sticky spirals and strong radial threads to capture fast-flying insects, suspended between tree branches; Roundshouldered Orbweavers construct smaller, more loosely woven orb webs (20\u201330 cm across) with wider spiral spacing and often include a tangled retreat of silk at the web\u2019s edge where the spider hides during the day."
+        "question": "In what habitats are Angulate and Roundshouldered Orbweavers typically found, and do their web-building behaviors differ?",
+        "answer": "Angulate Orbweavers prefer low shrubs and grasses in sunny meadows or forest edges and build small orb webs low to the ground. Roundshouldered Orbweavers are often found on porches, tree trunks, and under eaves in shaded areas; they construct larger, more vertically oriented webs and may rebuild nightly."
       }
     ]
   },
@@ -900,22 +861,21 @@
     "name": "Inflated Beard",
     "species": "Usnea",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932914/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932986/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/247344952/medium.jpeg"
     ],
     "description": "Fun Fact! It's a Inflated Beard",
     "prompts": [
       {
-        "question": "What is an inflated beard?",
-        "answer": "An inflated beard is a styling technique where the facial hair is fluffed and lifted to create extra volume and fullness, often using blow\u2010drying and specialized beard products."
+        "question": "What is an inflated beard and how is it typically used?",
+        "answer": "An inflated beard is a novelty accessory made of lightweight, airtight material that can be blown up with air to resemble a full, bushy beard. It is often used for theatrical performances, costume parties, photo booths, and humorous pranks."
       },
       {
-        "question": "How do you achieve an inflated beard at home?",
-        "answer": "Start with a towel\u2010dried beard, apply a volumizing beard mousse or sea salt spray, then use a hair dryer with a diffuser attachment on low heat while brushing the beard upward and outward to build volume."
+        "question": "How do you safely inflate and wear an inflated beard?",
+        "answer": "To safely inflate an inflated beard, use a small hand pump or simply blow air into the built-in valve until the beard reaches the desired fullness without overfilling. Secure the beard under your chin or around your head using the adjustable elastic straps, making sure it sits comfortably and does not obstruct your breathing or vision."
       },
       {
-        "question": "What products help maintain an inflated beard style?",
-        "answer": "Use a light hold beard wax or balm to keep hairs in place, a volumizing dry shampoo to absorb excess oil, and finish with a fine mist of beard hairspray for all\u2010day lift and definition."
+        "question": "What care and storage practices keep an inflated beard in good condition?",
+        "answer": "After use, fully deflate the beard by gently pressing on the valve to release air. Wipe the surface with a damp cloth and mild soap if needed, then allow it to air dry. Once clean and dry, fold it loosely, store it in a cool, dry place away from sharp objects, and avoid prolonged exposure to direct sunlight or heat sources."
       }
     ]
   },
@@ -923,22 +883,21 @@
     "name": "Inelegant Strap Lichen",
     "species": "Ramalina",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932878/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932907/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/242529/medium.jpg"
     ],
     "description": "Fun Fact! It's a Inelegant Strap Lichen",
     "prompts": [
       {
-        "question": "What are the key morphological features of the Inelegant Strap Lichen?",
-        "answer": "The Inelegant Strap Lichen (Hypotrachyna inelegans) has a foliose, strap-like thallus up to 10 cm across, with lobes 2\u20136 mm wide. The upper surface is gray-green and matte, often cracked or wrinkled, while the lower surface is pale to whitish with sparse rhizines. Apothecia, when present, appear as small, brownish discs on the lobe margins."
+        "question": "What are the key morphological characteristics of the Inelegant Strap Lichen?",
+        "answer": "The Inelegant Strap Lichen has a foliose, strap-like thallus up to 10 cm across, with broad, irregular lobes 1\u20133 cm wide. Its upper surface is dull gray-brown and slightly wrinkled, lacking a pronounced cortex sheen. The lower surface is white to pale tan with sparse rhizines. No distinct reproductive structures are visible without magnification."
       },
       {
-        "question": "In what habitats is the Inelegant Strap Lichen commonly found?",
-        "answer": "This lichen typically grows on the bark of deciduous and conifer trees in temperate forests, favoring shaded, humid environments. It can also colonize mossy rocks and shaded stone walls, usually at elevations from sea level up to 1,500 meters, where air quality remains relatively unpolluted."
+        "question": "In what habitats is the Inelegant Strap Lichen most commonly found?",
+        "answer": "This lichen prefers shaded, humid environments on the bark of mature deciduous trees, especially maple and oak. It also occurs on sheltered rock faces in temperate forests. It thrives in areas with clean air and stable humidity, often in old-growth or minimally disturbed woodlands."
       },
       {
-        "question": "What ecological role does the Inelegant Strap Lichen play in its environment?",
-        "answer": "The Inelegant Strap Lichen contributes to nutrient cycling by fixing atmospheric nitrogen and slowly releasing it into the substrate. It provides microhabitats for invertebrates and serves as an indicator of clean air, since it is sensitive to sulfur dioxide and heavy metal pollution."
+        "question": "What ecological roles and sensitivity to environmental factors does the Inelegant Strap Lichen exhibit?",
+        "answer": "The Inelegant Strap Lichen contributes to nutrient cycling by capturing moisture and trapping airborne particles. It provides microhabitat for invertebrates and algae. It is sensitive to sulfur dioxide and nitrogen pollution, making it a reliable bioindicator of air quality; populations decline sharply in areas with elevated industrial emissions."
       }
     ]
   },
@@ -946,21 +905,21 @@
     "name": "Asian Lady Beetle",
     "species": "Harmonia",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932909/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/452640195/medium.jpg"
     ],
     "description": "Fun Fact! It's a Asian Lady Beetle",
     "prompts": [
       {
-        "question": "What characteristics help identify an Asian Lady Beetle (Harmonia axyridis)?",
-        "answer": "The Asian Lady Beetle is identifiable by its dome-shaped, oval body ranging from orange to red, with 0\u201322 distinct black spots on its elytra. A key feature is the M- or W-shaped black marking on the pronotum (the area behind the head). Size typically ranges from 5 to 8 mm in length."
+        "question": "What distinguishing features help identify the Asian lady beetle compared to native ladybug species?",
+        "answer": "Asian lady beetles (Harmonia axyridis) vary in color from yellow to red and can have 0 to 22 black spots. They often display a distinctive 'M' or 'W' shaped marking on the pronotum (the area behind the head), which native ladybugs typically lack."
       },
       {
-        "question": "Why are Asian Lady Beetles considered invasive in many regions?",
-        "answer": "Asian Lady Beetles are invasive because they outcompete native lady beetle species for food and habitat. They have a broad diet, high reproductive rate, and can survive in a variety of climates, allowing them to establish large populations that disrupt local ecosystems."
+        "question": "Why were Asian lady beetles introduced to North America and Europe?",
+        "answer": "They were deliberately introduced as a biological control agent to manage aphid and scale insect populations in agricultural and horticultural settings because of their voracious appetite for these pests."
       },
       {
-        "question": "What methods can be used to control or prevent Asian Lady Beetles from entering homes?",
-        "answer": "To prevent Asian Lady Beetles from entering homes, seal cracks around windows, doors, and utility openings with caulk or weatherstripping. Use fine-mesh screens on vents and keep doors closed when not in use. If beetles do enter, vacuuming them up and disposing of the bag outdoors is an effective, chemical-free removal method."
+        "question": "How do Asian lady beetles affect local ecosystems and human dwellings?",
+        "answer": "While beneficial in reducing pest insects, Asian lady beetles can outcompete native ladybug species, reducing biodiversity. In autumn, they often seek shelter indoors to overwinter, becoming nuisance pests by emitting a foul odor and sometimes staining walls."
       }
     ]
   },
@@ -968,22 +927,21 @@
     "name": "Thin-legged Wolf Spiders",
     "species": "Pardosinae",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932650/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932679/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/305803027/medium.jpg"
     ],
     "description": "Fun Fact! It's a Thin-legged Wolf Spiders",
     "prompts": [
       {
-        "question": "What physical traits distinguish thin-legged wolf spiders from other wolf spider species?",
-        "answer": "Thin-legged wolf spiders have notably elongated, slender legs compared to typical wolf spiders. Their bodies are usually smaller and more delicate, with a flattened carapace and muted brown or gray coloration that helps them blend into grass and leaf litter."
+        "question": "What are the defining physical characteristics of Thin-legged Wolf Spiders?",
+        "answer": "Thin-legged Wolf Spiders have notably elongated, slender legs compared to other wolf spiders, a compact, mottled brown body with distinct dorsal stripes, and strong, spiny legs that support their agile, ground-running hunting style."
       },
       {
-        "question": "How do thin-legged wolf spiders hunt and capture their prey?",
-        "answer": "Like other wolf spiders, thin-legged wolf spiders are active, ground-dwelling hunters. They stalk or ambush prey rather than spinning webs, using their long legs for rapid bursts of speed to pounce on insects and other small arthropods."
+        "question": "In what types of habitats are Thin-legged Wolf Spiders commonly found?",
+        "answer": "They are typically found in open, dry habitats such as grasslands, sandy riverbanks, rocky outcrops, and sparse woodlands, where they can shelter under stones, leaf litter, or low vegetation during the day and hunt at night."
       },
       {
-        "question": "In what types of habitats are thin-legged wolf spiders most commonly found?",
-        "answer": "Thin-legged wolf spiders prefer open, grassy areas such as meadows, fields, and woodland edges. They favor habitats with ample ground cover and leaf litter, which provide hiding spots for both hunting and protection from predators."
+        "question": "How do Thin-legged Wolf Spiders hunt and capture their prey?",
+        "answer": "Unlike web-building spiders, Thin-legged Wolf Spiders are active nocturnal hunters that rely on speed and keen eyesight. They stalk or ambush insects, then sprint and pounce on their prey, using their powerful front legs to subdue it."
       }
     ]
   },
@@ -991,22 +949,21 @@
     "name": "beard lichens",
     "species": "Parmelioideae",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932431/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932449/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/51120844/medium.jpg"
     ],
     "description": "Fun Fact! It's a beard lichens",
     "prompts": [
       {
-        "question": "What are beard lichens?",
-        "answer": "Beard lichens are fruticose lichens in the genus Usnea, characterized by their hair-like, pendulous growth on tree branches in moist, shaded forests."
+        "question": "What are beard lichens and how do they form?",
+        "answer": "Beard lichens, commonly called old man's beard, are fruticose lichens of the genus Usnea. They form from a symbiotic partnership between a fungus (mycobiont) and a photosynthetic partner (photobiont), usually green algae. The fungus provides structure and protection, while the algae produce energy through photosynthesis."
       },
       {
-        "question": "What environmental conditions do beard lichens need to grow?",
-        "answer": "They require clean air, high humidity, and shaded habitats\u2014often thriving on mature trees in old-growth forests with minimal air pollution."
+        "question": "How can you identify beard lichens in the wild?",
+        "answer": "Beard lichens appear as hanging, hair-like tufts on tree branches and twigs. They are pale green to gray, have a distinct central elastic cord inside each strand, and often sway in the breeze. Gentle pulling reveals the elastic central core that distinguishes Usnea from other mosses or lichen types."
       },
       {
-        "question": "How can you identify beard lichens when hiking?",
-        "answer": "Look for pale green to grayish strands hanging from tree limbs. When gently stretched, they reveal a central elastic cord, distinguishing them from mosses or algae."
+        "question": "What ecological roles do beard lichens play in forest ecosystems?",
+        "answer": "Beard lichens serve as sensitive bioindicators of air quality, accumulating pollutants like sulfur dioxide. They fix atmospheric nitrogen, enriching nutrient-poor environments. Additionally, they provide habitat and nesting material for birds and invertebrates, and contribute to moisture retention in forest canopies."
       }
     ]
   },
@@ -1014,21 +971,21 @@
     "name": "Hairy-footed Flower Bee",
     "species": "Anthophora",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932238/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/118265119/medium.jpg"
     ],
     "description": "Fun Fact! It's a Hairy-footed Flower Bee",
     "prompts": [
       {
-        "question": "What is a hairy-footed flower bee?",
-        "answer": "The hairy-footed flower bee (Anthophora plumipes) is a solitary bee species known for the dense tufts of hairs on its legs, which it uses to collect and transport pollen."
+        "question": "What is the scientific name of the Hairy-footed Flower Bee?",
+        "answer": "The scientific name of the Hairy-footed Flower Bee is Anthophora plumipes."
       },
       {
-        "question": "Where is the hairy-footed flower bee commonly found?",
-        "answer": "This bee is widespread across Europe and parts of western Asia, often nesting in sandy soils, cliffs, and sunny banks in gardens and natural habitats."
+        "question": "What distinctive feature gives the Hairy-footed Flower Bee its common name?",
+        "answer": "Males have dense, brush-like tufts of long hairs on their front legs that they use to collect and display pollen, giving rise to the name 'hairy-footed'."
       },
       {
-        "question": "What unique adaptation helps the hairy-footed flower bee gather pollen?",
-        "answer": "It has specialized scopal hairs on its hind legs that form dense brushes, allowing it to efficiently pack and carry large amounts of pollen back to its nest."
+        "question": "Where do Hairy-footed Flower Bees typically build their nests?",
+        "answer": "They excavate burrows in bare or sparsely vegetated soil banks, clay banks, or compacted earth, often in sunny locations."
       }
     ]
   },
@@ -1036,24 +993,21 @@
     "name": "Honey Bees",
     "species": "Apini",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932083/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932109/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932123/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932142/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/70685498/medium.jpeg"
     ],
     "description": "Fun Fact! It's a Honey Bees",
     "prompts": [
       {
-        "question": "What is the primary role of worker honey bees in a colony?",
-        "answer": "Worker honey bees perform tasks such as foraging for nectar and pollen, caring for the brood, maintaining the hive, and defending the colony."
+        "question": "What is the primary role of worker honey bees in the hive?",
+        "answer": "Worker honey bees perform tasks such as foraging for nectar and pollen, feeding larvae, cleaning the hive, producing wax, and guarding the colony."
       },
       {
-        "question": "How do honey bees communicate the location of a food source to other members of the hive?",
-        "answer": "Honey bees use the waggle dance, a series of movements that convey distance and direction relative to the sun, to inform nestmates about the location of food sources."
+        "question": "How do honey bees communicate the location of a rich nectar source to their hive mates?",
+        "answer": "Honey bees use the waggle dance: a series of movements on the comb that indicate the direction and distance to a nectar source relative to the sun's position."
       },
       {
-        "question": "What substance do honey bees produce from nectar, and what is its primary purpose?",
-        "answer": "Honey bees convert collected nectar into honey, which serves as a carbohydrate-rich food reserve for the colony, especially during winter months."
+        "question": "What substance do honey bees produce and store as their main food reserve?",
+        "answer": "Honey bees produce honey by converting nectar with enzymes, then drying and storing it in wax cells as a long-term carbohydrate food reserve."
       }
     ]
   },
@@ -1061,22 +1015,21 @@
     "name": "Bumble Bees",
     "species": "Bombini",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932153/square.jpg",
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932778/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/6812/medium.jpg"
     ],
     "description": "Fun Fact! It's a Bumble Bees",
     "prompts": [
       {
-        "question": "What role do bumble bees play in pollination?",
-        "answer": "Bumble bees are important pollinators for many wildflowers and agricultural crops. Their large bodies and dense hairs pick up pollen efficiently, and they can perform buzz pollination by vibrating flowers to release pollen that other bees cannot access."
+        "question": "What distinguishes bumble bees from honey bees?",
+        "answer": "Bumble bees are generally larger, fuzzier, and more robust than honey bees. They have a rounder body covered in dense hairs, allowing them to forage in cooler temperatures. Unlike honey bees, bumble bee colonies are smaller (usually 50\u2013400 workers) and annual, with new queens starting fresh nests each spring."
       },
       {
-        "question": "How do bumble bees generate heat to survive in cold climates?",
-        "answer": "Bumble bees shiver their flight muscles without moving their wings to generate heat. This endothermic behavior allows them to raise their body temperature and remain active in cooler temperatures, even early in the spring or at high altitudes."
+        "question": "How do bumble bees regulate nest temperature?",
+        "answer": "Bumble bees thermoregulate by shivering their flight muscles to generate heat, maintaining an optimal nest temperature of about 30\u201335\u00b0C (86\u201395\u00b0F). They can also fan their wings to cool the nest when it gets too hot, ensuring brood development remains stable despite external temperature fluctuations."
       },
       {
-        "question": "How can you distinguish a bumble bee from a honey bee?",
-        "answer": "Bumble bees are generally larger and more robust than honey bees, with a rounder, fuzzy appearance and distinct color bands on their abdomen. Honey bees are smaller, have slimmer bodies, and their hair is less dense, giving them a smoother look."
+        "question": "Why are bumble bees important pollinators?",
+        "answer": "Bumble bees are vital pollinators due to their ability to perform buzz pollination, vibrating flowers to release pollen that other bees cannot access. They visit a wide variety of crops (tomatoes, peppers, blueberries) and wildflowers, significantly boosting fruit set and ecosystem biodiversity."
       }
     ]
   },
@@ -1084,21 +1037,21 @@
     "name": "typical shield lichens",
     "species": "Parmeliaceae",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570932045/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/76536882/medium.jpg"
     ],
     "description": "Fun Fact! It's a typical shield lichens",
     "prompts": [
       {
-        "question": "What is a shield lichen?",
-        "answer": "A shield lichen is a type of foliose lichen in the genus Parmelia, characterized by a broad, flat thallus with lobed margins resembling a warrior\u2019s shield. It is a symbiotic organism composed of a fungal partner and photosynthetic algae or cyanobacteria."
+        "question": "What are the defining characteristics of a typical shield lichen?",
+        "answer": "A typical shield lichen (genus Umbilicaria) has a circular, foliose thallus 1\u20135 cm across, attached to rock by a single central holdfast (umbilicus). The upper surface is smooth to slightly wrinkled, often dark olive to black, while the underside is paler, with rhizines or hair-like structures that aid attachment."
       },
       {
-        "question": "Where are shield lichens commonly found?",
-        "answer": "Shield lichens typically grow on the bark of deciduous and coniferous trees, as well as on exposed rock surfaces in temperate and boreal forests. They prefer clean air environments and are often indicators of good air quality."
+        "question": "In which habitats are typical shield lichens most commonly found?",
+        "answer": "Shield lichens favor exposed siliceous rock surfaces in alpine, arctic and other boreal environments. They tolerate extreme temperature and UV fluctuations and are often found on cliff faces, boulders and high-elevation peaks where few other organisms can survive."
       },
       {
-        "question": "How do shield lichens reproduce and spread?",
-        "answer": "Shield lichens reproduce both sexually and asexually. Sexually, they produce fungal spores in disk-shaped fruiting bodies called apothecia. Asexually, they disperse tiny vegetative propagules called soredia or isidia, which contain both fungal and algal cells to establish new lichen thalli."
+        "question": "How do shield lichens reproduce and disperse?",
+        "answer": "Shield lichens reproduce sexually by producing apothecia\u2014disk-shaped fruiting bodies\u2014that release fungal spores. They also propagate asexually via soredia or isidia, which are tiny fragments of thallus containing both fungal and algal partners; these disperse by wind or rain splash and establish new colonies on suitable rock."
       }
     ]
   },
@@ -1106,21 +1059,21 @@
     "name": "greenshield lichens",
     "species": "Parmelioideae",
     "images": [
-      "https://inaturalist-open-data.s3.amazonaws.com/photos/570931870/square.jpg"
+      "https://inaturalist-open-data.s3.amazonaws.com/photos/69730570/medium.jpeg"
     ],
     "description": "Fun Fact! It's a greenshield lichens",
     "prompts": [
       {
-        "question": "What is a green shield lichen and where is it commonly found?",
-        "answer": "Green shield lichen (Flavoparmelia caperata) is a foliose lichen with a leafy, yellow-green thallus. It is commonly found on bark and rock surfaces in temperate regions of North America and Europe, favoring humid, shaded environments."
+        "question": "What is a green shield lichen?",
+        "answer": "Green shield lichen (Flavoparmelia caperata) is a foliose lichen characterized by a leafy, greenish thallus with a smooth upper surface and pale underside. It grows on tree bark, rocks, and man-made structures in temperate regions."
       },
       {
         "question": "How can you identify green shield lichen in the field?",
-        "answer": "Green shield lichen can be identified by its wrinkled, shield-shaped lobes up to 5 cm across, a smooth, glossy upper surface that is olive-green to yellow-green, and a pale, powdery lower surface with simple rhizines attaching it to the substrate."
+        "answer": "You can identify green shield lichen by its broad, overlapping lobes, bright green color when wet, and pale yellow-green when dry. It lacks fruiting bodies on the surface and has powdery soredia on the margins for reproduction."
       },
       {
-        "question": "What ecological role does green shield lichen play and why is it important?",
-        "answer": "Green shield lichen is an important bioindicator of air quality, as it is sensitive to sulfur dioxide and other pollutants. It also contributes to nutrient cycling by fixing carbon and providing habitat and food for small invertebrates in forest ecosystems."
+        "question": "What ecological roles do green shield lichens play?",
+        "answer": "Green shield lichens contribute to ecosystem health by fixing atmospheric nitrogen, providing microhabitats for invertebrates, and acting as bioindicators of air quality because they are sensitive to pollution."
       }
     ]
   }
