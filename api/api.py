@@ -1,5 +1,6 @@
 import base64
 import json
+import os
 
 API_BASE_URL = "https://api.inaturalist.org/v1"
 API_PROJECT_ID = "bournemouth-university-nature-hackathon-2025"
@@ -43,5 +44,5 @@ async def get_bug(bug):
 
 @app.get("/profile")
 async def profile():
-    with open("api/new_profiles.json") as f:
+    with open(os.environ["JSON_LOC"]) as f:
         return json.load(f)
