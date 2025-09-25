@@ -14,6 +14,7 @@
             <ButtonElement 
                 icon="heart_broken"
                 text="return home"
+                @click="handleReturnHome"
             />
         </div>
     </div>
@@ -33,6 +34,11 @@ export default {
             type: String,
             default: 'Name'
         }
+    },
+    methods: {
+        handleReturnHome() {
+            this.$router.push('/');
+        },
     }
 }
 </script>

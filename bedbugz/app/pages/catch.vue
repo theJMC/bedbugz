@@ -10,6 +10,7 @@
             <ButtonElement 
                 icon="favorite"
                 text="get chatting"
+                @click="handleGetChatting"
             />
         </div>
     </div>
@@ -23,6 +24,11 @@ export default {
     components: {
         ButtonElement,
         MatchComponent
+    },
+    methods: {
+        handleGetChatting() {
+            this.$router.push('/messages');
+        },
     }
 }
 </script>
