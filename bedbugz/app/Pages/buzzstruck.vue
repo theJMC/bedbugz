@@ -42,6 +42,15 @@ export default {
         const centerY = window.innerHeight / 2.3;
         this.explodeEmojis("good", centerX, centerY);
         this.name = localStorage.getItem("suitorName");
+
+        // Add unlocked suitor to localStorage
+        if (this.name) {
+            let unlocked = JSON.parse(localStorage.getItem('unlockedSuitors') || '[]');
+            if (!unlocked.includes(this.name)) {
+                unlocked.push(this.name);
+                localStorage.setItem('unlockedSuitors', JSON.stringify(unlocked));
+            }
+        }
     },
     methods: {
         handleReturnHome() {

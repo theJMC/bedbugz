@@ -49,15 +49,82 @@ export default {
   data() {
     return {
       selectedSuitorId: null,
-      suitors: Array.from({ length: 16 }, (_, i) => ({
-        id: i + 1,
-        name: `Suitor ${i + 1}`,
-        image: 'https://tse4.mm.bing.net/th/id/OIP.2Yp1BvzHL7251IUYAfkEUgHaEx?rs=1&pid=ImgDetMain&o=7&rm=3',
-        locked: (i % 3)-2 === 0,
-      })),
+      suitors: [],
+      currentPage: 1,
+      numOfPages: 1,
+      loading: false,
+      suitorIds: new Set(), // Track added IDs
     };
   },
+  async mounted() {
+    this.loading = true;
+    try {
+      await this.loadAllSuitors();
+    } catch (error) {
+      console.error('Failed to load suitors:', error);
+    }
+    this.loading = false;
+  },
   methods: {
+    ensureDefaultUnlocked() {
+      const defaultSuitors = [
+        "Hairy-footed Flower Bee",
+        "Rosemary Beetle",
+        "Common Flower Flies"
+      ];
+      let unlocked = JSON.parse(localStorage.getItem('unlockedSuitors') || '[]');
+      // Add defaults if missing
+      defaultSuitors.forEach(name => {
+        if (!unlocked.includes(name)) {
+          unlocked.push(name);
+        }
+      });
+      localStorage.setItem('unlockedSuitors', JSON.stringify(unlocked));
+    },
+    isUnlocked(name) {
+      const unlocked = JSON.parse(localStorage.getItem('unlockedSuitors') || '[]');
+      return unlocked.includes(name);
+    },
+    async loadAllSuitors() {
+      this.ensureDefaultUnlocked();
+      this.suitors = [];
+      let allProfiles = [];
+      let seenNames = [];
+      let page = 1;
+      let numOfPages = 1;
+
+      while (page <= numOfPages) {
+        const response = await fetch(`https://api.bedbugz.uk/profile/${page}`);
+        const data = await response.json();
+        const profiles = data.results || data.profiles || [];
+        numOfPages = data.num_of_pages || 1;
+
+        profiles.forEach((profile) => {
+          if (profile.name && !seenNames.includes(profile.name)) {
+            allProfiles.push(profile);
+            seenNames.push(profile.name);
+          }
+        });
+
+        page += 1;
+      }
+
+      // Map profiles to suitor objects
+      let suitorObjs = allProfiles.map((profile, idx) => ({
+        id: profile.name,
+        name: profile.name,
+        image: profile.images?.[0] || 'https://via.placeholder.com/150',
+        locked: !this.isUnlocked(profile.name),
+      }));
+
+      // Sort so unlocked suitors come first
+      suitorObjs.sort((a, b) => {
+        if (a.locked === b.locked) return 0;
+        return a.locked ? 1 : -1;
+      });
+
+      this.suitors = suitorObjs;
+    },
     selectSuitor(suitor) {
       if (!suitor.locked) {
         this.selectedSuitorId = suitor.id;
