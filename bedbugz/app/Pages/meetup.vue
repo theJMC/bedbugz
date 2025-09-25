@@ -14,6 +14,7 @@
     <ButtonElement 
       icon="camera"
       class="camera-button-style"
+      @click="handleCameraClick"
     />
   
     <div class="hint-content">
@@ -33,13 +34,17 @@
   
   export default {
   components: {
-  ButtonElement,
+    ButtonElement,
+  },
+  methods: {
+    handleCameraClick() {
+      this.$router.push('/gift');
+    }
   }
   }
   </script>
   
   <style scoped>
-  
   .meetup-page {
     display: flex;
     flex-direction: column;
