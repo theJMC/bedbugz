@@ -1,9 +1,15 @@
 import base64
 import json
 
+API_BASE_URL = "https://api.inaturalist.org/v1"
+API_PROJECT_ID = "bournemouth-university-nature-hackathon-2025"
+API_CALL_LIMIT = 10
+
 from fastapi import FastAPI
 from openai import OpenAI
 from fastapi.middleware.cors import CORSMiddleware
+import requests as r
+
 client = OpenAI()
 app = FastAPI()
 
@@ -20,8 +26,12 @@ app.add_middleware(
         {'good': 'GOOD_RESPONSE','medium': 'MEDIUM_RESPONSE','bad': 'BAD_RESPONSE'}}"
 """
 
-@app.get("/{bug}")
-async def root(bug):
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+
+@app.get("/chat/{bug}")
+async def get_bug(bug):
     response = client.responses.create(
         model="o4-mini",
         input="Please generate 6 of the below response. You are pretending to be an insect bug on tinder. You are a [bug]. Please can you generate a message \
@@ -31,4 +41,7 @@ async def root(bug):
     result = json.loads(" ".join(response.output_text.split()))
     return result
 
-
+@app.get("/profile")
+async def profile():
+    with open("api/new_profiles.json") as f:
+        return json.load(f)

@@ -1,0 +1,362 @@
+[
+  [
+    {
+      "name": "Black-spotted Lady Beetles",
+      "species": "test",
+      "images": [
+        "https://static.inaturalist.org/photos/111876203/square.jpeg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What is the typical diet of Black-spotted Lady Beetles?",
+          "answer": "Black-spotted Lady Beetles primarily feed on soft-bodied pests such as aphids, mites, scale insects, whiteflies and small insect eggs, making them beneficial predators in gardens and agricultural fields."
+        },
+        {
+          "question": "How do Black-spotted Lady Beetles protect themselves from predators?",
+          "answer": "They use aposematic coloration to warn predators and can perform reflex bleeding, exuding hemolymph containing bitter-tasting alkaloids from their leg joints when threatened, deterring attackers."
+        },
+        {
+          "question": "What is the life cycle of Black-spotted Lady Beetles?",
+          "answer": "Black-spotted Lady Beetles undergo complete metamorphosis: females lay clusters of yellow eggs on leaves near prey, larvae hatch and pass through four instars over 2\u20133 weeks, then pupate for about a week, emerging as adults that live several months and often overwinter in sheltered sites."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Lady Beetles",
+      "species": "test",
+      "images": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/75979875/square.jpg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What do lady beetles primarily eat and how does their diet benefit garden plants?",
+          "answer": "Lady beetles mainly feed on aphids, scale insects, mites, and other soft-bodied pests. By consuming these harmful insects, they help protect garden plants from damage and reduce the need for chemical pesticides."
+        },
+        {
+          "question": "How many spots do lady beetles have and does the number of spots indicate their age?",
+          "answer": "The number of spots on a lady beetle varies by species and is fixed at adulthood. Spots do not indicate age; they are a species-specific trait used for identification."
+        },
+        {
+          "question": "What are the stages of a lady beetle's life cycle?",
+          "answer": "Lady beetles undergo complete metamorphosis consisting of four stages: egg, larva, pupa, and adult. This process typically takes 4 to 7 weeks, depending on temperature and food availability."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Seven-spotted Lady Beetle",
+      "species": "test",
+      "images": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/267168450/square.jpg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What is the scientific name of the Seven-spotted Lady Beetle?",
+          "answer": "The scientific name of the Seven-spotted Lady Beetle is Coccinella septempunctata. It belongs to the family Coccinellidae and the order Coleoptera."
+        },
+        {
+          "question": "How are the seven spots on a Seven-spotted Lady Beetle arranged?",
+          "answer": "The beetle has seven distinct black spots on its red elytra: three spots on each elytron (wing cover) plus one spot along the midline where the two elytra meet, giving a total of seven."
+        },
+        {
+          "question": "What ecological role does the Seven-spotted Lady Beetle play in agriculture?",
+          "answer": "The Seven-spotted Lady Beetle is a beneficial predator that feeds on aphids, scale insects, mites, and other soft-bodied pests. An adult can consume up to 50 aphids per day, helping to naturally control pest populations in crops and gardens."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Small White",
+      "species": "test",
+      "images": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/28420401/square.jpg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What is the scientific name of the Small White butterfly?",
+          "answer": "The scientific name of the Small White butterfly is Pieris rapae."
+        },
+        {
+          "question": "What types of plants do Small White caterpillars commonly feed on?",
+          "answer": "Small White caterpillars commonly feed on cruciferous plants such as cabbages, mustards, and broccoli."
+        },
+        {
+          "question": "How many generations of Small White butterflies are typically produced in a year?",
+          "answer": "In temperate regions, Small White butterflies usually produce two to three generations per year."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Bumble Bees",
+      "species": "test",
+      "images": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/6812/square.jpg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What physical characteristics distinguish bumble bees from honey bees?",
+          "answer": "Bumble bees are generally larger, more robust, and covered in dense, fuzzy hair (setae) with distinct black and yellow banding. They have rounder bodies and a more humped thorax compared to the slimmer, less hairy honey bees."
+        },
+        {
+          "question": "How do bumble bees perform buzz pollination and why is it important?",
+          "answer": "Bumble bees grasp a flower and vibrate their flight muscles at a specific frequency, shaking loose pollen from anthers in a process called buzz pollination. This technique is crucial for crops like tomatoes, peppers, and blueberries, which require vibration to release their pollen."
+        },
+        {
+          "question": "What nesting habits and colony sizes are typical of bumble bees?",
+          "answer": "Most bumble bee species build small underground or cavity nests, often in abandoned rodent burrows or grass tussocks. Colonies usually range from 50 to 400 individuals, much smaller than honey bee hives, and are annual\u2014dying off in winter except for a few fertilized queens."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Lumbricid Earthworms",
+      "species": "test",
+      "images": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/28279/square.jpg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What reproductive strategy do Lumbricid earthworms use?",
+          "answer": "Lumbricid earthworms are simultaneous hermaphrodites that exchange sperm with a partner and secrete a cocoon from the clitellum in which fertilized eggs develop."
+        },
+        {
+          "question": "How do Lumbricid earthworms enhance soil fertility?",
+          "answer": "By burrowing and ingesting organic matter, they aerate the soil, improve its structure, and produce nutrient\u2010rich casts that boost microbial activity and plant growth."
+        },
+        {
+          "question": "What environmental conditions are optimal for Lumbricid earthworms?",
+          "answer": "They prefer moist, well\u2010drained soils with neutral to slightly acidic pH, moderate temperatures (around 10\u201320 \u00b0C), and ample organic material for feeding."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Ichneumonid and Braconid Wasps",
+      "species": "test",
+      "images": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/22098248/square.jpg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What key morphological features distinguish Ichneumonid wasps from Braconid wasps?",
+          "answer": "Ichneumonid wasps (family Ichneumonidae) typically have a long, slender waist and more than 16 antennal segments. Their forewing has a distinctive vein 2m-cu. Braconid wasps (family Braconidae) usually have fewer antennal segments (up to 16) and lack vein 2m-cu in the forewing. Braconids often have a more compact body and a different metasomal tergite structure, with the first segment sometimes fused to the thorax."
+        },
+        {
+          "question": "How do the host ranges and parasitic strategies differ between Ichneumonid and Braconid wasps?",
+          "answer": "Ichneumonid wasps are predominantly koinobiont endoparasitoids, allowing the host to continue development while the wasp larva feeds internally. They parasitize a wide range of insect orders, especially Lepidoptera larvae. Braconid wasps exhibit both koinobiont and idiobiont strategies (the latter immediately immobilizing or killing the host). Braconids often target Coleoptera, Diptera, and Hemiptera, and some specialize on pest species like aphids or caterpillars."
+        },
+        {
+          "question": "What roles do Ichneumonid and Braconid wasps play in biological control?",
+          "answer": "Both families are valuable in integrated pest management. Braconid wasps such as Cotesia glomerata and Aphidius colemani are commercially used to control caterpillars and aphids, respectively. Ichneumonid wasps like Ophion species attack noctuid moth larvae in orchards. By parasitizing and regulating pest populations, these wasps reduce the need for chemical insecticides and help maintain ecological balance in agroecosystems."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Black Garden Ant",
+      "species": "test",
+      "images": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/129815566/square.jpg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What is the typical size range of a black garden ant worker?",
+          "answer": "Black garden ant workers typically measure between 3 and 5 millimeters in length."
+        },
+        {
+          "question": "How do black garden ants communicate with each other?",
+          "answer": "They communicate primarily through pheromone trails, which guide nestmates to food sources, and also by touching each other with their antennae."
+        },
+        {
+          "question": "What does the diet of a black garden ant consist of?",
+          "answer": "Black garden ants are omnivores: they feed on sugary substances like honeydew produced by aphids and also consume proteins from dead insects and other small invertebrates."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Common Carder Bumble Bee",
+      "species": "test",
+      "images": [
+        "https://static.inaturalist.org/photos/34380670/square.jpg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What is the scientific name of the Common Carder Bumble Bee?",
+          "answer": "The scientific name of the Common Carder Bumble Bee is Bombus pascuorum."
+        },
+        {
+          "question": "What distinguishing features help identify a Common Carder Bumble Bee?",
+          "answer": "Common Carder Bumble Bees have a uniformly ginger-brown thorax and abdomen without distinct black bands, and their hairs are relatively long and fluffy."
+        },
+        {
+          "question": "In what habitats are Common Carder Bumble Bees most commonly found?",
+          "answer": "They are most commonly found in grasslands, meadows, gardens, and hedgerows where plenty of flowering plants provide nectar and pollen."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Wolf Spiders",
+      "species": "test",
+      "images": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/491213904/square.png"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What physical features distinguish wolf spiders from other spider species?",
+          "answer": "Wolf spiders are characterized by their robust bodies, long legs, and distinctive eye arrangement: four small eyes in a row on the bottom, two large eyes in the middle, and two medium-sized eyes on top. Their coloration often includes brown, gray, or mottled patterns that provide camouflage."
+        },
+        {
+          "question": "Are wolf spiders dangerous to humans?",
+          "answer": "Wolf spiders are generally not dangerous to humans. While they can bite if threatened, their venom is mild and typically causes only minor pain, redness, and swelling. Severe reactions are rare and usually occur in people with allergies."
+        },
+        {
+          "question": "How do wolf spiders care for their offspring?",
+          "answer": "Female wolf spiders carry their egg sacs attached to their spinnerets until the eggs hatch. Once the spiderlings emerge, they climb onto their mother's abdomen and remain there for several days to weeks, gaining protection and mobility until they are ready to disperse."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Rollrims",
+      "species": "test",
+      "images": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/21188377/square.jpg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What are Rollrims wheels and how do they differ from standard alloy rims?",
+          "answer": "Rollrims wheels are a line of lightweight, forged aluminum rims featuring a proprietary roll-forming process for enhanced strength and reduced weight compared to cast alloy rims."
+        },
+        {
+          "question": "How should I maintain my Rollrims to ensure long\u2010term performance?",
+          "answer": "Clean Rollrims monthly with a pH-neutral wheel cleaner, avoid acidic detergents, inspect for curb damage, and apply a ceramic wheel sealant every 4\u20136 months for corrosion resistance."
+        },
+        {
+          "question": "Can Rollrims be fitted on any vehicle model?",
+          "answer": "Rollrims offers multiple bolt patterns, offsets, and diameters, making them compatible with most passenger cars and light trucks\u2014always verify the fitment chart for your specific vehicle."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Common Gilled Mushrooms and Allies",
+      "species": "test",
+      "images": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/7259109/square.jpg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What common edible gilled mushroom has a chocolate-brown spore print and is often sold in supermarkets?",
+          "answer": "The button mushroom (Agaricus bisporus) has a chocolate-brown spore print. You can identify it by its white cap that turns tan with age, free gills that change from pink to brown, and a mild odor."
+        },
+        {
+          "question": "How can you differentiate the false gills of the golden chanterelle from the true gills of toxic Jack-o'-lantern mushrooms?",
+          "answer": "Chanterelles (Cantharellus cibarius) exhibit false gills\u2014blunt, fold-like ridges that run down the stem\u2014whereas Jack-o'-lantern mushrooms (Omphalotus olearius) have sharp, blade-like true gills and emit a bioluminescent glow. Chanterelles also have a fruity aroma, while Jack-o'-lanterns smell unpleasant."
+        },
+        {
+          "question": "What are the distinguishing gill attachment and spore print color of Amanita mushrooms, and which species is known as the 'death cap'?",
+          "answer": "Amanita species have free gills that do not attach to the stem and produce a white spore print. The death cap (Amanita phalloides) is a notorious poisonous species characterized by a greenish to yellowish cap, a volva at the base of the stem, and a prominent ring."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Common Flower Flies",
+      "species": "test",
+      "images": [
+        "https://static.inaturalist.org/photos/51874009/square.jpg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What are Common Flower Flies and how can they be identified in the garden?",
+          "answer": "Common Flower Flies, also known as syrphid or hoverflies, are small pollinating flies often mistaken for bees or wasps. You can identify them by their ability to hover in place, a single pair of transparent wings, large compound eyes, and bright banded patterns (yellow, black, or orange) on their abdomen."
+        },
+        {
+          "question": "What ecological role do Common Flower Flies play in pollination and pest control?",
+          "answer": "Adult Common Flower Flies feed on nectar and pollen, making them effective pollinators for many flowering plants and crops. Their larvae often prey on aphids and other soft-bodied pests, providing natural biological control and reducing the need for chemical insecticides."
+        },
+        {
+          "question": "Can you describe the life cycle of a Common Flower Fly?",
+          "answer": "The life cycle of a Common Flower Fly includes four stages: egg, larva, pupa, and adult. Females lay eggs near aphid colonies; larvae hatch and feed voraciously on aphids for up to two weeks. After consuming enough prey, larvae pupate in soil or leaf litter, emerging days later as pollinating adults."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Western Conifer Seed Bug",
+      "species": "test",
+      "images": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/344303585/square.jpg"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "How can you identify a Western Conifer Seed Bug?",
+          "answer": "The Western Conifer Seed Bug is 16\u201320 mm long, with an elongated brown body, leaf-like flared hind legs, a white zigzag band across its forewings, and long antennae banded in white and dark segments."
+        },
+        {
+          "question": "What do Western Conifer Seed Bugs feed on?",
+          "answer": "They feed primarily on developing seeds within conifer cones\u2014especially pine, fir, and spruce\u2014using their piercing-sucking mouthparts to extract oils and nutrients from immature seeds."
+        },
+        {
+          "question": "How can you manage Western Conifer Seed Bugs in and around homes?",
+          "answer": "Seal gaps around windows, doors, and utility openings to prevent overwintering adults from entering. If indoors, vacuum them or use a mild insecticidal spray. Outdoors, remove nearby conifer seed sources and clear leaf litter to reduce local populations."
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Angulate and Roundshouldered Orbweavers",
+      "species": "test",
+      "images": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/322401633/square.png"
+      ],
+      "description": "fake description",
+      "prompts": [
+        {
+          "question": "What are the distinguishing physical characteristics of the Angulate Orbweaver?",
+          "answer": "The Angulate Orbweaver (Verrucosa arenata) has a distinctly triangular abdomen with three sharp corner points, mottled white, orange and brown coloration, and banded legs. Females are typically 7\u201310 mm long, with a flattened dorsal profile and subtle wart-like tubercles along the body margins."
+        },
+        {
+          "question": "What habitat and web-building behaviors are typical of the Roundshouldered Orbweaver?",
+          "answer": "The Roundshouldered Orbweaver (Hypsosinga sanguinea) is most often found in grassy meadows, woodland edges and low shrubs. It builds a small, tightly-spun orb web close to the ground and constructs a silken retreat\u2014often leaves bound together\u2014off to one side. From this retreat it signals by tugging a line before darting out to capture prey."
+        },
+        {
+          "question": "How can you differentiate between the Angulate and Roundshouldered Orbweavers in the field?",
+          "answer": "Angulate Orbweavers have a sharply triangular abdomen with pronounced corner points and sit openly in the web center. Roundshouldered Orbweavers, by contrast, have a smoother, rounded \u2018shoulder\u2019 hump on the carapace, lack pointed abdominal angles, and typically hide in a leaf retreat at the web\u2019s edge, using a signal line to detect and then capture prey."
+        }
+      ]
+    }
+  ]
+]
