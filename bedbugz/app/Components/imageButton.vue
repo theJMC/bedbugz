@@ -103,4 +103,7 @@ export default {
     opacity: 0.9;
   }
 }
+.lock-icon {
+  font-size: 75px;
+}
 </style>
