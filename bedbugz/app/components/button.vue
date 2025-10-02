@@ -65,5 +65,16 @@ export default {
             cursor: pointer;
         }
     }
+
+    &:disabled{
+        opacity: 0.5;
+        cursor: not-allowed;
+
+        &:hover {
+            background: transparent;
+            color: white;
+            cursor: not-allowed;
+        }
+    }
 }
 </style>

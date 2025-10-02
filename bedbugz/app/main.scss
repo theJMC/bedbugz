@@ -18,7 +18,6 @@ $main-black: #18032D;
   align-items: center;
   justify-content: center;
   gap: 4px;
-  width: 50px;
 
   span {
     width: 8px;
@@ -125,4 +124,32 @@ html {
 
 .pointer-events-none {
     pointer-events: none;
+}
+
+.loader-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  border-radius: 16px; // optional for a softer look
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #eee;
+  border-top: 5px solid #E110F2; // matches your active button color
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

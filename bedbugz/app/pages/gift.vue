@@ -4,7 +4,7 @@
   <div class="page-content">
   <div class="gift-container">
   <!-- Main gifting content -->
-  <svg width="300px" height="300px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="300px" height="35%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="green-purple-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#18D959"/>
@@ -151,7 +151,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 10px;
   width: 100%;
   }
   
