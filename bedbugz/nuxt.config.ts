@@ -18,8 +18,8 @@ export default defineNuxtConfig({
     }
   },
   umami: {
-    id: '5ad55f3f-72f5-4721-9310-e4cee3a32f95',
-    host: 'https://umami.thejmc.net',
+    id: 'f5517b10-c3e1-4c81-b958-9708ea44576c',
+    host: 'https://analytics.thejmc.net',
     autoTrack: true,
     // proxy: 'cloak',
     // useDirective: true,
