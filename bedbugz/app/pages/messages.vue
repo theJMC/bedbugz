@@ -57,6 +57,7 @@ export default {
             this.messages = data
             this.chooseResponseOrder(0)
         } catch(error) {
+            console.error(error)
             console.error('Unexpected Error getting messages')
         }
     },
