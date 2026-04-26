@@ -53,6 +53,7 @@ export default {
     async getMessages() {
         try {
             const response = await fetch(`https://api.bedbugz.uk/chat/sexyeducational${this.name}whodoesntintro`)
+            console.log(response)
             const data = await response.json()
             
             // Handle different API response structures
