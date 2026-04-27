@@ -58,18 +58,18 @@ export default {
                 throw new Error(`HTTP error! status: ${response.status}`)
             }
             
-            const data = await response.json()
-            console.log('API response data:', data)
+            // const data = 
             
-            // Handle different API response structures
-            const messagesArray = Array.isArray(data) ? data : data?.messages || data?.data || [];
             
-            if (!messagesArray.length) {
-                console.error('No messages received from API')
-                return
-            }
+            // // Handle different API response structures
+            // const messagesArray = Array.isArray(data) ? data : data?.messages || data?.data || [];
+            // console.log('API response data:', data)
+            // if (!messagesArray.length) {
+            //     console.error('No messages received from API')
+            //     return
+            // }
             
-            this.messages = messagesArray
+            this.messages = await response.json()
             this.chooseResponseOrder(0)
         } catch(error) {
             console.error(error)
