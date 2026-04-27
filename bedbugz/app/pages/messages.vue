@@ -52,24 +52,17 @@ export default {
   methods: {
     async getMessages() {
         try {
-            const response = await fetch(`https://api.bedbugz.uk/chat/sexyeducational${this.name}whodoesntintro`)
-            
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`)
+            const NUM_OF_MESSAGES = 5;
+            for (let i = 0; i < NUM_OF_MESSAGES; i++) {
+                var response = await fetch(`https://api.bedbugz.uk/chat/sexyeducational${this.name}whodoesntintro`)
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`)
+                }
+                this.messages.push(await response.json())
             }
+
             
-            // const data = 
-            
-            
-            // // Handle different API response structures
-            // const messagesArray = Array.isArray(data) ? data : data?.messages || data?.data || [];
-            // console.log('API response data:', data)
-            // if (!messagesArray.length) {
-            //     console.error('No messages received from API')
-            //     return
-            // }
-            
-            this.messages = await response.json()
+            // this.messages = await response.json()
             this.chooseResponseOrder(0)
         } catch(error) {
             console.error(error)
