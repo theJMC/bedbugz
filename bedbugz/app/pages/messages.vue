@@ -58,7 +58,7 @@ export default {
                 throw new Error(`HTTP error! status: ${response.status}`)
             }
             
-            const data = await response.json().body
+            const data = await response.json()
             console.log('API response data:', data)
             
             // Handle different API response structures

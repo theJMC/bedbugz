@@ -17,17 +17,4 @@ export default defineNuxtConfig({
       ]
     }
   },
-  umami: {
-    id: 'f5517b10-c3e1-4c81-b958-9708ea44576c',
-    host: 'https://analytics.thejmc.net',
-    autoTrack: true,
-    // proxy: 'cloak',
-    // useDirective: true,
-    // ignoreLocalhost: true,
-    // excludeQueryParams: false,
-    // domains: ['cool-site.app', 'my-space.site'],
-    // customEndpoint: '/my-custom-endpoint',
-    // enabled: false,
-    // logErrors: true,
-  },
 })
