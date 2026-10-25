@@ -52,7 +52,7 @@ export default {
   methods: {
     async getMessages() {
         try {
-            const response = await fetch(`https://api.bedbugz.uk/chat/sexyeducational${this.name}whodoesntintro`)
+            const response = await fetch(`https://api.bedbugz.thejmc.co.uk/chat/sexyeducational${this.name}whodoesntintro`)
             const data = await response.json()
             this.messages = data
             this.chooseResponseOrder(0)

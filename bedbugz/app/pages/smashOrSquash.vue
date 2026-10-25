@@ -73,7 +73,7 @@ export default {
         async fetchProfiles(page) {
             this.loading = true;
             try {
-                const res = await fetch(`https://api.bedbugz.uk/profile/${page}`);
+                const res = await fetch(`https://api.bedbugz.thejmc.co.uk/profile/${page}`);
                 const data = await res.json();
                 this.profiles = data.profiles || [];
                 this.numberOfPages = data.num_of_pages || 1;
