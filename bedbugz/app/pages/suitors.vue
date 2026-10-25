@@ -98,7 +98,7 @@ export default {
       let numOfPages = 1;
 
       while (page <= numOfPages) {
-        const response = await fetch(`https://api.bedbugz.uk/profile/${page}`);
+        const response = await fetch(`https://api.bedbugz.thejmc.co.uk/profile/${page}`);
         const data = await response.json();
         const profiles = data.results || data.profiles || [];
         numOfPages = data.num_of_pages || 1;

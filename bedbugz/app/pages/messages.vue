@@ -52,13 +52,16 @@ export default {
   methods: {
     async getMessages() {
         try {
+            const response = await fetch(`https://api.bedbugz.thejmc.co.uk/chat/sexyeducational${this.name}whodoesntintro`)
+            const data = await response.json()
+            this.messages = data
             const NUM_OF_MESSAGES = 5;
             for (let i = 0; i < NUM_OF_MESSAGES; i++) {
-                var response = await fetch(`https://api.bedbugz.uk/chat/${this.name}`)
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`)
+                var response2 = await fetch(`https://api.bedbugz.uk/chat/${this.name}`)
+                if (!response2.ok) {
+                    throw new Error(`HTTP error! status: ${response2.status}`)
                 }
-                this.messages.push(await response.json())
+                this.messages.push(await response2.json())
             }
 
             
