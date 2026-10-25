@@ -55,7 +55,7 @@ export default {
             this.messages = []
             const NUM_OF_MESSAGES = 5;
             for (let i = 0; i < NUM_OF_MESSAGES; i++) {
-                var response2 = await fetch(`https://api.bedbugz.uk/chat/${this.name}`)
+                var response2 = await fetch(`https://api.bedbugz.thejmc.co.uk/chat/${this.name}`)
                 if (!response2.ok) {
                     throw new Error(`HTTP error! status: ${response2.status}`)
                 }
