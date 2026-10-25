@@ -55,8 +55,20 @@ export default {
             const response = await fetch(`https://api.bedbugz.thejmc.co.uk/chat/sexyeducational${this.name}whodoesntintro`)
             const data = await response.json()
             this.messages = data
+            const NUM_OF_MESSAGES = 5;
+            for (let i = 0; i < NUM_OF_MESSAGES; i++) {
+                var response = await fetch(`https://api.bedbugz.uk/chat/${this.name}`)
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`)
+                }
+                this.messages.push(await response.json())
+            }
+
+            
+            // this.messages = await response.json()
             this.chooseResponseOrder(0)
         } catch(error) {
+            console.error(error)
             console.error('Unexpected Error getting messages')
         }
     },
@@ -69,17 +81,29 @@ export default {
         });
     },
     chooseResponseOrder(index) {
+        // Validate that the message exists and has required properties
+        if (!this.messages[index]) {
+            console.error(`Message at index ${index} not found`)
+            return
+        }
+        
+        const message = this.messages[index];
+        if (!message.bugMsg || !message.responses) {
+            console.error(`Message at index ${index} missing required properties`, message)
+            return
+        }
+        
         this.messageChain.push({
             isUser: false,
-            message: this.messages[index].bugMsg
+            message: message.bugMsg
         })
         this.scrollToBottom();
         this.messageIndex = index;
 
         const responses = [
-        { type: "good", text: this.messages[index].responses.good },
-        { type: "medium", text: this.messages[index].responses.medium },
-        { type: "bad", text: this.messages[index].responses.bad }
+        { type: "good", text: message.responses.good },
+        { type: "medium", text: message.responses.medium },
+        { type: "bad", text: message.responses.bad }
         ];
 
         // Shuffle array

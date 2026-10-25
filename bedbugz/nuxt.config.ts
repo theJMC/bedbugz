@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', '@nuxt/devtools', '@nuxt/image'],
+  modules: ['@nuxt/eslint', '@nuxt/devtools', '@nuxt/image', 'nuxt-umami'],
   app: {
     head: {
       title: 'BedBugZ',
@@ -16,5 +16,5 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' }
       ]
     }
-  }
+  },
 })
